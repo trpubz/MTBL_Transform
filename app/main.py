@@ -3,15 +3,14 @@ import argparse
 
 from app.src.mtbl_globals import ETLType
 from app.src.keymap import KeyMap
+from app.src.loader import Loader
+import app.src.transform as trx
 
 
 def main(etl_type: ETLType):
-    keymap = KeyMap().keymap
-    # import datasets
-    #   league managers
-    #   league rules (categories/roster slots)
-    #   league players
-    #   projections/stats
+    km = KeyMap()
+    loader = Loader(km.keymap)
+
     # combine datasets (could be done in pandas)
     # normalize/standardize datasets
     # add data fields

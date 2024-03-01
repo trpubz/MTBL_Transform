@@ -14,6 +14,20 @@ HITTER_STATS = ["Name", "Team", "G", "PA", "HR", "R", "RBI", "SB", "CS", "BB%", 
 PITCHER_STATS = ["Name", "Team", "G", "GS", "IP", "SV", "HLD", "ERA", "xERA", "WHIP", "FIP",
                  "xFIP", "SIERA", "K/9", "BB/9", "K/BB", "EV", "Barrel%", "HardHit%", "PlayerId",
                  "MLBAMID"]  # add QS during merge
+# ESPN CONFIG
+NO_MANAGERS = 10
+LG_RULESET = {
+    "ROSTER_SIZE": 21,
+    "BENCH_SLOTS": 5,
+    "SCORING": {
+        "BATTING": [
+            "R", "HR", "RBI", "SBN", "OBP", "SLG"
+        ],
+        "PITCHING": [
+            "IP", "QS", "ERA", "WHIP", "KP9", "SVHD"
+        ]
+    }
+}
 
 
 class ETLType(Enum):
