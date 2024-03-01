@@ -1,5 +1,6 @@
 import csv
 import json
+import tempfile
 import time
 
 import pandas as pd
@@ -12,9 +13,8 @@ from app.src.keymap import KeyMap
 class TestKeymap:
     @pytest.fixture
     def km(self):
-        return KeyMap().keymap
+        return KeyMap("tests/fixtures").keymap
 
-    @pytest.mark.usefixtures("km")
     def test_keymap(self, km):
         assert isinstance(km, pd.DataFrame)
         assert km.loc[42404]["PLAYERNAME"] == "Corbin Carroll"

@@ -12,18 +12,19 @@ from app.src.mtbl_globals import DIR_EXTRACT, DIR_TRANSFORM
 
 
 class KeyMap:
-    def __init__(self):
+    def __init__(self, keymap_dir=DIR_EXTRACT):
         self.keymap = None
-        self.load_keymap()
+        self.load_keymap(keymap_dir)
         verify_transform_dir()
 
-    def load_keymap(self):
+    def load_keymap(self, keymap_dir: str):
         """
         Load keymap from directory
+        :param keymap_dir: directory containing keymap file
         :return: None
         """
         # make DIR_EXTRACT if it doesn't exist
-        with open(os.path.join(DIR_EXTRACT, "mtbl_keymap.json")) as f:
+        with open(os.path.join(keymap_dir, "mtbl_keymap.json")) as f:
             self.keymap = pd.read_json(f).set_index("ESPNID")
 
     @staticmethod
