@@ -28,6 +28,11 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
+      - - run:
+            name: Create MTBL directory and file
+            command: |
+              mkdir -p /Users/Shared/BaseballHQ/resources/extract  # Create directory with explicit path
+              echo $MTBL_JSON > /Users/Shared/BaseballHQ/resources/extract/mtbl_keymap.json  # Create a file
       - python/install-packages:
           pkg-manager: pip
           # app-dir: ~/project/package-directory/  # If your requirements.txt isn't in the root directory.
