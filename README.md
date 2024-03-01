@@ -1,3 +1,7 @@
+[![codecov](https://codecov.io/gh/trpubz/MTBL_Transform/graph/badge.svg?token=6d3GfveuUY)](https://codecov.io/gh/trpubz/MTBL_Transform)
+[![covsunburst](https://codecov.io/gh/trpubz/MTBL_Transform/graph/sunburst.svg?token=6d3GfveuUY)](https://codecov.io/gh/trpubz/MTBL_Transform)
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/ND2c9oPVuFtQWAcK7DzGxc/D8zU1KuKBYZ7oyJZaUW7rX/tree/feature%2Fmtbl-69-add-keymap-encapsulation.svg?style=svg&circle-token=f2dcb42b614271e364161786d83493657f1569d8)](https://dl.circleci.com/status-badge/redirect/circleci/ND2c9oPVuFtQWAcK7DzGxc/D8zU1KuKBYZ7oyJZaUW7rX/tree/feature%2Fmtbl-69-add-keymap-encapsulation)
+
 # MTBL_Transform
 Transform function of MTBL ETL pipeline. The script needs to ingest x6 .json files and combine data. Compute wRAA and VORP for relative comparisons, among other activities.
 
