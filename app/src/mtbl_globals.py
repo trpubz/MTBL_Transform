@@ -6,6 +6,7 @@ from enum import Enum
 
 
 DIR_EXTRACT = "/Users/Shared/BaseballHQ/resources/extract"
+DIR_TRANSFORM = "/Users/Shared/BaseballHQ/resources/transform"
 # the names of the stat columns from Fangraphs downloaded csvs
 HITTER_STATS = ["Name", "Team", "G", "PA", "HR", "R", "RBI", "SB", "CS", "BB%", "K%", "ISO",
                 "BABIP", "AVG", "OBP", "SLG", "xSLG", "wOBA", "xwOBA", "wRC+", "wRAA", "EV",

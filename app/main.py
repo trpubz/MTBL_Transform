@@ -2,9 +2,21 @@ import os
 import argparse
 
 from app.src.mtbl_globals import ETLType
+from app.src.keymap import KeyMap
 
 
 def main(etl_type: ETLType):
+    keymap = KeyMap().keymap
+    # import datasets
+    #   league managers
+    #   league rules (categories/roster slots)
+    #   league players
+    #   projections/stats
+    # combine datasets (could be done in pandas)
+    # normalize/standardize datasets
+    # add data fields
+    # export datasets (pd.to_csv), if json, then PlayerKit -- pydantic
+
     print(etl_type)
     pass
 
