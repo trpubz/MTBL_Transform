@@ -15,7 +15,9 @@ class KeyMap:
     def __init__(self, keymap_dir=DIR_EXTRACT):
         self.keymap = None
         self.load_keymap(keymap_dir)
-        verify_transform_dir()
+
+        if keymap_dir == DIR_TRANSFORM:
+            verify_transform_dir()
 
     def load_keymap(self, keymap_dir: str):
         """
@@ -37,9 +39,10 @@ class KeyMap:
         pass
 
 
-def verify_transform_dir():
+def verify_transform_dir(output_dir=DIR_TRANSFORM):
     """
     Checks if a directory exists, and creates it if it doesn't.
+    Required to have write permissions to /User directory
     """
-    if not os.path.exists(DIR_TRANSFORM):
-        os.makedirs(DIR_TRANSFORM)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
