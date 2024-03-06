@@ -29,3 +29,9 @@ Inputs for this process include:
 This will output 2x .json files for Hitters/Pitchers.  It will have all current/projection data combined, with VORP computed
 - bats_mtbl.json
 - arms_mtbl.json
+
+## Performance Findings
+
+Converting the raw data into a pandas Dataframe object and indexing on `playerid` yeilded ~ 260x performance increase.
+
+<img width="2222" alt="Screenshot 2024-03-06 at 13 38 30" src="https://github.com/trpubz/MTBL_Transform/assets/25095319/1a94003f-89d4-44fd-b422-2366df6d82d8">
