@@ -8,8 +8,14 @@ import app.src.transform as trx
 
 
 def main(etl_type: ETLType):
-    km = KeyMap()
-    loader = Loader(km.keymap)
+    """
+    Main controller.
+    Note: if ETLType is PRE_SZN, keymap primary key should be set to other than ESPNID.
+    :param etl_type:
+    :return:
+    """
+    km = KeyMap(primary_key="FANGRAPHSID")  # object has keymap attribute
+    loader = Loader(km.keymap, etl_type=ETLType.PRE_SZN)  # object has combined dfs
 
     # combine datasets (could be done in pandas)
     # normalize/standardize datasets

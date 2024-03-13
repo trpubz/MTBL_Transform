@@ -12,22 +12,28 @@ from app.src.mtbl_globals import DIR_EXTRACT, DIR_TRANSFORM
 
 
 class KeyMap:
-    def __init__(self, keymap_dir=DIR_EXTRACT):
+    def __init__(self, keymap_dir=DIR_EXTRACT, primary_key: str = "ESPNID"):
         self.keymap = None
-        self.load_keymap(keymap_dir)
+        self.load_keymap(keymap_dir, primary_key)
 
         if keymap_dir == DIR_TRANSFORM:
             verify_transform_dir()
 
-    def load_keymap(self, keymap_dir: str):
+    def load_keymap(self, keymap_dir: str, primary_key: str) -> None:
         """
         Load keymap from directory
-        :param keymap_dir: directory containing keymap file
+        :param keymap_dir: containing keymap file
+        :param primary_key: sets the primary key of the keymap.
+            Options: ESPNID, MLBID, FANGRAPHSID, BREFID
         :return: None
         """
         # make DIR_EXTRACT if it doesn't exist
         with open(os.path.join(keymap_dir, "mtbl_keymap.json")) as f:
-            self.keymap = pd.read_json(f).set_index("ESPNID")
+            # Setting drop=False prevents the removal of the primary key column,
+            # retaining it along with its name within the DataFrame.
+            self.keymap = pd.read_json(f).set_index(primary_key, drop=False)
+            self.keymap.index.name = "idx" + primary_key
+            self.keymap["MLBID"] = self.keymap["MLBID"].astype(str)
 
     @staticmethod
     def refresh_keymap():
