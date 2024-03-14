@@ -1,12 +1,12 @@
 # File with global variables
 # by pubins.taylor
-# v0.5.0
-# lastUpdate 29 FB 2024
+# v0.6.0
+# lastUpdate 13 MAR 2024
 from enum import Enum
-
 
 DIR_EXTRACT = "/Users/Shared/BaseballHQ/resources/extract"
 DIR_TRANSFORM = "/Users/Shared/BaseballHQ/resources/transform"
+MTBL_KEYMAP_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSEw6LWoxJrrBSFY39wA_PxSW5SG_t3J7dJT3JsP2DpMF5vWY6HJY071d8iNIttYDnArfQXg-oY_Q6I/pubhtml?gid=0&single=true"
 # the names of the stat columns from Fangraphs downloaded csvs
 HITTER_STATS = ["Name", "Team", "G", "PA", "HR", "R", "RBI", "SB", "CS", "BB%", "K%", "ISO",
                 "BABIP", "AVG", "OBP", "SLG", "xSLG", "wOBA", "xwOBA", "wRC+", "wRAA", "EV",

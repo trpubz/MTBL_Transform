@@ -4,11 +4,14 @@ by: pubins.taylor
 date: 29 FEB 2024
 keymap.py
 """
+import json
 import os
 
+import numpy as np
 import pandas as pd
 
-from app.src.mtbl_globals import DIR_EXTRACT, DIR_TRANSFORM
+from app.src.mtbl_globals import DIR_EXTRACT, DIR_TRANSFORM, MTBL_KEYMAP_URL
+from mtbl_iokit.write import write
 
 
 class KeyMap:
@@ -29,20 +32,52 @@ class KeyMap:
         """
         # make DIR_EXTRACT if it doesn't exist
         with open(os.path.join(keymap_dir, "mtbl_keymap.json")) as f:
+            # keymap is loaded with schema, need to access data key
+            json_data = json.load(f)["data"]
             # Setting drop=False prevents the removal of the primary key column,
             # retaining it along with its name within the DataFrame.
-            self.keymap = pd.read_json(f).set_index(primary_key, drop=False)
+            self.keymap = pd.read_json(json.dumps(json_data)).set_index(primary_key, drop=False)
             self.keymap.index.name = "idx" + primary_key
-            self.keymap["MLBID"] = self.keymap["MLBID"].astype(str)
+
+            self.keymap = convert_num_id_cols(self.keymap)
 
     @staticmethod
-    def refresh_keymap():
+    def refresh_keymap(save_dir: str = DIR_EXTRACT):
         """
         Static method to refresh keymap, compares timestamps to determine if fetching is necessary
+        :param save_dir: directory to save file
         :return:
         """
-        # TODO:
-        pass
+        # read html appends each table to list, access dataframe with index
+        new_keymap = pd.read_html(MTBL_KEYMAP_URL, header=1)[0]
+        # reset index, drop index column, remove bad rows
+        new_keymap = new_keymap.reset_index(drop=True).drop(columns="1").dropna(how='all')
+
+        new_keymap = convert_num_id_cols(new_keymap)
+
+        write.export_dataframe(new_keymap, "mtbl_keymap", ".json", save_dir)
+
+
+def convert_num_id_cols(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Converts the columns that load in as floats or integers into strings
+    :param df: the dataframe to convert
+    :return: a dataframe with only the columns known to load as numerical values
+    """
+    def float_to_str(x):
+        if pd.notna(x).any():  # Check for at least one non-null value
+
+            for idx in range(len(x)):
+                if isinstance(x[idx], float):
+                    x[idx] = int(x[idx])
+
+            return x.astype(str)
+        else:
+            return x
+
+    df[["MLBID", "ESPNID"]] = df[["MLBID", "ESPNID"]].apply(float_to_str, axis=1)
+
+    return df
 
 
 def verify_transform_dir(output_dir=DIR_TRANSFORM):

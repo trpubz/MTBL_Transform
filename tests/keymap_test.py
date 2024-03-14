@@ -1,5 +1,6 @@
 import csv
 import json
+import os
 import tempfile
 import time
 
@@ -57,3 +58,13 @@ class TestKeymap:
 
         result = benchmark(indexing_pandas)
         assert result is not None
+
+    def test_refresh_keymap(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            KeyMap.refresh_keymap(tmpdir)
+
+            expected_file = "mtbl_keymap.json"  # Example filename
+            file_path = os.path.join(tmpdir, expected_file)
+
+            # Assertion to check for file existence
+            assert os.path.exists(file_path)
