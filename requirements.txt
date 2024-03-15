@@ -6,7 +6,7 @@ pandas~=2.2
 pyarrow
 selenium~=4.17
 
-mtbl-iokit @ git+https://github.com/trpubz/MTBL_IOKit.git@v0.3.0
+mtbl-iokit @ git+https://github.com/trpubz/MTBL_IOKit.git@v0.3.1
 mtbl-driverkit @ git+https://github.com/trpubz/MTBL_DriverKit.git@v0.4.1
 
 
