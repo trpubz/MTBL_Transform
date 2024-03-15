@@ -28,9 +28,17 @@ class Loader:
         self.combined_bats = None
         self.combined_arms = None
         self.extract_dir = extract_dir
+        self.keymap = keymap
+        self.etl_type = etl_type
+
+    def load_extracted_data(self) -> None:
+        """
+        Loads and combines extracted data
+        :return: None
+        """
         dfs_bats = {}
         dfs_arms = {}
-        match etl_type:
+        match self.etl_type:
             case ETLType.PRE_SZN:
                 # order of keys matters here since SAVANT processing relies on FANGRAPHSID
                 dfs_bats["FANGRAPHS"] = self.import_projections("bats")
@@ -42,7 +50,7 @@ class Loader:
                 # TODO:
                 pass
 
-        self.combine_dataframes(keymap, dfs_bats, dfs_arms)
+        self.combine_dataframes(dfs_bats, dfs_arms)
 
     def import_owners(self):
         # TODO:
@@ -67,7 +75,7 @@ class Loader:
     def import_stats(self, pos):
         pass
 
-    def combine_dataframes(self, keymap, dfs_bats: dict, dfs_arms: dict) -> None:
+    def combine_dataframes(self, dfs_bats: dict, dfs_arms: dict) -> None:
         """
         Combines the pos group lists.
         :param keymap: pd.Dataframe containing the joins table
@@ -75,6 +83,7 @@ class Loader:
         :param dfs_arms: dict of Dataframes for pitchers
         :return: None
         """
+
         def combine_pos_group(pos: dict) -> pd.DataFrame:
             combined = None
             for source, df in pos.items():
@@ -91,10 +100,10 @@ class Loader:
                         aux_key = "FANGRAPHSID"
 
                 try:
-                    keyed_df = df.merge(keymap[[keymap_key, aux_key]],
-                                             how="left",
-                                             left_on=source_key,
-                                             right_on=keymap_key)
+                    keyed_df = df.merge(self.keymap[[keymap_key, aux_key]],
+                                        how="left",
+                                        left_on=source_key,
+                                        right_on=keymap_key)
 
                     if source == "SAVANT":
                         # will raise AttributeError if there is a key problem
@@ -136,7 +145,8 @@ def check_keymap_validity(df: pd.DataFrame, id_col: str, source: str) -> None:
             problematic_players = df[df[id_col].isna()]["Name"]
         case "SAVANT":
             # FANGRAPHSID cannot start with 'sa' and be found in the savant data.
-            problematic_players = df[df["FANGRAPHSID"].str.startswith(
+            no_nas_df = df[df[id_col].notna()]
+            problematic_players = no_nas_df[no_nas_df["FANGRAPHSID"].str.startswith(
                 'sa')]["last_name, first_name"]
 
     if not problematic_players.empty:

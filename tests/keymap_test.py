@@ -18,11 +18,11 @@ class TestKeymap:
 
     def test_keymap(self, km):
         assert isinstance(km, pd.DataFrame)
-        assert km.loc[42404]["PLAYERNAME"] == "Corbin Carroll"
+        assert km.loc["42404"]["PLAYERNAME"] == "Corbin Carroll"
 
     def test_indexing_json(self, benchmark):
         def indexing_json():
-            json_keymap = json.load(open("tests/fixtures/mtbl_keymap.json"))
+            json_keymap = json.load(open("tests/fixtures/mtbl_keymap.json"))["data"]
             key = "42404"  # Corbin Carroll
 
             json_result = None
@@ -35,24 +35,9 @@ class TestKeymap:
         result = benchmark(indexing_json)
         assert result is not None
 
-    def test_indexing_csv(self, benchmark):
-        def indexing_csv():
-            csv_keymap = csv.DictReader(open("tests/fixtures/mtbl_keymap.csv"))
-            key = "42404"  # Corbin Carroll
-
-            csv_result = None
-            for row in csv_keymap:
-                if row["ESPNID"] == key:
-                    csv_result = row["PLAYERNAME"]
-
-            return csv_result
-
-        result = benchmark(indexing_csv)
-        assert result is not None
-
     def test_indexing_pandas(self, km, benchmark):
         def indexing_pandas():
-            pd_result = km.loc[42404]["PLAYERNAME"]
+            pd_result = km.loc["42404"]["PLAYERNAME"]
 
             return pd_result
 

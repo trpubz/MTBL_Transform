@@ -15,10 +15,11 @@ PITCHER_STATS = ["Name", "Team", "G", "GS", "IP", "SV", "HLD", "ERA", "xERA", "W
                  "xFIP", "SIERA", "K/9", "BB/9", "K/BB", "EV", "Barrel%", "HardHit%", "PlayerId",
                  "MLBAMID"]  # add QS during merge
 # ESPN CONFIG
-NO_MANAGERS = 10
+NO_MANAGERS = 11
 LG_RULESET = {
     "ROSTER_SIZE": 21,
     "BENCH_SLOTS": 5,
+    "DRAFT_BUDGET": 260,
     "SCORING": {
         "BATTING": [
             "R", "HR", "RBI", "SBN", "OBP", "SLG"

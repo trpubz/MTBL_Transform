@@ -6,6 +6,7 @@ import pytest
 from app.src.mtbl_globals import ETLType, DIR_EXTRACT
 from app.src.keymap import KeyMap
 from app.src.loader import Loader
+from tests.fixtures.mock_helper import mock_savant, mock_projections
 
 from mtbl_iokit import read
 
@@ -13,62 +14,26 @@ from mtbl_iokit import read
 class TestLoader:
     @pytest.fixture(autouse=True)
     def setup(self):
+        # optionally refresh keymap during mods; comment out line if desired to use static file
+        # KeyMap.refresh_keymap("./tests/fixtures")
         # setting to alt primary key since testing with preseason data
         keymap = KeyMap("./tests/fixtures", primary_key="FANGRAPHSID").keymap
         yield keymap
 
-    @pytest.fixture
-    def savant_fixture(self) -> ():
-        """
-        Fixture factory
-        :return: a function and can accept arg at runtime
-        """
-        def _savant_fixture(pos) -> pd.DataFrame:
-            return read.read_in_as(directory="./tests/fixtures",
-                            file_name=pos + "_savant",
-                            file_type=".csv",
-                            as_type=read.IOKitDataTypes.DATAFRAME)
+    def test_instantiation(self, setup):
+        loader = Loader(setup, ETLType.PRE_SZN)
 
-        return _savant_fixture
+        assert loader.extract_dir == DIR_EXTRACT
+        assert isinstance(loader.keymap, pd.DataFrame)
+        assert loader.etl_type == ETLType.PRE_SZN
 
-    @pytest.fixture
-    def projections_fixture(self) -> ():
-        """
-        Fixture factory
-        :return: a function and can accept arg at runtime
-        """
-        def _projections_fixture(pos) -> pd.DataFrame:
-            return read.read_in_as(directory="./tests/fixtures",
-                            file_name=pos + "_fg",
-                            file_type=".csv",
-                            as_type=read.IOKitDataTypes.DATAFRAME)
-
-        return _projections_fixture
-
-    def test_instantiation(self, setup, monkeypatch, savant_fixture, projections_fixture):
-        def mock_savant(_, pos) -> pd.DataFrame:
-            if pos == "bats":
-                return savant_fixture("bats")
-            elif pos == "arms":
-                return savant_fixture("arms")
-            else:
-                raise ValueError(f"Unexpected position: {pos}")
-
-        def mock_projections(_, pos) -> pd.DataFrame:
-            if pos == "bats":
-                func = projections_fixture
-                return func("bats")
-            elif pos == "arms":
-                func = projections_fixture
-                return func("arms")
-            else:
-                raise ValueError(f"Unexpected position: {pos}")
+    def test_load_extracted_data(self, setup, monkeypatch):
 
         monkeypatch.setattr(Loader, "import_savant", mock_savant)
         monkeypatch.setattr(Loader, "import_projections", mock_projections)
 
         loader = Loader(setup, ETLType.PRE_SZN)
+        loader.load_extracted_data()
 
-        assert loader.extract_dir == DIR_EXTRACT
         assert isinstance(loader.combined_bats, pd.DataFrame)
-        # assert isinstance(loader.combined_arms, pd.DataFrame)
+        assert isinstance(loader.combined_arms, pd.DataFrame)

@@ -16,14 +16,11 @@ def main(etl_type: ETLType):
     """
     km = KeyMap(primary_key="FANGRAPHSID")  # object has keymap attribute
     loader = Loader(km.keymap, etl_type=ETLType.PRE_SZN)  # object has combined dfs
-
-    # combine datasets (could be done in pandas)
-    # normalize/standardize datasets
+    loader.load_extracted_data()
+    # clean data
+    # standardize datasets
     # add data fields
     # export datasets (pd.to_csv), if json, then PlayerKit -- pydantic
-
-    print(etl_type)
-    pass
 
 
 if __name__ == '__main__':

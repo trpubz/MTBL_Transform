@@ -68,10 +68,10 @@ def convert_num_id_cols(df: pd.DataFrame) -> pd.DataFrame:
         if pd.notna(x).any():  # Check for at least one non-null value
 
             for idx in range(len(x)):
-                if isinstance(x[idx], float):
-                    x[idx] = int(x[idx])
+                if isinstance(x[idx], float) and not pd.isnull(x[idx]):
+                    x[idx] = str(int(x[idx]))
 
-            return x.astype(str)
+            return x
         else:
             return x
 
