@@ -4,6 +4,7 @@ import argparse
 from app.src.mtbl_globals import ETLType
 from app.src.keymap import KeyMap
 from app.src.loader import Loader
+from app.src.cleaner import clean_hitters, clean_pitchers
 import app.src.transform as trx
 
 
@@ -18,6 +19,8 @@ def main(etl_type: ETLType):
     loader = Loader(km.keymap, etl_type=ETLType.PRE_SZN)  # object has combined dfs
     loader.load_extracted_data()
     # clean data
+    clean_bats = clean_hitters(loader.combined_bats, etl_type)
+    clean_sps, clean_rps = clean_pitchers(loader.combined_arms, etl_type)
     # standardize datasets
     # add data fields
     # export datasets (pd.to_csv), if json, then PlayerKit -- pydantic

@@ -52,13 +52,13 @@ class Loader:
 
         self.combine_dataframes(dfs_bats, dfs_arms)
 
-    def import_owners(self):
+    # def import_owners(self):
         # TODO:
-        pass
+        # pass
 
-    def import_ruleset(self):
+    # def import_ruleset(self):
         # TODO:
-        pass
+        # pass
 
     def import_savant(self, pos) -> pd.DataFrame:
         return read.read_in_as(directory=self.extract_dir,
@@ -72,8 +72,8 @@ class Loader:
                                file_type=".csv",
                                as_type=read.IOKitDataTypes.DATAFRAME)
 
-    def import_stats(self, pos):
-        pass
+    # def import_stats(self, pos):
+    #     pass
 
     def combine_dataframes(self, dfs_bats: dict, dfs_arms: dict) -> None:
         """
