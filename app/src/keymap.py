@@ -36,10 +36,13 @@ class KeyMap:
             json_data = json.load(f)["data"]
             # Setting drop=False prevents the removal of the primary key column,
             # retaining it along with its name within the DataFrame.
-            self.keymap = pd.read_json(json.dumps(json_data)).set_index(primary_key, drop=False)
-            self.keymap.index.name = "idx" + primary_key
+            keymap = pd.read_json(json.dumps(json_data))
+            keymap = convert_num_id_cols(keymap)
 
-            self.keymap = convert_num_id_cols(self.keymap)
+            keymap.set_index(primary_key, drop=False, inplace=True)
+            keymap.index.name = "idx" + primary_key
+
+            self.keymap = keymap
 
     @staticmethod
     def refresh_keymap(save_dir: str = DIR_EXTRACT):
