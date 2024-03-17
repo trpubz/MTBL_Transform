@@ -1,7 +1,7 @@
 # File with global variables
 # by pubins.taylor
-# v0.6.0
-# lastUpdate 13 MAR 2024
+# v0.6.1
+# lastUpdate 16 MAR 2024
 from enum import Enum
 
 DIR_EXTRACT = "/Users/Shared/BaseballHQ/resources/extract"
@@ -34,6 +34,9 @@ LG_RULESET = {
 class ETLType(Enum):
     PRE_SZN = "preseason"
     REG_SZN = "regular_season"
+
+    def __eq__(self, other):
+        return self.value == other.value
 
     def __str__(self):
         return self.name

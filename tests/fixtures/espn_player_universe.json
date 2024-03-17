@@ -1,0 +1,10939 @@
+[
+  {
+    "name": "Ronald Acuna Jr.",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 1,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 120,
+      "HR": 35,
+      "RBI": 91,
+      "SBN": 36,
+      "OBP": 0.401,
+      "SLG": 0.565
+    },
+    "espn_id": "36185"
+  },
+  {
+    "name": "Juan Soto",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 2,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 111,
+      "HR": 39,
+      "RBI": 106,
+      "SBN": 4,
+      "OBP": 0.43,
+      "SLG": 0.55
+    },
+    "espn_id": "36969"
+  },
+  {
+    "name": "Mookie Betts",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 3,
+    "positions": [
+      "OF",
+      "2B"
+    ],
+    "player_stats": {
+      "R": 132,
+      "HR": 37,
+      "RBI": 103,
+      "SBN": 11,
+      "OBP": 0.381,
+      "SLG": 0.553
+    },
+    "espn_id": "33039"
+  },
+  {
+    "name": "Kyle Tucker",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 4,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 100,
+      "HR": 34,
+      "RBI": 120,
+      "SBN": 24,
+      "OBP": 0.366,
+      "SLG": 0.54
+    },
+    "espn_id": "34967"
+  },
+  {
+    "name": "Jose Ramirez",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 5,
+    "positions": [
+      "3B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 97,
+      "HR": 30,
+      "RBI": 103,
+      "SBN": 20,
+      "OBP": 0.357,
+      "SLG": 0.509
+    },
+    "espn_id": "32801"
+  },
+  {
+    "name": "Freddie Freeman",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 6,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 125,
+      "HR": 28,
+      "RBI": 101,
+      "SBN": 12,
+      "OBP": 0.397,
+      "SLG": 0.538
+    },
+    "espn_id": "30193"
+  },
+  {
+    "name": "Matt Olson",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 7,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 108,
+      "HR": 45,
+      "RBI": 122,
+      "SBN": 2,
+      "OBP": 0.369,
+      "SLG": 0.554
+    },
+    "espn_id": "32767"
+  },
+  {
+    "name": "Yordan Alvarez",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 8,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 91,
+      "HR": 37,
+      "RBI": 105,
+      "SBN": 1,
+      "OBP": 0.395,
+      "SLG": 0.598
+    },
+    "espn_id": "36018"
+  },
+  {
+    "name": "Corbin Carroll",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 9,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 106,
+      "HR": 23,
+      "RBI": 73,
+      "SBN": 38,
+      "OBP": 0.366,
+      "SLG": 0.496
+    },
+    "espn_id": "42404"
+  },
+  {
+    "name": "Shohei Ohtani",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 10,
+    "positions": [
+      "DH",
+      "SP"
+    ],
+    "player_stats": {
+      "R": 101,
+      "HR": 43,
+      "RBI": 101,
+      "SBN": 12,
+      "OBP": 0.379,
+      "SLG": 0.593
+    },
+    "espn_id": "39832"
+  },
+  {
+    "name": "Aaron Judge",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 11,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 108,
+      "HR": 42,
+      "RBI": 106,
+      "SBN": 7,
+      "OBP": 0.402,
+      "SLG": 0.579
+    },
+    "espn_id": "33192"
+  },
+  {
+    "name": "Bobby Witt Jr.",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 12,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 90,
+      "HR": 30,
+      "RBI": 88,
+      "SBN": 30,
+      "OBP": 0.319,
+      "SLG": 0.495
+    },
+    "espn_id": "42403"
+  },
+  {
+    "name": "Fernando Tatis Jr.",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 13,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 103,
+      "HR": 30,
+      "RBI": 94,
+      "SBN": 26,
+      "OBP": 0.337,
+      "SLG": 0.476
+    },
+    "espn_id": "35983"
+  },
+  {
+    "name": "Rafael Devers",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 14,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 95,
+      "HR": 36,
+      "RBI": 105,
+      "SBN": 1,
+      "OBP": 0.357,
+      "SLG": 0.533
+    },
+    "espn_id": "33859"
+  },
+  {
+    "name": "Marcus Semien",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 15,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 106,
+      "HR": 29,
+      "RBI": 88,
+      "SBN": 14,
+      "OBP": 0.329,
+      "SLG": 0.465
+    },
+    "espn_id": "32146"
+  },
+  {
+    "name": "Ozzie Albies",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 16,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 96,
+      "HR": 30,
+      "RBI": 103,
+      "SBN": 9,
+      "OBP": 0.327,
+      "SLG": 0.494
+    },
+    "espn_id": "33783"
+  },
+  {
+    "name": "Vladimir Guerrero Jr.",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 17,
+    "positions": [
+      "1B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 90,
+      "HR": 31,
+      "RBI": 100,
+      "SBN": 4,
+      "OBP": 0.36,
+      "SLG": 0.488
+    },
+    "espn_id": "35002"
+  },
+  {
+    "name": "Adley Rutschman",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 18,
+    "positions": [
+      "C",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 87,
+      "HR": 19,
+      "RBI": 75,
+      "SBN": 1,
+      "OBP": 0.372,
+      "SLG": 0.434
+    },
+    "espn_id": "42178"
+  },
+  {
+    "name": "Alex Bregman",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 19,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 94,
+      "HR": 22,
+      "RBI": 90,
+      "SBN": 1,
+      "OBP": 0.36,
+      "SLG": 0.44
+    },
+    "espn_id": "34886"
+  },
+  {
+    "name": "Corey Seager",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 20,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 95,
+      "HR": 34,
+      "RBI": 99,
+      "SBN": 1,
+      "OBP": 0.369,
+      "SLG": 0.558
+    },
+    "espn_id": "32691"
+  },
+  {
+    "name": "Bryce Harper",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 21,
+    "positions": [
+      "1B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 100,
+      "HR": 30,
+      "RBI": 89,
+      "SBN": 10,
+      "OBP": 0.395,
+      "SLG": 0.535
+    },
+    "espn_id": "30951"
+  },
+  {
+    "name": "Trea Turner",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 22,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 105,
+      "HR": 25,
+      "RBI": 84,
+      "SBN": 26,
+      "OBP": 0.338,
+      "SLG": 0.477
+    },
+    "espn_id": "33710"
+  },
+  {
+    "name": "Julio Rodriguez",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 23,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 101,
+      "HR": 32,
+      "RBI": 96,
+      "SBN": 25,
+      "OBP": 0.34,
+      "SLG": 0.487
+    },
+    "espn_id": "41044"
+  },
+  {
+    "name": "Jose Altuve",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 24,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 107,
+      "HR": 26,
+      "RBI": 69,
+      "SBN": 11,
+      "OBP": 0.367,
+      "SLG": 0.499
+    },
+    "espn_id": "31662"
+  },
+  {
+    "name": "Francisco Lindor",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 25,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 106,
+      "HR": 27,
+      "RBI": 101,
+      "SBN": 15,
+      "OBP": 0.332,
+      "SLG": 0.442
+    },
+    "espn_id": "32129"
+  },
+  {
+    "name": "Pete Alonso",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 26,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 91,
+      "HR": 41,
+      "RBI": 115,
+      "SBN": 3,
+      "OBP": 0.336,
+      "SLG": 0.51
+    },
+    "espn_id": "37498"
+  },
+  {
+    "name": "Austin Riley",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 27,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 102,
+      "HR": 37,
+      "RBI": 97,
+      "SBN": 2,
+      "OBP": 0.345,
+      "SLG": 0.524
+    },
+    "espn_id": "34982"
+  },
+  {
+    "name": "Ketel Marte",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 28,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 92,
+      "HR": 23,
+      "RBI": 79,
+      "SBN": 4,
+      "OBP": 0.349,
+      "SLG": 0.472
+    },
+    "espn_id": "32512"
+  },
+  {
+    "name": "Gunnar Henderson",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 29,
+    "positions": [
+      "3B",
+      "SS"
+    ],
+    "player_stats": {
+      "R": 99,
+      "HR": 29,
+      "RBI": 88,
+      "SBN": 10,
+      "OBP": 0.35,
+      "SLG": 0.496
+    },
+    "espn_id": "42507"
+  },
+  {
+    "name": "Kyle Schwarber",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 30,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 103,
+      "HR": 43,
+      "RBI": 99,
+      "SBN": 2,
+      "OBP": 0.348,
+      "SLG": 0.485
+    },
+    "espn_id": "33712"
+  },
+  {
+    "name": "Will Smith",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 31,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 81,
+      "HR": 22,
+      "RBI": 87,
+      "SBN": 3,
+      "OBP": 0.36,
+      "SLG": 0.457
+    },
+    "espn_id": "38309"
+  },
+  {
+    "name": "Luis Arraez",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 32,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 79,
+      "HR": 9,
+      "RBI": 62,
+      "SBN": 0,
+      "OBP": 0.372,
+      "SLG": 0.438
+    },
+    "espn_id": "39572"
+  },
+  {
+    "name": "Yandy Diaz",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 33,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 87,
+      "HR": 17,
+      "RBI": 74,
+      "SBN": -1,
+      "OBP": 0.393,
+      "SLG": 0.463
+    },
+    "espn_id": "33481"
+  },
+  {
+    "name": "Manny Machado",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 34,
+    "positions": [
+      "3B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 88,
+      "HR": 29,
+      "RBI": 99,
+      "SBN": 6,
+      "OBP": 0.333,
+      "SLG": 0.478
+    },
+    "espn_id": "31097"
+  },
+  {
+    "name": "Paul Goldschmidt",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 35,
+    "positions": [
+      "1B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 92,
+      "HR": 29,
+      "RBI": 86,
+      "SBN": 9,
+      "OBP": 0.37,
+      "SLG": 0.484
+    },
+    "espn_id": "31027"
+  },
+  {
+    "name": "Steven Kwan",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 36,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 92,
+      "HR": 4,
+      "RBI": 55,
+      "SBN": 14,
+      "OBP": 0.36,
+      "SLG": 0.385
+    },
+    "espn_id": "41996"
+  },
+  {
+    "name": "Nico Hoerner",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 37,
+    "positions": [
+      "2B",
+      "SS"
+    ],
+    "player_stats": {
+      "R": 87,
+      "HR": 9,
+      "RBI": 67,
+      "SBN": 29,
+      "OBP": 0.34,
+      "SLG": 0.384
+    },
+    "espn_id": "41219"
+  },
+  {
+    "name": "Bryan Reynolds",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 38,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 84,
+      "HR": 26,
+      "RBI": 80,
+      "SBN": 7,
+      "OBP": 0.347,
+      "SLG": 0.478
+    },
+    "espn_id": "38980"
+  },
+  {
+    "name": "Michael Harris II",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 39,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 84,
+      "HR": 19,
+      "RBI": 71,
+      "SBN": 21,
+      "OBP": 0.337,
+      "SLG": 0.475
+    },
+    "espn_id": "42470"
+  },
+  {
+    "name": "Nolan Arenado",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 40,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 71,
+      "HR": 28,
+      "RBI": 96,
+      "SBN": 1,
+      "OBP": 0.32,
+      "SLG": 0.479
+    },
+    "espn_id": "31261"
+  },
+  {
+    "name": "Christian Walker",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 41,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 82,
+      "HR": 31,
+      "RBI": 93,
+      "SBN": 4,
+      "OBP": 0.329,
+      "SLG": 0.478
+    },
+    "espn_id": "32758"
+  },
+  {
+    "name": "William Contreras",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 42,
+    "positions": [
+      "C",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 81,
+      "HR": 20,
+      "RBI": 76,
+      "SBN": 4,
+      "OBP": 0.352,
+      "SLG": 0.451
+    },
+    "espn_id": "39895"
+  },
+  {
+    "name": "George Springer",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 43,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 93,
+      "HR": 23,
+      "RBI": 76,
+      "SBN": 12,
+      "OBP": 0.34,
+      "SLG": 0.441
+    },
+    "espn_id": "32078"
+  },
+  {
+    "name": "Bo Bichette",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 44,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 88,
+      "HR": 23,
+      "RBI": 89,
+      "SBN": 5,
+      "OBP": 0.34,
+      "SLG": 0.477
+    },
+    "espn_id": "38904"
+  },
+  {
+    "name": "Brandon Nimmo",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 45,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 97,
+      "HR": 20,
+      "RBI": 65,
+      "SBN": 0,
+      "OBP": 0.366,
+      "SLG": 0.448
+    },
+    "espn_id": "32159"
+  },
+  {
+    "name": "Luis Robert Jr.",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 46,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 90,
+      "HR": 34,
+      "RBI": 83,
+      "SBN": 13,
+      "OBP": 0.324,
+      "SLG": 0.531
+    },
+    "espn_id": "39631"
+  },
+  {
+    "name": "Randy Arozarena",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 47,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 92,
+      "HR": 22,
+      "RBI": 85,
+      "SBN": 15,
+      "OBP": 0.355,
+      "SLG": 0.437
+    },
+    "espn_id": "36488"
+  },
+  {
+    "name": "Anthony Santander",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 48,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 81,
+      "HR": 29,
+      "RBI": 93,
+      "SBN": 0,
+      "OBP": 0.316,
+      "SLG": 0.461
+    },
+    "espn_id": "36084"
+  },
+  {
+    "name": "Christian Yelich",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 49,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 102,
+      "HR": 16,
+      "RBI": 68,
+      "SBN": 22,
+      "OBP": 0.362,
+      "SLG": 0.416
+    },
+    "espn_id": "31283"
+  },
+  {
+    "name": "Gleyber Torres",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 50,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 81,
+      "HR": 22,
+      "RBI": 70,
+      "SBN": 6,
+      "OBP": 0.335,
+      "SLG": 0.441
+    },
+    "espn_id": "33804"
+  },
+  {
+    "name": "Ian Happ",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 51,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 83,
+      "HR": 20,
+      "RBI": 83,
+      "SBN": 8,
+      "OBP": 0.352,
+      "SLG": 0.425
+    },
+    "espn_id": "34945"
+  },
+  {
+    "name": "Xander Bogaerts",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 52,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 85,
+      "HR": 18,
+      "RBI": 67,
+      "SBN": 12,
+      "OBP": 0.356,
+      "SLG": 0.436
+    },
+    "espn_id": "31606"
+  },
+  {
+    "name": "Cody Bellinger",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 53,
+    "positions": [
+      "OF",
+      "1B"
+    ],
+    "player_stats": {
+      "R": 85,
+      "HR": 22,
+      "RBI": 86,
+      "SBN": 12,
+      "OBP": 0.32,
+      "SLG": 0.458
+    },
+    "espn_id": "33912"
+  },
+  {
+    "name": "Marcell Ozuna",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 54,
+    "positions": [
+      "DH"
+    ],
+    "player_stats": {
+      "R": 76,
+      "HR": 35,
+      "RBI": 87,
+      "SBN": 1,
+      "OBP": 0.326,
+      "SLG": 0.508
+    },
+    "espn_id": "31668"
+  },
+  {
+    "name": "Evan Carter",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 55,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 86,
+      "HR": 21,
+      "RBI": 69,
+      "SBN": 20,
+      "OBP": 0.392,
+      "SLG": 0.469
+    },
+    "espn_id": "4917921"
+  },
+  {
+    "name": "Keibert Ruiz",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 56,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 52,
+      "HR": 17,
+      "RBI": 63,
+      "SBN": 2,
+      "OBP": 0.315,
+      "SLG": 0.41
+    },
+    "espn_id": "38827"
+  },
+  {
+    "name": "Masataka Yoshida",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 57,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 59,
+      "HR": 15,
+      "RBI": 71,
+      "SBN": 4,
+      "OBP": 0.359,
+      "SLG": 0.449
+    },
+    "espn_id": "4872598"
+  },
+  {
+    "name": "Mike Trout",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 58,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 81,
+      "HR": 30,
+      "RBI": 70,
+      "SBN": 3,
+      "OBP": 0.378,
+      "SLG": 0.549
+    },
+    "espn_id": "30836"
+  },
+  {
+    "name": "J.T. Realmuto",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 59,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 70,
+      "HR": 20,
+      "RBI": 70,
+      "SBN": 13,
+      "OBP": 0.323,
+      "SLG": 0.457
+    },
+    "espn_id": "32177"
+  },
+  {
+    "name": "Nolan Jones",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 60,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 85,
+      "HR": 27,
+      "RBI": 85,
+      "SBN": 13,
+      "OBP": 0.361,
+      "SLG": 0.489
+    },
+    "espn_id": "37340"
+  },
+  {
+    "name": "Gabriel Moreno",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 61,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 56,
+      "HR": 12,
+      "RBI": 76,
+      "SBN": 5,
+      "OBP": 0.338,
+      "SLG": 0.419
+    },
+    "espn_id": "42464"
+  },
+  {
+    "name": "Adolis Garcia",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 62,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 94,
+      "HR": 34,
+      "RBI": 102,
+      "SBN": 9,
+      "OBP": 0.308,
+      "SLG": 0.475
+    },
+    "espn_id": "35537"
+  },
+  {
+    "name": "Royce Lewis",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 63,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 73,
+      "HR": 28,
+      "RBI": 87,
+      "SBN": 8,
+      "OBP": 0.353,
+      "SLG": 0.513
+    },
+    "espn_id": "40635"
+  },
+  {
+    "name": "Ha-Seong Kim",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 64,
+    "positions": [
+      "2B",
+      "3B",
+      "SS"
+    ],
+    "player_stats": {
+      "R": 81,
+      "HR": 15,
+      "RBI": 67,
+      "SBN": 25,
+      "OBP": 0.334,
+      "SLG": 0.383
+    },
+    "espn_id": "4089862"
+  },
+  {
+    "name": "Jeff McNeil",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 65,
+    "positions": [
+      "2B",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 74,
+      "HR": 9,
+      "RBI": 56,
+      "SBN": 8,
+      "OBP": 0.336,
+      "SLG": 0.383
+    },
+    "espn_id": "33900"
+  },
+  {
+    "name": "Triston Casas",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 66,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 80,
+      "HR": 31,
+      "RBI": 77,
+      "SBN": 0,
+      "OBP": 0.369,
+      "SLG": 0.503
+    },
+    "espn_id": "41180"
+  },
+  {
+    "name": "Cal Raleigh",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 67,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 72,
+      "HR": 33,
+      "RBI": 77,
+      "SBN": 1,
+      "OBP": 0.3,
+      "SLG": 0.471
+    },
+    "espn_id": "41292"
+  },
+  {
+    "name": "Matt McLain",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 68,
+    "positions": [
+      "SS",
+      "2B"
+    ],
+    "player_stats": {
+      "R": 94,
+      "HR": 24,
+      "RBI": 76,
+      "SBN": 17,
+      "OBP": 0.35,
+      "SLG": 0.485
+    },
+    "espn_id": "4422899"
+  },
+  {
+    "name": "Isaac Paredes",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 69,
+    "positions": [
+      "3B",
+      "1B"
+    ],
+    "player_stats": {
+      "R": 70,
+      "HR": 25,
+      "RBI": 83,
+      "SBN": -1,
+      "OBP": 0.343,
+      "SLG": 0.441
+    },
+    "espn_id": "39706"
+  },
+  {
+    "name": "Nick Castellanos",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 70,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 78,
+      "HR": 28,
+      "RBI": 96,
+      "SBN": 5,
+      "OBP": 0.31,
+      "SLG": 0.467
+    },
+    "espn_id": "31187"
+  },
+  {
+    "name": "Seiya Suzuki",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 71,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 74,
+      "HR": 20,
+      "RBI": 70,
+      "SBN": 2,
+      "OBP": 0.352,
+      "SLG": 0.475
+    },
+    "espn_id": "4142424"
+  },
+  {
+    "name": "Yainer Diaz",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 72,
+    "positions": [
+      "C",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 62,
+      "HR": 25,
+      "RBI": 78,
+      "SBN": 2,
+      "OBP": 0.307,
+      "SLG": 0.486
+    },
+    "espn_id": "4781491"
+  },
+  {
+    "name": "Spencer Steer",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 73,
+    "positions": [
+      "1B",
+      "3B",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 74,
+      "HR": 22,
+      "RBI": 80,
+      "SBN": 6,
+      "OBP": 0.34,
+      "SLG": 0.449
+    },
+    "espn_id": "4722857"
+  },
+  {
+    "name": "J.P. Crawford",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 74,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 85,
+      "HR": 13,
+      "RBI": 57,
+      "SBN": 1,
+      "OBP": 0.358,
+      "SLG": 0.39
+    },
+    "espn_id": "33210"
+  },
+  {
+    "name": "Vinnie Pasquantino",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 75,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 52,
+      "HR": 20,
+      "RBI": 55,
+      "SBN": 2,
+      "OBP": 0.354,
+      "SLG": 0.463
+    },
+    "espn_id": "4109109"
+  },
+  {
+    "name": "Max Muncy",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 76,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 86,
+      "HR": 31,
+      "RBI": 94,
+      "SBN": 1,
+      "OBP": 0.339,
+      "SLG": 0.465
+    },
+    "espn_id": "33303"
+  },
+  {
+    "name": "Willson Contreras",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 77,
+    "positions": [
+      "C",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 60,
+      "HR": 22,
+      "RBI": 61,
+      "SBN": 1,
+      "OBP": 0.354,
+      "SLG": 0.463
+    },
+    "espn_id": "32532"
+  },
+  {
+    "name": "Bryson Stott",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 78,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 78,
+      "HR": 14,
+      "RBI": 63,
+      "SBN": 20,
+      "OBP": 0.323,
+      "SLG": 0.399
+    },
+    "espn_id": "42417"
+  },
+  {
+    "name": "Josh Naylor",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 79,
+    "positions": [
+      "1B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 58,
+      "HR": 21,
+      "RBI": 88,
+      "SBN": 7,
+      "OBP": 0.339,
+      "SLG": 0.48
+    },
+    "espn_id": "35066"
+  },
+  {
+    "name": "Elly De La Cruz",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 80,
+    "positions": [
+      "SS",
+      "3B"
+    ],
+    "player_stats": {
+      "R": 90,
+      "HR": 22,
+      "RBI": 71,
+      "SBN": 30,
+      "OBP": 0.321,
+      "SLG": 0.457
+    },
+    "espn_id": "4917694"
+  },
+  {
+    "name": "Lourdes Gurriel Jr.",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 81,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 64,
+      "HR": 19,
+      "RBI": 78,
+      "SBN": 0,
+      "OBP": 0.321,
+      "SLG": 0.455
+    },
+    "espn_id": "36040"
+  },
+  {
+    "name": "Cedric Mullins",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 82,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 73,
+      "HR": 17,
+      "RBI": 73,
+      "SBN": 19,
+      "OBP": 0.312,
+      "SLG": 0.412
+    },
+    "espn_id": "35578"
+  },
+  {
+    "name": "Spencer Torkelson",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 83,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 79,
+      "HR": 34,
+      "RBI": 80,
+      "SBN": 2,
+      "OBP": 0.315,
+      "SLG": 0.465
+    },
+    "espn_id": "4424286"
+  },
+  {
+    "name": "Dansby Swanson",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 84,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 86,
+      "HR": 23,
+      "RBI": 84,
+      "SBN": 13,
+      "OBP": 0.326,
+      "SLG": 0.427
+    },
+    "espn_id": "34895"
+  },
+  {
+    "name": "Jung Hoo Lee",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 85,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 53,
+      "HR": 8,
+      "RBI": 60,
+      "SBN": 4,
+      "OBP": 0.334,
+      "SLG": 0.386
+    },
+    "espn_id": "5134621"
+  },
+  {
+    "name": "CJ Abrams",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 86,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 84,
+      "HR": 15,
+      "RBI": 64,
+      "SBN": 30,
+      "OBP": 0.299,
+      "SLG": 0.387
+    },
+    "espn_id": "42402"
+  },
+  {
+    "name": "Jake Cronenworth",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 87,
+    "positions": [
+      "1B",
+      "2B"
+    ],
+    "player_stats": {
+      "R": 79,
+      "HR": 15,
+      "RBI": 70,
+      "SBN": 4,
+      "OBP": 0.329,
+      "SLG": 0.409
+    },
+    "espn_id": "36364"
+  },
+  {
+    "name": "Jorge Soler",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 88,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 69,
+      "HR": 32,
+      "RBI": 67,
+      "SBN": -1,
+      "OBP": 0.336,
+      "SLG": 0.489
+    },
+    "espn_id": "32558"
+  },
+  {
+    "name": "Lane Thomas",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 89,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 84,
+      "HR": 25,
+      "RBI": 72,
+      "SBN": 8,
+      "OBP": 0.31,
+      "SLG": 0.451
+    },
+    "espn_id": "36409"
+  },
+  {
+    "name": "Daulton Varsho",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 90,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 76,
+      "HR": 24,
+      "RBI": 70,
+      "SBN": 10,
+      "OBP": 0.301,
+      "SLG": 0.423
+    },
+    "espn_id": "40963"
+  },
+  {
+    "name": "TJ Friedl",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 91,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 68,
+      "HR": 12,
+      "RBI": 58,
+      "SBN": 17,
+      "OBP": 0.341,
+      "SLG": 0.408
+    },
+    "espn_id": "36020"
+  },
+  {
+    "name": "Alec Bohm",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 92,
+    "positions": [
+      "3B",
+      "1B"
+    ],
+    "player_stats": {
+      "R": 74,
+      "HR": 15,
+      "RBI": 83,
+      "SBN": 3,
+      "OBP": 0.329,
+      "SLG": 0.413
+    },
+    "espn_id": "41169"
+  },
+  {
+    "name": "Willy Adames",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 93,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 82,
+      "HR": 26,
+      "RBI": 88,
+      "SBN": 3,
+      "OBP": 0.32,
+      "SLG": 0.438
+    },
+    "espn_id": "33675"
+  },
+  {
+    "name": "Salvador Perez",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 94,
+    "positions": [
+      "C",
+      "1B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 56,
+      "HR": 24,
+      "RBI": 78,
+      "SBN": 0,
+      "OBP": 0.293,
+      "SLG": 0.435
+    },
+    "espn_id": "31127"
+  },
+  {
+    "name": "Josh Lowe",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 95,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 71,
+      "HR": 21,
+      "RBI": 78,
+      "SBN": 28,
+      "OBP": 0.327,
+      "SLG": 0.483
+    },
+    "espn_id": "40557"
+  },
+  {
+    "name": "Andres Gimenez",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 96,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 75,
+      "HR": 18,
+      "RBI": 67,
+      "SBN": 21,
+      "OBP": 0.326,
+      "SLG": 0.422
+    },
+    "espn_id": "37729"
+  },
+  {
+    "name": "Sean Murphy",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 97,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 65,
+      "HR": 22,
+      "RBI": 69,
+      "SBN": 0,
+      "OBP": 0.353,
+      "SLG": 0.472
+    },
+    "espn_id": "33557"
+  },
+  {
+    "name": "Andrew Benintendi",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 98,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 68,
+      "HR": 9,
+      "RBI": 54,
+      "SBN": 6,
+      "OBP": 0.332,
+      "SLG": 0.378
+    },
+    "espn_id": "34986"
+  },
+  {
+    "name": "Josh Bell",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 99,
+    "positions": [
+      "1B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 67,
+      "HR": 22,
+      "RBI": 77,
+      "SBN": -1,
+      "OBP": 0.346,
+      "SLG": 0.44
+    },
+    "espn_id": "32517"
+  },
+  {
+    "name": "Ke'Bryan Hayes",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 100,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 66,
+      "HR": 20,
+      "RBI": 60,
+      "SBN": 9,
+      "OBP": 0.314,
+      "SLG": 0.471
+    },
+    "espn_id": "35020"
+  },
+  {
+    "name": "Junior Caminero",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 101,
+    "positions": [
+      "3B",
+      "SS"
+    ],
+    "player_stats": {
+      "R": 63,
+      "HR": 20,
+      "RBI": 75,
+      "SBN": 4,
+      "OBP": 0.343,
+      "SLG": 0.449
+    },
+    "espn_id": "4905921"
+  },
+  {
+    "name": "Vaughn Grissom",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 102,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 64,
+      "HR": 8,
+      "RBI": 55,
+      "SBN": 13,
+      "OBP": 0.364,
+      "SLG": 0.432
+    },
+    "espn_id": "42503"
+  },
+  {
+    "name": "Francisco Alvarez",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 103,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 60,
+      "HR": 27,
+      "RBI": 68,
+      "SBN": 1,
+      "OBP": 0.328,
+      "SLG": 0.454
+    },
+    "espn_id": "41253"
+  },
+  {
+    "name": "Teoscar Hernandez",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 104,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 78,
+      "HR": 32,
+      "RBI": 99,
+      "SBN": 5,
+      "OBP": 0.308,
+      "SLG": 0.48
+    },
+    "espn_id": "33377"
+  },
+  {
+    "name": "Eloy Jimenez",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 105,
+    "positions": [
+      "DH"
+    ],
+    "player_stats": {
+      "R": 57,
+      "HR": 22,
+      "RBI": 76,
+      "SBN": 0,
+      "OBP": 0.321,
+      "SLG": 0.451
+    },
+    "espn_id": "33867"
+  },
+  {
+    "name": "Carlos Correa",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 106,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 70,
+      "HR": 20,
+      "RBI": 67,
+      "SBN": 0,
+      "OBP": 0.345,
+      "SLG": 0.44
+    },
+    "espn_id": "32653"
+  },
+  {
+    "name": "Riley Greene",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 107,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 71,
+      "HR": 16,
+      "RBI": 56,
+      "SBN": 7,
+      "OBP": 0.34,
+      "SLG": 0.442
+    },
+    "espn_id": "42179"
+  },
+  {
+    "name": "Jazz Chisholm Jr.",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 108,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 74,
+      "HR": 25,
+      "RBI": 72,
+      "SBN": 19,
+      "OBP": 0.313,
+      "SLG": 0.468
+    },
+    "espn_id": "41433"
+  },
+  {
+    "name": "Jonah Heim",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 109,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 59,
+      "HR": 18,
+      "RBI": 63,
+      "SBN": 2,
+      "OBP": 0.31,
+      "SLG": 0.418
+    },
+    "espn_id": "33842"
+  },
+  {
+    "name": "Max Kepler",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 110,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 71,
+      "HR": 21,
+      "RBI": 62,
+      "SBN": 4,
+      "OBP": 0.33,
+      "SLG": 0.451
+    },
+    "espn_id": "31870"
+  },
+  {
+    "name": "Justin Turner",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 111,
+    "positions": [
+      "1B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 74,
+      "HR": 21,
+      "RBI": 85,
+      "SBN": 3,
+      "OBP": 0.323,
+      "SLG": 0.426
+    },
+    "espn_id": "29607"
+  },
+  {
+    "name": "Luis Rengifo",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 112,
+    "positions": [
+      "2B",
+      "3B",
+      "SS",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 58,
+      "HR": 17,
+      "RBI": 55,
+      "SBN": 4,
+      "OBP": 0.315,
+      "SLG": 0.416
+    },
+    "espn_id": "37237"
+  },
+  {
+    "name": "Joey Meneses",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 113,
+    "positions": [
+      "DH"
+    ],
+    "player_stats": {
+      "R": 66,
+      "HR": 18,
+      "RBI": 80,
+      "SBN": 1,
+      "OBP": 0.303,
+      "SLG": 0.403
+    },
+    "espn_id": "34534"
+  },
+  {
+    "name": "Jordan Walker",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 114,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 63,
+      "HR": 19,
+      "RBI": 54,
+      "SBN": 11,
+      "OBP": 0.343,
+      "SLG": 0.441
+    },
+    "espn_id": "4684778"
+  },
+  {
+    "name": "Mitch Garver",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 115,
+    "positions": [
+      "C",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 51,
+      "HR": 21,
+      "RBI": 55,
+      "SBN": 0,
+      "OBP": 0.348,
+      "SLG": 0.457
+    },
+    "espn_id": "33667"
+  },
+  {
+    "name": "Taylor Ward",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 116,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 70,
+      "HR": 19,
+      "RBI": 60,
+      "SBN": 3,
+      "OBP": 0.345,
+      "SLG": 0.451
+    },
+    "espn_id": "34923"
+  },
+  {
+    "name": "Logan O'Hoppe",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 117,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 54,
+      "HR": 27,
+      "RBI": 65,
+      "SBN": 0,
+      "OBP": 0.333,
+      "SLG": 0.471
+    },
+    "espn_id": "42047"
+  },
+  {
+    "name": "Mark Canha",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 118,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 68,
+      "HR": 12,
+      "RBI": 64,
+      "SBN": 6,
+      "OBP": 0.356,
+      "SLG": 0.4
+    },
+    "espn_id": "31670"
+  },
+  {
+    "name": "Thairo Estrada",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 119,
+    "positions": [
+      "2B",
+      "SS"
+    ],
+    "player_stats": {
+      "R": 69,
+      "HR": 14,
+      "RBI": 59,
+      "SBN": 13,
+      "OBP": 0.317,
+      "SLG": 0.412
+    },
+    "espn_id": "36485"
+  },
+  {
+    "name": "MJ Melendez",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 120,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 63,
+      "HR": 22,
+      "RBI": 60,
+      "SBN": -1,
+      "OBP": 0.317,
+      "SLG": 0.422
+    },
+    "espn_id": "40948"
+  },
+  {
+    "name": "Rhys Hoskins",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 121,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 72,
+      "HR": 27,
+      "RBI": 73,
+      "SBN": 2,
+      "OBP": 0.333,
+      "SLG": 0.479
+    },
+    "espn_id": "35291"
+  },
+  {
+    "name": "Jarren Duran",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 122,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 74,
+      "HR": 14,
+      "RBI": 60,
+      "SBN": 23,
+      "OBP": 0.317,
+      "SLG": 0.435
+    },
+    "espn_id": "41610"
+  },
+  {
+    "name": "Jeimer Candelario",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 123,
+    "positions": [
+      "3B",
+      "1B"
+    ],
+    "player_stats": {
+      "R": 76,
+      "HR": 24,
+      "RBI": 71,
+      "SBN": 3,
+      "OBP": 0.328,
+      "SLG": 0.467
+    },
+    "espn_id": "32531"
+  },
+  {
+    "name": "Wyatt Langford",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 124,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 66,
+      "HR": 17,
+      "RBI": 63,
+      "SBN": 5,
+      "OBP": 0.328,
+      "SLG": 0.432
+    },
+    "espn_id": "4719324"
+  },
+  {
+    "name": "Tommy Edman",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 125,
+    "positions": [
+      "2B",
+      "SS",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 75,
+      "HR": 12,
+      "RBI": 48,
+      "SBN": 22,
+      "OBP": 0.309,
+      "SLG": 0.396
+    },
+    "espn_id": "39907"
+  },
+  {
+    "name": "Sal Frelick",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 126,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 63,
+      "HR": 6,
+      "RBI": 41,
+      "SBN": 12,
+      "OBP": 0.343,
+      "SLG": 0.357
+    },
+    "espn_id": "4417795"
+  },
+  {
+    "name": "Byron Buxton",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 127,
+    "positions": [
+      "DH"
+    ],
+    "player_stats": {
+      "R": 66,
+      "HR": 26,
+      "RBI": 53,
+      "SBN": 11,
+      "OBP": 0.308,
+      "SLG": 0.501
+    },
+    "espn_id": "32655"
+  },
+  {
+    "name": "Alejandro Kirk",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 128,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 41,
+      "HR": 10,
+      "RBI": 49,
+      "SBN": 0,
+      "OBP": 0.349,
+      "SLG": 0.387
+    },
+    "espn_id": "42081"
+  },
+  {
+    "name": "Austin Hays",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 129,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 74,
+      "HR": 18,
+      "RBI": 67,
+      "SBN": 2,
+      "OBP": 0.311,
+      "SLG": 0.435
+    },
+    "espn_id": "36928"
+  },
+  {
+    "name": "Bo Naylor",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 130,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 59,
+      "HR": 19,
+      "RBI": 59,
+      "SBN": 6,
+      "OBP": 0.346,
+      "SLG": 0.423
+    },
+    "espn_id": "41183"
+  },
+  {
+    "name": "Ty France",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 131,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 76,
+      "HR": 15,
+      "RBI": 68,
+      "SBN": 0,
+      "OBP": 0.343,
+      "SLG": 0.396
+    },
+    "espn_id": "35591"
+  },
+  {
+    "name": "Oneil Cruz",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 132,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 75,
+      "HR": 20,
+      "RBI": 71,
+      "SBN": 16,
+      "OBP": 0.317,
+      "SLG": 0.416
+    },
+    "espn_id": "39712"
+  },
+  {
+    "name": "Nathaniel Lowe",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 133,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 68,
+      "HR": 16,
+      "RBI": 65,
+      "SBN": 2,
+      "OBP": 0.354,
+      "SLG": 0.427
+    },
+    "espn_id": "40538"
+  },
+  {
+    "name": "Hunter Renfroe",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 134,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 65,
+      "HR": 21,
+      "RBI": 68,
+      "SBN": 0,
+      "OBP": 0.303,
+      "SLG": 0.436
+    },
+    "espn_id": "33205"
+  },
+  {
+    "name": "Chas McCormick",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 135,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 71,
+      "HR": 24,
+      "RBI": 76,
+      "SBN": 13,
+      "OBP": 0.338,
+      "SLG": 0.459
+    },
+    "espn_id": "40574"
+  },
+  {
+    "name": "Alex Verdugo",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 136,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 70,
+      "HR": 15,
+      "RBI": 54,
+      "SBN": 0,
+      "OBP": 0.307,
+      "SLG": 0.395
+    },
+    "espn_id": "33786"
+  },
+  {
+    "name": "Matt Chapman",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 137,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 74,
+      "HR": 21,
+      "RBI": 65,
+      "SBN": 1,
+      "OBP": 0.33,
+      "SLG": 0.436
+    },
+    "espn_id": "33857"
+  },
+  {
+    "name": "Brandon Drury",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 138,
+    "positions": [
+      "2B",
+      "1B"
+    ],
+    "player_stats": {
+      "R": 65,
+      "HR": 23,
+      "RBI": 79,
+      "SBN": -1,
+      "OBP": 0.299,
+      "SLG": 0.463
+    },
+    "espn_id": "32269"
+  },
+  {
+    "name": "Andrew Vaughn",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 139,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 68,
+      "HR": 21,
+      "RBI": 80,
+      "SBN": -1,
+      "OBP": 0.317,
+      "SLG": 0.431
+    },
+    "espn_id": "42394"
+  },
+  {
+    "name": "Danny Jansen",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 140,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 51,
+      "HR": 21,
+      "RBI": 65,
+      "SBN": 1,
+      "OBP": 0.318,
+      "SLG": 0.483
+    },
+    "espn_id": "35004"
+  },
+  {
+    "name": "Lars Nootbaar",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 141,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 63,
+      "HR": 15,
+      "RBI": 45,
+      "SBN": 7,
+      "OBP": 0.352,
+      "SLG": 0.424
+    },
+    "espn_id": "4448736"
+  },
+  {
+    "name": "Anthony Volpe",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 142,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 72,
+      "HR": 21,
+      "RBI": 61,
+      "SBN": 25,
+      "OBP": 0.321,
+      "SLG": 0.423
+    },
+    "espn_id": "42547"
+  },
+  {
+    "name": "Jake Burger",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 143,
+    "positions": [
+      "3B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 65,
+      "HR": 31,
+      "RBI": 73,
+      "SBN": -1,
+      "OBP": 0.316,
+      "SLG": 0.492
+    },
+    "espn_id": "39882"
+  },
+  {
+    "name": "Kerry Carpenter",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 144,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 63,
+      "HR": 23,
+      "RBI": 68,
+      "SBN": 4,
+      "OBP": 0.333,
+      "SLG": 0.463
+    },
+    "espn_id": "42714"
+  },
+  {
+    "name": "Jackson Chourio",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 145,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 54,
+      "HR": 13,
+      "RBI": 57,
+      "SBN": 11,
+      "OBP": 0.326,
+      "SLG": 0.418
+    },
+    "espn_id": "4917869"
+  },
+  {
+    "name": "Kris Bryant",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 146,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 70,
+      "HR": 20,
+      "RBI": 55,
+      "SBN": 4,
+      "OBP": 0.336,
+      "SLG": 0.432
+    },
+    "espn_id": "33172"
+  },
+  {
+    "name": "Bryan De La Cruz",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 147,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 57,
+      "HR": 18,
+      "RBI": 67,
+      "SBN": 1,
+      "OBP": 0.308,
+      "SLG": 0.413
+    },
+    "espn_id": "40787"
+  },
+  {
+    "name": "DJ LeMahieu",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 148,
+    "positions": [
+      "3B",
+      "1B"
+    ],
+    "player_stats": {
+      "R": 66,
+      "HR": 12,
+      "RBI": 48,
+      "SBN": 1,
+      "OBP": 0.337,
+      "SLG": 0.373
+    },
+    "espn_id": "30765"
+  },
+  {
+    "name": "Christopher Morel",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 149,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 70,
+      "HR": 25,
+      "RBI": 70,
+      "SBN": 7,
+      "OBP": 0.312,
+      "SLG": 0.468
+    },
+    "espn_id": "42927"
+  },
+  {
+    "name": "James Outman",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 150,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 87,
+      "HR": 24,
+      "RBI": 76,
+      "SBN": 12,
+      "OBP": 0.339,
+      "SLG": 0.433
+    },
+    "espn_id": "41802"
+  },
+  {
+    "name": "Jeremy Pena",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 151,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 86,
+      "HR": 15,
+      "RBI": 58,
+      "SBN": 11,
+      "OBP": 0.314,
+      "SLG": 0.398
+    },
+    "espn_id": "41273"
+  },
+  {
+    "name": "Gavin Lux",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 152,
+    "positions": [
+      "2B",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 74,
+      "HR": 9,
+      "RBI": 54,
+      "SBN": 5,
+      "OBP": 0.332,
+      "SLG": 0.376
+    },
+    "espn_id": "40423"
+  },
+  {
+    "name": "Jurickson Profar",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 153,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 63,
+      "HR": 10,
+      "RBI": 48,
+      "SBN": 4,
+      "OBP": 0.323,
+      "SLG": 0.362
+    },
+    "espn_id": "31117"
+  },
+  {
+    "name": "Charlie Blackmon",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 154,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 52,
+      "HR": 11,
+      "RBI": 51,
+      "SBN": 2,
+      "OBP": 0.335,
+      "SLG": 0.416
+    },
+    "espn_id": "31084"
+  },
+  {
+    "name": "Mitch Haniger",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 155,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 70,
+      "HR": 20,
+      "RBI": 69,
+      "SBN": 1,
+      "OBP": 0.303,
+      "SLG": 0.415
+    },
+    "espn_id": "32771"
+  },
+  {
+    "name": "Luis Campusano",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 156,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 48,
+      "HR": 12,
+      "RBI": 50,
+      "SBN": 0,
+      "OBP": 0.304,
+      "SLG": 0.384
+    },
+    "espn_id": "40521"
+  },
+  {
+    "name": "Zack Gelof",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 157,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 73,
+      "HR": 20,
+      "RBI": 58,
+      "SBN": 17,
+      "OBP": 0.342,
+      "SLG": 0.441
+    },
+    "espn_id": "4414531"
+  },
+  {
+    "name": "Tommy Pham",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 158,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 64,
+      "HR": 16,
+      "RBI": 59,
+      "SBN": 9,
+      "OBP": 0.328,
+      "SLG": 0.423
+    },
+    "espn_id": "31208"
+  },
+  {
+    "name": "Ezequiel Tovar",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 159,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 70,
+      "HR": 17,
+      "RBI": 69,
+      "SBN": 11,
+      "OBP": 0.29,
+      "SLG": 0.419
+    },
+    "espn_id": "4905919"
+  },
+  {
+    "name": "Eugenio Suarez",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 160,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 71,
+      "HR": 26,
+      "RBI": 91,
+      "SBN": 1,
+      "OBP": 0.321,
+      "SLG": 0.418
+    },
+    "espn_id": "32367"
+  },
+  {
+    "name": "Jorge Polanco",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 161,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 59,
+      "HR": 19,
+      "RBI": 64,
+      "SBN": 3,
+      "OBP": 0.325,
+      "SLG": 0.427
+    },
+    "espn_id": "32525"
+  },
+  {
+    "name": "Seth Brown",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 162,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 53,
+      "HR": 23,
+      "RBI": 72,
+      "SBN": 6,
+      "OBP": 0.296,
+      "SLG": 0.437
+    },
+    "espn_id": "35676"
+  },
+  {
+    "name": "Tyler O'Neill",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 163,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 68,
+      "HR": 22,
+      "RBI": 61,
+      "SBN": 11,
+      "OBP": 0.33,
+      "SLG": 0.461
+    },
+    "espn_id": "34168"
+  },
+  {
+    "name": "Zach Neto",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 164,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 72,
+      "HR": 17,
+      "RBI": 68,
+      "SBN": 8,
+      "OBP": 0.331,
+      "SLG": 0.41
+    },
+    "espn_id": "4666100"
+  },
+  {
+    "name": "Jonathan India",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 165,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 72,
+      "HR": 16,
+      "RBI": 57,
+      "SBN": 10,
+      "OBP": 0.346,
+      "SLG": 0.422
+    },
+    "espn_id": "41171"
+  },
+  {
+    "name": "Joc Pederson",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 166,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 56,
+      "HR": 17,
+      "RBI": 55,
+      "SBN": 1,
+      "OBP": 0.352,
+      "SLG": 0.458
+    },
+    "espn_id": "31392"
+  },
+  {
+    "name": "Starling Marte",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 167,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 60,
+      "HR": 10,
+      "RBI": 43,
+      "SBN": 21,
+      "OBP": 0.326,
+      "SLG": 0.389
+    },
+    "espn_id": "30830"
+  },
+  {
+    "name": "Jose Abreu",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 168,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 66,
+      "HR": 19,
+      "RBI": 81,
+      "SBN": -1,
+      "OBP": 0.325,
+      "SLG": 0.418
+    },
+    "espn_id": "33095"
+  },
+  {
+    "name": "Esteury Ruiz",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 169,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 59,
+      "HR": 7,
+      "RBI": 43,
+      "SBN": 49,
+      "OBP": 0.326,
+      "SLG": 0.354
+    },
+    "espn_id": "39680"
+  },
+  {
+    "name": "Colt Keith",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 170,
+    "positions": [
+      "3B",
+      "2B"
+    ],
+    "player_stats": {
+      "R": 57,
+      "HR": 13,
+      "RBI": 57,
+      "SBN": 3,
+      "OBP": 0.327,
+      "SLG": 0.422
+    },
+    "espn_id": "4683384"
+  },
+  {
+    "name": "Christian Encarnacion-Strand",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 171,
+    "positions": [
+      "1B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 71,
+      "HR": 29,
+      "RBI": 84,
+      "SBN": 2,
+      "OBP": 0.327,
+      "SLG": 0.491
+    },
+    "espn_id": "5012106"
+  },
+  {
+    "name": "Leody Taveras",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 172,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 64,
+      "HR": 13,
+      "RBI": 61,
+      "SBN": 11,
+      "OBP": 0.303,
+      "SLG": 0.398
+    },
+    "espn_id": "34951"
+  },
+  {
+    "name": "J.D. Martinez",
+    "team": "FA",
+    "owner": "FA",
+    "ovr": 173,
+    "positions": [
+      "DH"
+    ],
+    "player_stats": {
+      "R": 69,
+      "HR": 25,
+      "RBI": 87,
+      "SBN": 0,
+      "OBP": 0.327,
+      "SLG": 0.508
+    },
+    "espn_id": "31065"
+  },
+  {
+    "name": "Luis Matos",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 174,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 52,
+      "HR": 7,
+      "RBI": 43,
+      "SBN": 10,
+      "OBP": 0.33,
+      "SLG": 0.382
+    },
+    "espn_id": "4722941"
+  },
+  {
+    "name": "Jarred Kelenic",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 175,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 55,
+      "HR": 16,
+      "RBI": 58,
+      "SBN": 8,
+      "OBP": 0.317,
+      "SLG": 0.417
+    },
+    "espn_id": "41150"
+  },
+  {
+    "name": "LaMonte Wade Jr.",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 176,
+    "positions": [
+      "1B",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 59,
+      "HR": 16,
+      "RBI": 47,
+      "SBN": 4,
+      "OBP": 0.361,
+      "SLG": 0.421
+    },
+    "espn_id": "37798"
+  },
+  {
+    "name": "Luis Garcia Jr.",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 177,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 58,
+      "HR": 11,
+      "RBI": 54,
+      "SBN": 3,
+      "OBP": 0.305,
+      "SLG": 0.399
+    },
+    "espn_id": "40459"
+  },
+  {
+    "name": "Tyler Stephenson",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 178,
+    "positions": [
+      "C",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 63,
+      "HR": 13,
+      "RBI": 64,
+      "SBN": -1,
+      "OBP": 0.331,
+      "SLG": 0.401
+    },
+    "espn_id": "34975"
+  },
+  {
+    "name": "Brent Rooker",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 179,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 67,
+      "HR": 30,
+      "RBI": 75,
+      "SBN": 2,
+      "OBP": 0.332,
+      "SLG": 0.458
+    },
+    "espn_id": "40926"
+  },
+  {
+    "name": "Ryan McMahon",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 180,
+    "positions": [
+      "3B",
+      "2B"
+    ],
+    "player_stats": {
+      "R": 66,
+      "HR": 22,
+      "RBI": 64,
+      "SBN": 3,
+      "OBP": 0.322,
+      "SLG": 0.427
+    },
+    "espn_id": "33247"
+  },
+  {
+    "name": "Brendan Rodgers",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 181,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 64,
+      "HR": 14,
+      "RBI": 60,
+      "SBN": 0,
+      "OBP": 0.317,
+      "SLG": 0.406
+    },
+    "espn_id": "35073"
+  },
+  {
+    "name": "Nolan Gorman",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 182,
+    "positions": [
+      "2B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 65,
+      "HR": 29,
+      "RBI": 73,
+      "SBN": 5,
+      "OBP": 0.316,
+      "SLG": 0.458
+    },
+    "espn_id": "41174"
+  },
+  {
+    "name": "Shea Langeliers",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 183,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 50,
+      "HR": 20,
+      "RBI": 55,
+      "SBN": 2,
+      "OBP": 0.29,
+      "SLG": 0.412
+    },
+    "espn_id": "42598"
+  },
+  {
+    "name": "Carlos Santana",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 184,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 58,
+      "HR": 20,
+      "RBI": 64,
+      "SBN": 2,
+      "OBP": 0.324,
+      "SLG": 0.416
+    },
+    "espn_id": "30280"
+  },
+  {
+    "name": "Josh Jung",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 185,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 71,
+      "HR": 23,
+      "RBI": 69,
+      "SBN": 1,
+      "OBP": 0.314,
+      "SLG": 0.458
+    },
+    "espn_id": "42437"
+  },
+  {
+    "name": "Orlando Arcia",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 186,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 56,
+      "HR": 16,
+      "RBI": 55,
+      "SBN": 2,
+      "OBP": 0.314,
+      "SLG": 0.414
+    },
+    "espn_id": "32530"
+  },
+  {
+    "name": "Brandon Lowe",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 187,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 60,
+      "HR": 22,
+      "RBI": 62,
+      "SBN": 5,
+      "OBP": 0.328,
+      "SLG": 0.462
+    },
+    "espn_id": "39961"
+  },
+  {
+    "name": "Jack Suwinski",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 188,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 65,
+      "HR": 26,
+      "RBI": 66,
+      "SBN": 6,
+      "OBP": 0.333,
+      "SLG": 0.446
+    },
+    "espn_id": "36754"
+  },
+  {
+    "name": "Parker Meadows",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 189,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 56,
+      "HR": 12,
+      "RBI": 44,
+      "SBN": 13,
+      "OBP": 0.32,
+      "SLG": 0.413
+    },
+    "espn_id": "41223"
+  },
+  {
+    "name": "Andrew McCutchen",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 190,
+    "positions": [
+      "DH"
+    ],
+    "player_stats": {
+      "R": 54,
+      "HR": 13,
+      "RBI": 49,
+      "SBN": 5,
+      "OBP": 0.355,
+      "SLG": 0.392
+    },
+    "espn_id": "28701"
+  },
+  {
+    "name": "Elias Diaz",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 191,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 43,
+      "HR": 15,
+      "RBI": 61,
+      "SBN": -1,
+      "OBP": 0.288,
+      "SLG": 0.393
+    },
+    "espn_id": "33594"
+  },
+  {
+    "name": "Michael Conforto",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 192,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 61,
+      "HR": 15,
+      "RBI": 62,
+      "SBN": 3,
+      "OBP": 0.337,
+      "SLG": 0.386
+    },
+    "espn_id": "33711"
+  },
+  {
+    "name": "Alek Thomas",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 193,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 57,
+      "HR": 9,
+      "RBI": 47,
+      "SBN": 8,
+      "OBP": 0.301,
+      "SLG": 0.384
+    },
+    "espn_id": "41215"
+  },
+  {
+    "name": "Mike Yastrzemski",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 194,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 66,
+      "HR": 18,
+      "RBI": 53,
+      "SBN": 3,
+      "OBP": 0.318,
+      "SLG": 0.433
+    },
+    "espn_id": "33341"
+  },
+  {
+    "name": "Jackson Holliday",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 195,
+    "positions": [
+      "SS",
+      "2B"
+    ],
+    "player_stats": {
+      "R": 49,
+      "HR": 5,
+      "RBI": 36,
+      "SBN": 3,
+      "OBP": 0.358,
+      "SLG": 0.383
+    },
+    "espn_id": "5080633"
+  },
+  {
+    "name": "Wilyer Abreu",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 196,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 55,
+      "HR": 14,
+      "RBI": 50,
+      "SBN": 7,
+      "OBP": 0.37,
+      "SLG": 0.436
+    },
+    "espn_id": "4990055"
+  },
+  {
+    "name": "Alex Kirilloff",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 197,
+    "positions": [
+      "1B",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 55,
+      "HR": 17,
+      "RBI": 66,
+      "SBN": 1,
+      "OBP": 0.338,
+      "SLG": 0.439
+    },
+    "espn_id": "40636"
+  },
+  {
+    "name": "Ceddanne Rafaela",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 198,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 56,
+      "HR": 12,
+      "RBI": 51,
+      "SBN": 14,
+      "OBP": 0.314,
+      "SLG": 0.441
+    },
+    "espn_id": "4987382"
+  },
+  {
+    "name": "Edouard Julien",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 199,
+    "positions": [
+      "2B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 74,
+      "HR": 17,
+      "RBI": 52,
+      "SBN": 9,
+      "OBP": 0.37,
+      "SLG": 0.407
+    },
+    "espn_id": "3985190"
+  },
+  {
+    "name": "Maikel Garcia",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 200,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 60,
+      "HR": 5,
+      "RBI": 46,
+      "SBN": 18,
+      "OBP": 0.335,
+      "SLG": 0.371
+    },
+    "espn_id": "4905884"
+  },
+  {
+    "name": "Eddie Rosario",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 201,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 51,
+      "HR": 15,
+      "RBI": 60,
+      "SBN": 3,
+      "OBP": 0.308,
+      "SLG": 0.428
+    },
+    "espn_id": "31944"
+  },
+  {
+    "name": "Trevor Story",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 202,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 64,
+      "HR": 20,
+      "RBI": 70,
+      "SBN": 16,
+      "OBP": 0.295,
+      "SLG": 0.409
+    },
+    "espn_id": "32150"
+  },
+  {
+    "name": "Anthony Rizzo",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 203,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 63,
+      "HR": 20,
+      "RBI": 57,
+      "SBN": 1,
+      "OBP": 0.336,
+      "SLG": 0.421
+    },
+    "espn_id": "30782"
+  },
+  {
+    "name": "Nick Fortes",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 204,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 48,
+      "HR": 11,
+      "RBI": 38,
+      "SBN": 3,
+      "OBP": 0.288,
+      "SLG": 0.34
+    },
+    "espn_id": "41674"
+  },
+  {
+    "name": "Jesus Sanchez",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 205,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 51,
+      "HR": 17,
+      "RBI": 58,
+      "SBN": 2,
+      "OBP": 0.325,
+      "SLG": 0.444
+    },
+    "espn_id": "39957"
+  },
+  {
+    "name": "Nolan Schanuel",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 206,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 76,
+      "HR": 5,
+      "RBI": 37,
+      "SBN": 2,
+      "OBP": 0.374,
+      "SLG": 0.333
+    },
+    "espn_id": "4739755"
+  },
+  {
+    "name": "Nelson Velazquez",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 207,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 57,
+      "HR": 27,
+      "RBI": 58,
+      "SBN": 7,
+      "OBP": 0.309,
+      "SLG": 0.468
+    },
+    "espn_id": "41047"
+  },
+  {
+    "name": "Brandon Marsh",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 208,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 59,
+      "HR": 13,
+      "RBI": 61,
+      "SBN": 7,
+      "OBP": 0.344,
+      "SLG": 0.43
+    },
+    "espn_id": "40803"
+  },
+  {
+    "name": "Giancarlo Stanton",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 209,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 48,
+      "HR": 26,
+      "RBI": 70,
+      "SBN": 0,
+      "OBP": 0.304,
+      "SLG": 0.455
+    },
+    "espn_id": "30583"
+  },
+  {
+    "name": "Ryan Mountcastle",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 210,
+    "positions": [
+      "1B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 55,
+      "HR": 18,
+      "RBI": 64,
+      "SBN": 1,
+      "OBP": 0.313,
+      "SLG": 0.435
+    },
+    "espn_id": "34940"
+  },
+  {
+    "name": "Jordan Westburg",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 211,
+    "positions": [
+      "2B",
+      "3B"
+    ],
+    "player_stats": {
+      "R": 43,
+      "HR": 12,
+      "RBI": 41,
+      "SBN": 5,
+      "OBP": 0.324,
+      "SLG": 0.428
+    },
+    "espn_id": "4298641"
+  },
+  {
+    "name": "Johan Rojas",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 212,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 54,
+      "HR": 8,
+      "RBI": 41,
+      "SBN": 25,
+      "OBP": 0.311,
+      "SLG": 0.388
+    },
+    "espn_id": "42829"
+  },
+  {
+    "name": "Yan Gomes",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 213,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 39,
+      "HR": 10,
+      "RBI": 51,
+      "SBN": 1,
+      "OBP": 0.3,
+      "SLG": 0.402
+    },
+    "espn_id": "32108"
+  },
+  {
+    "name": "Kyle Manzardo",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 214,
+    "positions": [
+      "1B"
+    ],
+    "player_stats": {
+      "R": 48,
+      "HR": 16,
+      "RBI": 55,
+      "SBN": -1,
+      "OBP": 0.324,
+      "SLG": 0.422
+    },
+    "espn_id": "4917927"
+  },
+  {
+    "name": "Whit Merrifield",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 215,
+    "positions": [
+      "2B",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 47,
+      "HR": 7,
+      "RBI": 42,
+      "SBN": 13,
+      "OBP": 0.3,
+      "SLG": 0.367
+    },
+    "espn_id": "32422"
+  },
+  {
+    "name": "Edward Olivares",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 216,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 49,
+      "HR": 12,
+      "RBI": 37,
+      "SBN": 5,
+      "OBP": 0.321,
+      "SLG": 0.427
+    },
+    "espn_id": "36463"
+  },
+  {
+    "name": "Masyn Winn",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 217,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 61,
+      "HR": 10,
+      "RBI": 42,
+      "SBN": 13,
+      "OBP": 0.327,
+      "SLG": 0.373
+    },
+    "espn_id": "4683365"
+  },
+  {
+    "name": "Willi Castro",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 218,
+    "positions": [
+      "OF",
+      "3B"
+    ],
+    "player_stats": {
+      "R": 58,
+      "HR": 9,
+      "RBI": 34,
+      "SBN": 19,
+      "OBP": 0.311,
+      "SLG": 0.379
+    },
+    "espn_id": "34230"
+  },
+  {
+    "name": "Jake Rogers",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 219,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 49,
+      "HR": 21,
+      "RBI": 50,
+      "SBN": 2,
+      "OBP": 0.284,
+      "SLG": 0.438
+    },
+    "espn_id": "39900"
+  },
+  {
+    "name": "Adam Duvall",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 220,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 51,
+      "HR": 24,
+      "RBI": 66,
+      "SBN": 3,
+      "OBP": 0.281,
+      "SLG": 0.487
+    },
+    "espn_id": "32664"
+  },
+  {
+    "name": "Ryan O'Hearn",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 221,
+    "positions": [
+      "1B",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 47,
+      "HR": 14,
+      "RBI": 59,
+      "SBN": 3,
+      "OBP": 0.302,
+      "SLG": 0.443
+    },
+    "espn_id": "35183"
+  },
+  {
+    "name": "Henry Davis",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 222,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 38,
+      "HR": 10,
+      "RBI": 35,
+      "SBN": 3,
+      "OBP": 0.356,
+      "SLG": 0.384
+    },
+    "espn_id": "4418683"
+  },
+  {
+    "name": "Harrison Bader",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 223,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 48,
+      "HR": 9,
+      "RBI": 45,
+      "SBN": 13,
+      "OBP": 0.278,
+      "SLG": 0.356
+    },
+    "espn_id": "35062"
+  },
+  {
+    "name": "Jasson Dominguez",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 224,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 30,
+      "HR": 6,
+      "RBI": 23,
+      "SBN": 8,
+      "OBP": 0.358,
+      "SLG": 0.4
+    },
+    "espn_id": "42401"
+  },
+  {
+    "name": "Matt Wallner",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 225,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 55,
+      "HR": 17,
+      "RBI": 57,
+      "SBN": 0,
+      "OBP": 0.356,
+      "SLG": 0.436
+    },
+    "espn_id": "42427"
+  },
+  {
+    "name": "Jose Siri",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 226,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 68,
+      "HR": 21,
+      "RBI": 56,
+      "SBN": 14,
+      "OBP": 0.275,
+      "SLG": 0.438
+    },
+    "espn_id": "33954"
+  },
+  {
+    "name": "Matt Vierling",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 227,
+    "positions": [
+      "OF",
+      "3B"
+    ],
+    "player_stats": {
+      "R": 44,
+      "HR": 7,
+      "RBI": 33,
+      "SBN": 5,
+      "OBP": 0.319,
+      "SLG": 0.376
+    },
+    "espn_id": "41636"
+  },
+  {
+    "name": "Austin Wells",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 228,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 35,
+      "HR": 13,
+      "RBI": 46,
+      "SBN": 7,
+      "OBP": 0.313,
+      "SLG": 0.409
+    },
+    "espn_id": "4683349"
+  },
+  {
+    "name": "Javier Baez",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 229,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 61,
+      "HR": 14,
+      "RBI": 62,
+      "SBN": 11,
+      "OBP": 0.279,
+      "SLG": 0.371
+    },
+    "espn_id": "32127"
+  },
+  {
+    "name": "Patrick Bailey",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 230,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 37,
+      "HR": 8,
+      "RBI": 45,
+      "SBN": 2,
+      "OBP": 0.307,
+      "SLG": 0.362
+    },
+    "espn_id": "4345843"
+  },
+  {
+    "name": "Nick Senzel",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 231,
+    "positions": [
+      "3B",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 57,
+      "HR": 10,
+      "RBI": 38,
+      "SBN": 3,
+      "OBP": 0.303,
+      "SLG": 0.355
+    },
+    "espn_id": "36180"
+  },
+  {
+    "name": "Will Benson",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 232,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 65,
+      "HR": 14,
+      "RBI": 39,
+      "SBN": 13,
+      "OBP": 0.358,
+      "SLG": 0.428
+    },
+    "espn_id": "39216"
+  },
+  {
+    "name": "Hunter Goodman",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 233,
+    "positions": [
+      "OF",
+      "1B"
+    ],
+    "player_stats": {
+      "R": 35,
+      "HR": 19,
+      "RBI": 59,
+      "SBN": 1,
+      "OBP": 0.32,
+      "SLG": 0.518
+    },
+    "espn_id": "4416591"
+  },
+  {
+    "name": "Joey Ortiz",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 234,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 52,
+      "HR": 9,
+      "RBI": 47,
+      "SBN": 4,
+      "OBP": 0.315,
+      "SLG": 0.403
+    },
+    "espn_id": "42958"
+  },
+  {
+    "name": "Adam Frazier",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 235,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 55,
+      "HR": 6,
+      "RBI": 43,
+      "SBN": 4,
+      "OBP": 0.326,
+      "SLG": 0.382
+    },
+    "espn_id": "33546"
+  },
+  {
+    "name": "Brice Turang",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 236,
+    "positions": [
+      "2B",
+      "SS"
+    ],
+    "player_stats": {
+      "R": 47,
+      "HR": 7,
+      "RBI": 40,
+      "SBN": 16,
+      "OBP": 0.299,
+      "SLG": 0.316
+    },
+    "espn_id": "41179"
+  },
+  {
+    "name": "Manuel Margot",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 237,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 43,
+      "HR": 5,
+      "RBI": 47,
+      "SBN": 5,
+      "OBP": 0.319,
+      "SLG": 0.392
+    },
+    "espn_id": "33599"
+  },
+  {
+    "name": "Myles Straw",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 238,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 54,
+      "HR": 1,
+      "RBI": 28,
+      "SBN": 15,
+      "OBP": 0.309,
+      "SLG": 0.301
+    },
+    "espn_id": "39105"
+  },
+  {
+    "name": "Ryan Jeffers",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 239,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 39,
+      "HR": 13,
+      "RBI": 40,
+      "SBN": 0,
+      "OBP": 0.331,
+      "SLG": 0.436
+    },
+    "espn_id": "41587"
+  },
+  {
+    "name": "Jake Fraley",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 240,
+    "positions": [
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 35,
+      "HR": 11,
+      "RBI": 46,
+      "SBN": 9,
+      "OBP": 0.352,
+      "SLG": 0.429
+    },
+    "espn_id": "37974"
+  },
+  {
+    "name": "Tim Anderson",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 241,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 61,
+      "HR": 5,
+      "RBI": 32,
+      "SBN": 12,
+      "OBP": 0.304,
+      "SLG": 0.348
+    },
+    "espn_id": "33184"
+  },
+  {
+    "name": "Heston Kjerstad",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 242,
+    "positions": [
+      "DH"
+    ],
+    "player_stats": {
+      "R": 34,
+      "HR": 9,
+      "RBI": 23,
+      "SBN": 1,
+      "OBP": 0.336,
+      "SLG": 0.433
+    },
+    "espn_id": "4297758"
+  },
+  {
+    "name": "Dylan Carlson",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 243,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 45,
+      "HR": 9,
+      "RBI": 38,
+      "SBN": 2,
+      "OBP": 0.323,
+      "SLG": 0.379
+    },
+    "espn_id": "39226"
+  },
+  {
+    "name": "Amed Rosario",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 244,
+    "positions": [
+      "SS",
+      "2B"
+    ],
+    "player_stats": {
+      "R": 46,
+      "HR": 5,
+      "RBI": 37,
+      "SBN": 8,
+      "OBP": 0.303,
+      "SLG": 0.377
+    },
+    "espn_id": "33215"
+  },
+  {
+    "name": "Will Brennan",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 245,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 35,
+      "HR": 5,
+      "RBI": 41,
+      "SBN": 7,
+      "OBP": 0.323,
+      "SLG": 0.385
+    },
+    "espn_id": "4088296"
+  },
+  {
+    "name": "Ramon Laureano",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 246,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 49,
+      "HR": 12,
+      "RBI": 36,
+      "SBN": 8,
+      "OBP": 0.308,
+      "SLG": 0.402
+    },
+    "espn_id": "35142"
+  },
+  {
+    "name": "Kevin Kiermaier",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 247,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 55,
+      "HR": 8,
+      "RBI": 37,
+      "SBN": 9,
+      "OBP": 0.316,
+      "SLG": 0.413
+    },
+    "espn_id": "31446"
+  },
+  {
+    "name": "Jason Heyward",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 248,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 49,
+      "HR": 11,
+      "RBI": 36,
+      "SBN": 1,
+      "OBP": 0.317,
+      "SLG": 0.423
+    },
+    "espn_id": "29551"
+  },
+  {
+    "name": "Wilmer Flores",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 249,
+    "positions": [
+      "1B",
+      "3B",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 40,
+      "HR": 14,
+      "RBI": 43,
+      "SBN": 0,
+      "OBP": 0.341,
+      "SLG": 0.462
+    },
+    "espn_id": "30627"
+  },
+  {
+    "name": "Luis Urias",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 250,
+    "positions": [
+      "2B",
+      "3B"
+    ],
+    "player_stats": {
+      "R": 52,
+      "HR": 12,
+      "RBI": 44,
+      "SBN": 0,
+      "OBP": 0.325,
+      "SLG": 0.351
+    },
+    "espn_id": "35383"
+  },
+  {
+    "name": "JJ Bleday",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 251,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 45,
+      "HR": 12,
+      "RBI": 38,
+      "SBN": 2,
+      "OBP": 0.31,
+      "SLG": 0.354
+    },
+    "espn_id": "42410"
+  },
+  {
+    "name": "Chris Taylor",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 252,
+    "positions": [
+      "OF",
+      "3B",
+      "SS"
+    ],
+    "player_stats": {
+      "R": 54,
+      "HR": 14,
+      "RBI": 54,
+      "SBN": 11,
+      "OBP": 0.329,
+      "SLG": 0.426
+    },
+    "espn_id": "32900"
+  },
+  {
+    "name": "Pete Crow-Armstrong",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 253,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 48,
+      "HR": 9,
+      "RBI": 38,
+      "SBN": 10,
+      "OBP": 0.343,
+      "SLG": 0.446
+    },
+    "espn_id": "4717833"
+  },
+  {
+    "name": "Travis d'Arnaud",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 254,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 31,
+      "HR": 10,
+      "RBI": 35,
+      "SBN": 0,
+      "OBP": 0.3,
+      "SLG": 0.42
+    },
+    "espn_id": "29951"
+  },
+  {
+    "name": "Sean Bouchard",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 255,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 47,
+      "HR": 15,
+      "RBI": 40,
+      "SBN": 5,
+      "OBP": 0.356,
+      "SLG": 0.477
+    },
+    "espn_id": "41989"
+  },
+  {
+    "name": "Luke Raley",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 256,
+    "positions": [
+      "OF",
+      "1B"
+    ],
+    "player_stats": {
+      "R": 49,
+      "HR": 17,
+      "RBI": 49,
+      "SBN": 6,
+      "OBP": 0.322,
+      "SLG": 0.429
+    },
+    "espn_id": "40422"
+  },
+  {
+    "name": "Anthony Rendon",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 257,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 35,
+      "HR": 7,
+      "RBI": 41,
+      "SBN": 2,
+      "OBP": 0.347,
+      "SLG": 0.362
+    },
+    "espn_id": "32098"
+  },
+  {
+    "name": "Isiah Kiner-Falefa",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 258,
+    "positions": [
+      "OF",
+      "3B"
+    ],
+    "player_stats": {
+      "R": 29,
+      "HR": 3,
+      "RBI": 24,
+      "SBN": 6,
+      "OBP": 0.315,
+      "SLG": 0.345
+    },
+    "espn_id": "33572"
+  },
+  {
+    "name": "Davis Schneider",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 259,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 52,
+      "HR": 18,
+      "RBI": 51,
+      "SBN": 2,
+      "OBP": 0.364,
+      "SLG": 0.484
+    },
+    "espn_id": "4997181"
+  },
+  {
+    "name": "Joey Wiemer",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 260,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 50,
+      "HR": 14,
+      "RBI": 45,
+      "SBN": 14,
+      "OBP": 0.306,
+      "SLG": 0.388
+    },
+    "espn_id": "4417134"
+  },
+  {
+    "name": "Brayan Rocchio",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 261,
+    "positions": [
+      "SS",
+      "3B"
+    ],
+    "player_stats": {
+      "R": 48,
+      "HR": 6,
+      "RBI": 38,
+      "SBN": 5,
+      "OBP": 0.314,
+      "SLG": 0.355
+    },
+    "espn_id": "41217"
+  },
+  {
+    "name": "Rene Pinto",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 262,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 37,
+      "HR": 15,
+      "RBI": 48,
+      "SBN": 2,
+      "OBP": 0.264,
+      "SLG": 0.411
+    },
+    "espn_id": "37637"
+  },
+  {
+    "name": "Jake McCarthy",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 263,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 49,
+      "HR": 6,
+      "RBI": 34,
+      "SBN": 21,
+      "OBP": 0.319,
+      "SLG": 0.37
+    },
+    "espn_id": "41197"
+  },
+  {
+    "name": "Jordan Lawlar",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 264,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 53,
+      "HR": 9,
+      "RBI": 35,
+      "SBN": 20,
+      "OBP": 0.344,
+      "SLG": 0.401
+    },
+    "espn_id": "4872649"
+  },
+  {
+    "name": "Connor Joe",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 265,
+    "positions": [
+      "OF",
+      "1B"
+    ],
+    "player_stats": {
+      "R": 44,
+      "HR": 9,
+      "RBI": 30,
+      "SBN": 1,
+      "OBP": 0.34,
+      "SLG": 0.405
+    },
+    "espn_id": "35440"
+  },
+  {
+    "name": "Yoan Moncada",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 266,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 51,
+      "HR": 14,
+      "RBI": 52,
+      "SBN": 1,
+      "OBP": 0.331,
+      "SLG": 0.421
+    },
+    "espn_id": "33984"
+  },
+  {
+    "name": "Connor Wong",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 267,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 48,
+      "HR": 11,
+      "RBI": 37,
+      "SBN": 6,
+      "OBP": 0.28,
+      "SLG": 0.382
+    },
+    "espn_id": "40086"
+  },
+  {
+    "name": "Brett Baty",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 268,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 53,
+      "HR": 14,
+      "RBI": 49,
+      "SBN": 1,
+      "OBP": 0.317,
+      "SLG": 0.378
+    },
+    "espn_id": "42414"
+  },
+  {
+    "name": "Nicky Lopez",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 269,
+    "positions": [
+      "2B",
+      "3B"
+    ],
+    "player_stats": {
+      "R": 51,
+      "HR": 2,
+      "RBI": 29,
+      "SBN": 11,
+      "OBP": 0.314,
+      "SLG": 0.301
+    },
+    "espn_id": "38106"
+  },
+  {
+    "name": "Gary Sanchez",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 270,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 30,
+      "HR": 14,
+      "RBI": 40,
+      "SBN": 1,
+      "OBP": 0.3,
+      "SLG": 0.412
+    },
+    "espn_id": "31095"
+  },
+  {
+    "name": "Jon Berti",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 271,
+    "positions": [
+      "SS",
+      "3B"
+    ],
+    "player_stats": {
+      "R": 40,
+      "HR": 5,
+      "RBI": 24,
+      "SBN": 14,
+      "OBP": 0.325,
+      "SLG": 0.373
+    },
+    "espn_id": "32273"
+  },
+  {
+    "name": "Liover Peguero",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 272,
+    "positions": [
+      "SS",
+      "2B"
+    ],
+    "player_stats": {
+      "R": 44,
+      "HR": 9,
+      "RBI": 37,
+      "SBN": 15,
+      "OBP": 0.293,
+      "SLG": 0.367
+    },
+    "espn_id": "42451"
+  },
+  {
+    "name": "Brenton Doyle",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 273,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 53,
+      "HR": 16,
+      "RBI": 48,
+      "SBN": 15,
+      "OBP": 0.276,
+      "SLG": 0.4
+    },
+    "espn_id": "42462"
+  },
+  {
+    "name": "Christian Vazquez",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 274,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 28,
+      "HR": 5,
+      "RBI": 30,
+      "SBN": 0,
+      "OBP": 0.287,
+      "SLG": 0.336
+    },
+    "espn_id": "31389"
+  },
+  {
+    "name": "Gio Urshela",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 275,
+    "positions": [
+      "3B",
+      "1B"
+    ],
+    "player_stats": {
+      "R": 37,
+      "HR": 7,
+      "RBI": 40,
+      "SBN": 0,
+      "OBP": 0.316,
+      "SLG": 0.401
+    },
+    "espn_id": "32721"
+  },
+  {
+    "name": "Ji Hwan Bae",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 276,
+    "positions": [
+      "2B",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 53,
+      "HR": 4,
+      "RBI": 31,
+      "SBN": 13,
+      "OBP": 0.317,
+      "SLG": 0.344
+    },
+    "espn_id": "40896"
+  },
+  {
+    "name": "Michael Busch",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 277,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 45,
+      "HR": 14,
+      "RBI": 43,
+      "SBN": 1,
+      "OBP": 0.333,
+      "SLG": 0.412
+    },
+    "espn_id": "42415"
+  },
+  {
+    "name": "Joey Gallo",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 278,
+    "positions": [
+      "OF",
+      "1B"
+    ],
+    "player_stats": {
+      "R": 57,
+      "HR": 26,
+      "RBI": 57,
+      "SBN": 3,
+      "OBP": 0.297,
+      "SLG": 0.406
+    },
+    "espn_id": "32818"
+  },
+  {
+    "name": "Randal Grichuk",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 279,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 31,
+      "HR": 8,
+      "RBI": 29,
+      "SBN": 0,
+      "OBP": 0.288,
+      "SLG": 0.398
+    },
+    "espn_id": "31399"
+  },
+  {
+    "name": "Cavan Biggio",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 280,
+    "positions": [
+      "2B",
+      "1B",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 53,
+      "HR": 9,
+      "RBI": 36,
+      "SBN": 3,
+      "OBP": 0.327,
+      "SLG": 0.356
+    },
+    "espn_id": "37639"
+  },
+  {
+    "name": "Alex Call",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 281,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 36,
+      "HR": 8,
+      "RBI": 30,
+      "SBN": 3,
+      "OBP": 0.312,
+      "SLG": 0.33
+    },
+    "espn_id": "38994"
+  },
+  {
+    "name": "Estevan Florial",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 282,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 40,
+      "HR": 12,
+      "RBI": 35,
+      "SBN": 9,
+      "OBP": 0.315,
+      "SLG": 0.399
+    },
+    "espn_id": "36636"
+  },
+  {
+    "name": "Yasmani Grandal",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 283,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 26,
+      "HR": 7,
+      "RBI": 29,
+      "SBN": 0,
+      "OBP": 0.327,
+      "SLG": 0.342
+    },
+    "espn_id": "30950"
+  },
+  {
+    "name": "Ezequiel Duran",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 284,
+    "positions": [
+      "SS",
+      "3B",
+      "OF",
+      "DH"
+    ],
+    "player_stats": {
+      "R": 47,
+      "HR": 13,
+      "RBI": 47,
+      "SBN": 5,
+      "OBP": 0.302,
+      "SLG": 0.421
+    },
+    "espn_id": "42457"
+  },
+  {
+    "name": "Aaron Hicks",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 285,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 37,
+      "HR": 7,
+      "RBI": 30,
+      "SBN": 4,
+      "OBP": 0.331,
+      "SLG": 0.351
+    },
+    "espn_id": "31253"
+  },
+  {
+    "name": "David Peralta",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 286,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 33,
+      "HR": 7,
+      "RBI": 42,
+      "SBN": 1,
+      "OBP": 0.315,
+      "SLG": 0.424
+    },
+    "espn_id": "33384"
+  },
+  {
+    "name": "Taylor Walls",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 287,
+    "positions": [
+      "3B",
+      "2B",
+      "SS"
+    ],
+    "player_stats": {
+      "R": 48,
+      "HR": 7,
+      "RBI": 34,
+      "SBN": 10,
+      "OBP": 0.299,
+      "SLG": 0.315
+    },
+    "espn_id": "40576"
+  },
+  {
+    "name": "Tyler Black",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 288,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 36,
+      "HR": 7,
+      "RBI": 24,
+      "SBN": 15,
+      "OBP": 0.393,
+      "SLG": 0.448
+    },
+    "espn_id": "4414183"
+  },
+  {
+    "name": "Michael Taylor",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 289,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 47,
+      "HR": 16,
+      "RBI": 47,
+      "SBN": 6,
+      "OBP": 0.287,
+      "SLG": 0.389
+    },
+    "espn_id": "32219"
+  },
+  {
+    "name": "Brendan Donovan",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 290,
+    "positions": [
+      "2B",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 37,
+      "HR": 6,
+      "RBI": 27,
+      "SBN": 1,
+      "OBP": 0.365,
+      "SLG": 0.386
+    },
+    "espn_id": "41773"
+  },
+  {
+    "name": "Michael Massey",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 291,
+    "positions": [
+      "2B"
+    ],
+    "player_stats": {
+      "R": 31,
+      "HR": 10,
+      "RBI": 39,
+      "SBN": 4,
+      "OBP": 0.297,
+      "SLG": 0.412
+    },
+    "espn_id": "4109223"
+  },
+  {
+    "name": "Andy Ibanez",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 292,
+    "positions": [
+      "2B",
+      "OF"
+    ],
+    "player_stats": {
+      "R": 30,
+      "HR": 8,
+      "RBI": 28,
+      "SBN": 1,
+      "OBP": 0.302,
+      "SLG": 0.396
+    },
+    "espn_id": "34947"
+  },
+  {
+    "name": "J.D. Davis",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 293,
+    "positions": [
+      "3B"
+    ],
+    "player_stats": {
+      "R": 18,
+      "HR": 5,
+      "RBI": 18,
+      "SBN": -1,
+      "OBP": 0.338,
+      "SLG": 0.415
+    },
+    "espn_id": "33796"
+  },
+  {
+    "name": "Harold Ramirez",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 294,
+    "positions": [
+      "DH"
+    ],
+    "player_stats": {
+      "R": 41,
+      "HR": 7,
+      "RBI": 50,
+      "SBN": 0,
+      "OBP": 0.33,
+      "SLG": 0.413
+    },
+    "espn_id": "33259"
+  },
+  {
+    "name": "Kyle Isbel",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 295,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 33,
+      "HR": 5,
+      "RBI": 25,
+      "SBN": 5,
+      "OBP": 0.29,
+      "SLG": 0.368
+    },
+    "espn_id": "41263"
+  },
+  {
+    "name": "Matt Thaiss",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 296,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 27,
+      "HR": 8,
+      "RBI": 28,
+      "SBN": 3,
+      "OBP": 0.317,
+      "SLG": 0.347
+    },
+    "espn_id": "36176"
+  },
+  {
+    "name": "Darell Hernaiz",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 297,
+    "positions": [
+      "SS"
+    ],
+    "player_stats": {
+      "R": 36,
+      "HR": 4,
+      "RBI": 29,
+      "SBN": 10,
+      "OBP": 0.32,
+      "SLG": 0.358
+    },
+    "espn_id": "43025"
+  },
+  {
+    "name": "Ramon Urias",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 298,
+    "positions": [
+      "3B",
+      "2B"
+    ],
+    "player_stats": {
+      "R": 42,
+      "HR": 7,
+      "RBI": 39,
+      "SBN": 1,
+      "OBP": 0.319,
+      "SLG": 0.379
+    },
+    "espn_id": "40610"
+  },
+  {
+    "name": "Tyler Soderstrom",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 299,
+    "positions": [
+      "C"
+    ],
+    "player_stats": {
+      "R": 22,
+      "HR": 8,
+      "RBI": 27,
+      "SBN": 1,
+      "OBP": 0.271,
+      "SLG": 0.362
+    },
+    "espn_id": "4686066"
+  },
+  {
+    "name": "Dominic Fletcher",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 300,
+    "positions": [
+      "OF"
+    ],
+    "player_stats": {
+      "R": 44,
+      "HR": 8,
+      "RBI": 35,
+      "SBN": -1,
+      "OBP": 0.308,
+      "SLG": 0.353
+    },
+    "espn_id": "42984"
+  },
+  {
+    "name": "Spencer Strider",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 1,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 191.0,
+      "QS": 21,
+      "ERA": 3.35,
+      "WHIP": 1.05,
+      "K/9": 13.57,
+      "SVHD": 0
+    },
+    "espn_id": "4307825"
+  },
+  {
+    "name": "Zack Wheeler",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 2,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 194.0,
+      "QS": 21,
+      "ERA": 3.29,
+      "WHIP": 1.08,
+      "K/9": 9.79,
+      "SVHD": 0
+    },
+    "espn_id": "31267"
+  },
+  {
+    "name": "Luis Castillo",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 3,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 193.0,
+      "QS": 21,
+      "ERA": 3.4,
+      "WHIP": 1.12,
+      "K/9": 10.17,
+      "SVHD": 0
+    },
+    "espn_id": "35124"
+  },
+  {
+    "name": "Kevin Gausman",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 4,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 190.0,
+      "QS": 21,
+      "ERA": 3.22,
+      "WHIP": 1.13,
+      "K/9": 10.85,
+      "SVHD": 0
+    },
+    "espn_id": "32667"
+  },
+  {
+    "name": "Corbin Burnes",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 5,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 192.0,
+      "QS": 21,
+      "ERA": 3.23,
+      "WHIP": 1.11,
+      "K/9": 9.89,
+      "SVHD": 0
+    },
+    "espn_id": "39878"
+  },
+  {
+    "name": "Pablo Lopez",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 6,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 196.0,
+      "QS": 19,
+      "ERA": 3.72,
+      "WHIP": 1.16,
+      "K/9": 10.06,
+      "SVHD": 0
+    },
+    "espn_id": "39671"
+  },
+  {
+    "name": "Shohei Ohtani",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 7,
+    "positions": [
+      "DH",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": null,
+      "QS": null,
+      "ERA": null,
+      "WHIP": null,
+      "K/9": null,
+      "SVHD": null
+    },
+    "espn_id": "39832"
+  },
+  {
+    "name": "Logan Webb",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 8,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 205.0,
+      "QS": 22,
+      "ERA": 3.16,
+      "WHIP": 1.12,
+      "K/9": 8.3,
+      "SVHD": 0
+    },
+    "espn_id": "41216"
+  },
+  {
+    "name": "Zac Gallen",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 9,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 190.0,
+      "QS": 21,
+      "ERA": 3.36,
+      "WHIP": 1.1,
+      "K/9": 9.38,
+      "SVHD": 0
+    },
+    "espn_id": "39910"
+  },
+  {
+    "name": "Framber Valdez",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 10,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 200.0,
+      "QS": 20,
+      "ERA": 3.47,
+      "WHIP": 1.17,
+      "K/9": 9.32,
+      "SVHD": 0
+    },
+    "espn_id": "36581"
+  },
+  {
+    "name": "Aaron Nola",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 11,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 191.0,
+      "QS": 18,
+      "ERA": 3.77,
+      "WHIP": 1.09,
+      "K/9": 10.27,
+      "SVHD": 0
+    },
+    "espn_id": "33709"
+  },
+  {
+    "name": "George Kirby",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 12,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 194.0,
+      "QS": 21,
+      "ERA": 3.34,
+      "WHIP": 1.07,
+      "K/9": 8.4,
+      "SVHD": 0
+    },
+    "espn_id": "42406"
+  },
+  {
+    "name": "Tyler Glasnow",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 13,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 158.0,
+      "QS": 17,
+      "ERA": 3.3,
+      "WHIP": 1.06,
+      "K/9": 12.42,
+      "SVHD": 0
+    },
+    "espn_id": "33190"
+  },
+  {
+    "name": "Yoshinobu Yamamoto",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 14,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 170.0,
+      "QS": 19,
+      "ERA": 3.18,
+      "WHIP": 1.08,
+      "K/9": 9.37,
+      "SVHD": 0
+    },
+    "espn_id": "4872587"
+  },
+  {
+    "name": "Freddy Peralta",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 15,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 173.0,
+      "QS": 18,
+      "ERA": 3.69,
+      "WHIP": 1.12,
+      "K/9": 11.18,
+      "SVHD": 0
+    },
+    "espn_id": "39825"
+  },
+  {
+    "name": "Gerrit Cole",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 16,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 150.0,
+      "QS": 18,
+      "ERA": 2.94,
+      "WHIP": 0.97,
+      "K/9": 10.68,
+      "SVHD": 0
+    },
+    "espn_id": "32081"
+  },
+  {
+    "name": "Tarik Skubal",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 17,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 153.0,
+      "QS": 18,
+      "ERA": 3.18,
+      "WHIP": 1.04,
+      "K/9": 11.06,
+      "SVHD": 0
+    },
+    "espn_id": "42409"
+  },
+  {
+    "name": "Logan Gilbert",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 18,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 190.0,
+      "QS": 19,
+      "ERA": 3.65,
+      "WHIP": 1.12,
+      "K/9": 9.14,
+      "SVHD": 0
+    },
+    "espn_id": "41221"
+  },
+  {
+    "name": "Blake Snell",
+    "team": "FA",
+    "owner": "FA",
+    "ovr": 19,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 179.0,
+      "QS": 19,
+      "ERA": 3.62,
+      "WHIP": 1.26,
+      "K/9": 11.56,
+      "SVHD": 0
+    },
+    "espn_id": "33748"
+  },
+  {
+    "name": "Jesus Luzardo",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 20,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 172.0,
+      "QS": 18,
+      "ERA": 3.66,
+      "WHIP": 1.16,
+      "K/9": 10.94,
+      "SVHD": 0
+    },
+    "espn_id": "39667"
+  },
+  {
+    "name": "Max Fried",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 21,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 158.0,
+      "QS": 19,
+      "ERA": 3.13,
+      "WHIP": 1.1,
+      "K/9": 8.83,
+      "SVHD": 0
+    },
+    "espn_id": "32685"
+  },
+  {
+    "name": "Camilo Doval",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 22,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 70.0,
+      "QS": 0,
+      "ERA": 3.21,
+      "WHIP": 1.17,
+      "K/9": 11.31,
+      "SVHD": 35
+    },
+    "espn_id": "41337"
+  },
+  {
+    "name": "Joe Ryan",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 23,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 166.0,
+      "QS": 17,
+      "ERA": 3.8,
+      "WHIP": 1.1,
+      "K/9": 10.63,
+      "SVHD": 0
+    },
+    "espn_id": "42450"
+  },
+  {
+    "name": "Edwin Diaz",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 24,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 57.0,
+      "QS": 0,
+      "ERA": 2.84,
+      "WHIP": 1.0,
+      "K/9": 13.58,
+      "SVHD": 30
+    },
+    "espn_id": "35394"
+  },
+  {
+    "name": "Grayson Rodriguez",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 25,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 173.0,
+      "QS": 18,
+      "ERA": 3.64,
+      "WHIP": 1.19,
+      "K/9": 9.73,
+      "SVHD": 0
+    },
+    "espn_id": "41196"
+  },
+  {
+    "name": "Justin Steele",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 26,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 175.0,
+      "QS": 18,
+      "ERA": 3.55,
+      "WHIP": 1.21,
+      "K/9": 9.1,
+      "SVHD": 0
+    },
+    "espn_id": "41022"
+  },
+  {
+    "name": "Emmanuel Clase",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 27,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 74.0,
+      "QS": 0,
+      "ERA": 3.16,
+      "WHIP": 1.07,
+      "K/9": 8.88,
+      "SVHD": 37
+    },
+    "espn_id": "41743"
+  },
+  {
+    "name": "Zach Eflin",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 28,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 162.0,
+      "QS": 18,
+      "ERA": 3.5,
+      "WHIP": 1.09,
+      "K/9": 8.83,
+      "SVHD": 0
+    },
+    "espn_id": "32804"
+  },
+  {
+    "name": "Josh Hader",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 29,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 56.0,
+      "QS": 0,
+      "ERA": 2.73,
+      "WHIP": 1.11,
+      "K/9": 13.66,
+      "SVHD": 38
+    },
+    "espn_id": "32760"
+  },
+  {
+    "name": "Merrill Kelly",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 30,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 183.0,
+      "QS": 19,
+      "ERA": 3.64,
+      "WHIP": 1.2,
+      "K/9": 8.8,
+      "SVHD": 0
+    },
+    "espn_id": "32968"
+  },
+  {
+    "name": "Jhoan Duran",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 31,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 67.0,
+      "QS": 0,
+      "ERA": 3.22,
+      "WHIP": 1.15,
+      "K/9": 11.69,
+      "SVHD": 32
+    },
+    "espn_id": "41109"
+  },
+  {
+    "name": "Chris Bassitt",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 32,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 195.0,
+      "QS": 18,
+      "ERA": 3.83,
+      "WHIP": 1.19,
+      "K/9": 8.45,
+      "SVHD": 0
+    },
+    "espn_id": "33148"
+  },
+  {
+    "name": "Jordan Romano",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 33,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 65.0,
+      "QS": 0,
+      "ERA": 3.32,
+      "WHIP": 1.18,
+      "K/9": 11.22,
+      "SVHD": 37
+    },
+    "espn_id": "36380"
+  },
+  {
+    "name": "Eury Perez",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 34,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 147.0,
+      "QS": 16,
+      "ERA": 3.61,
+      "WHIP": 1.13,
+      "K/9": 11.27,
+      "SVHD": 0
+    },
+    "espn_id": "4917854"
+  },
+  {
+    "name": "Dylan Cease",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 35,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 172.0,
+      "QS": 18,
+      "ERA": 3.92,
+      "WHIP": 1.32,
+      "K/9": 11.35,
+      "SVHD": 0
+    },
+    "espn_id": "34943"
+  },
+  {
+    "name": "Jordan Montgomery",
+    "team": "FA",
+    "owner": "FA",
+    "ovr": 36,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 184.0,
+      "QS": 20,
+      "ERA": 3.57,
+      "WHIP": 1.19,
+      "K/9": 8.51,
+      "SVHD": 0
+    },
+    "espn_id": "38173"
+  },
+  {
+    "name": "Joe Musgrove",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 37,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 160.0,
+      "QS": 17,
+      "ERA": 3.38,
+      "WHIP": 1.14,
+      "K/9": 8.83,
+      "SVHD": 0
+    },
+    "espn_id": "34848"
+  },
+  {
+    "name": "Cole Ragans",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 38,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 167.0,
+      "QS": 16,
+      "ERA": 3.83,
+      "WHIP": 1.26,
+      "K/9": 10.24,
+      "SVHD": 0
+    },
+    "espn_id": "41054"
+  },
+  {
+    "name": "Mitch Keller",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 39,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 190.0,
+      "QS": 18,
+      "ERA": 3.93,
+      "WHIP": 1.26,
+      "K/9": 9.81,
+      "SVHD": 0
+    },
+    "espn_id": "33722"
+  },
+  {
+    "name": "Alexis Diaz",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 40,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 72.0,
+      "QS": 0,
+      "ERA": 3.5,
+      "WHIP": 1.22,
+      "K/9": 11.88,
+      "SVHD": 32
+    },
+    "espn_id": "4905920"
+  },
+  {
+    "name": "Chris Sale",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 41,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 151.0,
+      "QS": 15,
+      "ERA": 3.75,
+      "WHIP": 1.12,
+      "K/9": 11.09,
+      "SVHD": 0
+    },
+    "espn_id": "30948"
+  },
+  {
+    "name": "Nick Pivetta",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 42,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 157.0,
+      "QS": 15,
+      "ERA": 4.07,
+      "WHIP": 1.2,
+      "K/9": 11.18,
+      "SVHD": 0
+    },
+    "espn_id": "36071"
+  },
+  {
+    "name": "Hunter Greene",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 43,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 162.0,
+      "QS": 15,
+      "ERA": 4.22,
+      "WHIP": 1.27,
+      "K/9": 12.0,
+      "SVHD": 0
+    },
+    "espn_id": "39635"
+  },
+  {
+    "name": "Hunter Brown",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 44,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 167.0,
+      "QS": 17,
+      "ERA": 3.93,
+      "WHIP": 1.23,
+      "K/9": 10.19,
+      "SVHD": 0
+    },
+    "espn_id": "4717803"
+  },
+  {
+    "name": "Jose Berrios",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 45,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 186.0,
+      "QS": 18,
+      "ERA": 3.97,
+      "WHIP": 1.22,
+      "K/9": 8.42,
+      "SVHD": 0
+    },
+    "espn_id": "32811"
+  },
+  {
+    "name": "Bobby Miller",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 46,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 156.0,
+      "QS": 17,
+      "ERA": 3.58,
+      "WHIP": 1.14,
+      "K/9": 9.46,
+      "SVHD": 0
+    },
+    "espn_id": "4326703"
+  },
+  {
+    "name": "Raisel Iglesias",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 47,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 60.0,
+      "QS": 0,
+      "ERA": 3.0,
+      "WHIP": 1.08,
+      "K/9": 10.95,
+      "SVHD": 32
+    },
+    "espn_id": "33618"
+  },
+  {
+    "name": "David Bednar",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 48,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 61.0,
+      "QS": 0,
+      "ERA": 3.1,
+      "WHIP": 1.11,
+      "K/9": 11.07,
+      "SVHD": 34
+    },
+    "espn_id": "38303"
+  },
+  {
+    "name": "Sonny Gray",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 49,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 162.0,
+      "QS": 19,
+      "ERA": 3.28,
+      "WHIP": 1.16,
+      "K/9": 8.56,
+      "SVHD": 0
+    },
+    "espn_id": "32082"
+  },
+  {
+    "name": "Tanner Bibee",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 50,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 178.0,
+      "QS": 18,
+      "ERA": 3.84,
+      "WHIP": 1.21,
+      "K/9": 9.0,
+      "SVHD": 0
+    },
+    "espn_id": "4345278"
+  },
+  {
+    "name": "Andres Munoz",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 51,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 56.0,
+      "QS": 0,
+      "ERA": 3.21,
+      "WHIP": 1.16,
+      "K/9": 12.7,
+      "SVHD": 33
+    },
+    "espn_id": "40939"
+  },
+  {
+    "name": "Clay Holmes",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 52,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 67.0,
+      "QS": 0,
+      "ERA": 3.22,
+      "WHIP": 1.19,
+      "K/9": 10.21,
+      "SVHD": 38
+    },
+    "espn_id": "32827"
+  },
+  {
+    "name": "Bailey Ober",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 53,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 169.0,
+      "QS": 17,
+      "ERA": 3.78,
+      "WHIP": 1.09,
+      "K/9": 9.05,
+      "SVHD": 0
+    },
+    "espn_id": "3107919"
+  },
+  {
+    "name": "Braxton Garrett",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 54,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 176.0,
+      "QS": 18,
+      "ERA": 3.68,
+      "WHIP": 1.19,
+      "K/9": 9.1,
+      "SVHD": 0
+    },
+    "espn_id": "40971"
+  },
+  {
+    "name": "Cristian Javier",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 55,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 157.0,
+      "QS": 18,
+      "ERA": 3.73,
+      "WHIP": 1.19,
+      "K/9": 9.97,
+      "SVHD": 0
+    },
+    "espn_id": "41261"
+  },
+  {
+    "name": "Pete Fairbanks",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 56,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 49.0,
+      "QS": 0,
+      "ERA": 2.94,
+      "WHIP": 1.06,
+      "K/9": 13.04,
+      "SVHD": 31
+    },
+    "espn_id": "42180"
+  },
+  {
+    "name": "Paul Sewald",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 57,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 62.0,
+      "QS": 0,
+      "ERA": 3.34,
+      "WHIP": 1.15,
+      "K/9": 11.76,
+      "SVHD": 34
+    },
+    "espn_id": "35009"
+  },
+  {
+    "name": "Tanner Scott",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 58,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 76.0,
+      "QS": 0,
+      "ERA": 3.2,
+      "WHIP": 1.12,
+      "K/9": 11.84,
+      "SVHD": 28
+    },
+    "espn_id": "35135"
+  },
+  {
+    "name": "Ryan Helsley",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 59,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 56.0,
+      "QS": 0,
+      "ERA": 3.05,
+      "WHIP": 1.13,
+      "K/9": 13.18,
+      "SVHD": 32
+    },
+    "espn_id": "39909"
+  },
+  {
+    "name": "Shane Bieber",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 60,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 164.0,
+      "QS": 16,
+      "ERA": 3.62,
+      "WHIP": 1.2,
+      "K/9": 8.4,
+      "SVHD": 0
+    },
+    "espn_id": "40912"
+  },
+  {
+    "name": "Adbert Alzolay",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 61,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 64.0,
+      "QS": 0,
+      "ERA": 3.38,
+      "WHIP": 1.11,
+      "K/9": 9.7,
+      "SVHD": 35
+    },
+    "espn_id": "39802"
+  },
+  {
+    "name": "Kenley Jansen",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 62,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 56.0,
+      "QS": 0,
+      "ERA": 3.7,
+      "WHIP": 1.2,
+      "K/9": 10.61,
+      "SVHD": 31
+    },
+    "espn_id": "29630"
+  },
+  {
+    "name": "Craig Kimbrel",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 63,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 69.0,
+      "QS": 0,
+      "ERA": 3.39,
+      "WHIP": 1.16,
+      "K/9": 11.48,
+      "SVHD": 31
+    },
+    "espn_id": "30653"
+  },
+  {
+    "name": "Evan Phillips",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 64,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 64.0,
+      "QS": 0,
+      "ERA": 2.95,
+      "WHIP": 1.02,
+      "K/9": 9.98,
+      "SVHD": 31
+    },
+    "espn_id": "37911"
+  },
+  {
+    "name": "Alex Lange",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 65,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 67.0,
+      "QS": 0,
+      "ERA": 3.9,
+      "WHIP": 1.33,
+      "K/9": 11.15,
+      "SVHD": 31
+    },
+    "espn_id": "40976"
+  },
+  {
+    "name": "Walker Buehler",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 66,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 122.0,
+      "QS": 13,
+      "ERA": 3.76,
+      "WHIP": 1.17,
+      "K/9": 8.26,
+      "SVHD": 0
+    },
+    "espn_id": "39251"
+  },
+  {
+    "name": "Reid Detmers",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 67,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 167.0,
+      "QS": 16,
+      "ERA": 4.15,
+      "WHIP": 1.29,
+      "K/9": 9.97,
+      "SVHD": 0
+    },
+    "espn_id": "4326697"
+  },
+  {
+    "name": "Jose Alvarado",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 68,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 46.0,
+      "QS": 0,
+      "ERA": 3.33,
+      "WHIP": 1.22,
+      "K/9": 13.5,
+      "SVHD": 37
+    },
+    "espn_id": "36063"
+  },
+  {
+    "name": "Charlie Morton",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 69,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 167.0,
+      "QS": 16,
+      "ERA": 4.04,
+      "WHIP": 1.32,
+      "K/9": 9.92,
+      "SVHD": 0
+    },
+    "espn_id": "29155"
+  },
+  {
+    "name": "Carlos Rodon",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 70,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 137.0,
+      "QS": 13,
+      "ERA": 4.4,
+      "WHIP": 1.34,
+      "K/9": 9.2,
+      "SVHD": 0
+    },
+    "espn_id": "33696"
+  },
+  {
+    "name": "Eduardo Rodriguez",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 71,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 160.0,
+      "QS": 15,
+      "ERA": 3.88,
+      "WHIP": 1.24,
+      "K/9": 8.78,
+      "SVHD": 0
+    },
+    "espn_id": "32675"
+  },
+  {
+    "name": "Michael King",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 72,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 138.0,
+      "QS": 15,
+      "ERA": 3.78,
+      "WHIP": 1.2,
+      "K/9": 10.3,
+      "SVHD": 0
+    },
+    "espn_id": "40429"
+  },
+  {
+    "name": "Yennier Cano",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 73,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 73.0,
+      "QS": 0,
+      "ERA": 3.33,
+      "WHIP": 1.18,
+      "K/9": 8.51,
+      "SVHD": 37
+    },
+    "espn_id": "35536"
+  },
+  {
+    "name": "A.J. Puk",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 74,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 100.0,
+      "QS": 3,
+      "ERA": 4.05,
+      "WHIP": 1.17,
+      "K/9": 12.24,
+      "SVHD": 25
+    },
+    "espn_id": "36201"
+  },
+  {
+    "name": "Kodai Senga",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 75,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 140.0,
+      "QS": 14,
+      "ERA": 3.66,
+      "WHIP": 1.21,
+      "K/9": 10.99,
+      "SVHD": 0
+    },
+    "espn_id": "4142421"
+  },
+  {
+    "name": "Jose Leclerc",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 76,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 60.0,
+      "QS": 0,
+      "ERA": 3.45,
+      "WHIP": 1.23,
+      "K/9": 10.8,
+      "SVHD": 28
+    },
+    "espn_id": "33926"
+  },
+  {
+    "name": "Kyle Bradish",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 77,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 140.0,
+      "QS": 14,
+      "ERA": 3.66,
+      "WHIP": 1.19,
+      "K/9": 9.32,
+      "SVHD": 0
+    },
+    "espn_id": "4311625"
+  },
+  {
+    "name": "Carlos Estevez",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 78,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 63.0,
+      "QS": 0,
+      "ERA": 3.86,
+      "WHIP": 1.33,
+      "K/9": 10.86,
+      "SVHD": 37
+    },
+    "espn_id": "34861"
+  },
+  {
+    "name": "Bryce Miller",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 79,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 167.0,
+      "QS": 17,
+      "ERA": 3.88,
+      "WHIP": 1.17,
+      "K/9": 8.84,
+      "SVHD": 0
+    },
+    "espn_id": "4654313"
+  },
+  {
+    "name": "Yu Darvish",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 80,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 152.0,
+      "QS": 14,
+      "ERA": 4.09,
+      "WHIP": 1.25,
+      "K/9": 8.94,
+      "SVHD": 0
+    },
+    "espn_id": "32055"
+  },
+  {
+    "name": "Kyle Finnegan",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 81,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 69.0,
+      "QS": 0,
+      "ERA": 3.78,
+      "WHIP": 1.25,
+      "K/9": 8.87,
+      "SVHD": 25
+    },
+    "espn_id": "36543"
+  },
+  {
+    "name": "Lance Lynn",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 82,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 180.0,
+      "QS": 16,
+      "ERA": 4.3,
+      "WHIP": 1.27,
+      "K/9": 8.6,
+      "SVHD": 0
+    },
+    "espn_id": "30820"
+  },
+  {
+    "name": "Nathan Eovaldi",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 83,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 149.0,
+      "QS": 14,
+      "ERA": 3.87,
+      "WHIP": 1.21,
+      "K/9": 8.34,
+      "SVHD": 0
+    },
+    "espn_id": "31174"
+  },
+  {
+    "name": "Ryan Pepiot",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 84,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 144.0,
+      "QS": 15,
+      "ERA": 3.81,
+      "WHIP": 1.2,
+      "K/9": 9.56,
+      "SVHD": 0
+    },
+    "espn_id": "4208281"
+  },
+  {
+    "name": "Kyle Harrison",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 85,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 150.0,
+      "QS": 17,
+      "ERA": 3.96,
+      "WHIP": 1.26,
+      "K/9": 10.26,
+      "SVHD": 0
+    },
+    "espn_id": "4683375"
+  },
+  {
+    "name": "Triston McKenzie",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 86,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 133.0,
+      "QS": 13,
+      "ERA": 3.99,
+      "WHIP": 1.2,
+      "K/9": 9.07,
+      "SVHD": 0
+    },
+    "espn_id": "34954"
+  },
+  {
+    "name": "Kenta Maeda",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 87,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 156.0,
+      "QS": 16,
+      "ERA": 4.04,
+      "WHIP": 1.18,
+      "K/9": 10.1,
+      "SVHD": 0
+    },
+    "espn_id": "34892"
+  },
+  {
+    "name": "Jon Gray",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 88,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 158.0,
+      "QS": 15,
+      "ERA": 4.1,
+      "WHIP": 1.26,
+      "K/9": 8.83,
+      "SVHD": 0
+    },
+    "espn_id": "33203"
+  },
+  {
+    "name": "Matt Strahm",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 89,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 84.0,
+      "QS": 0,
+      "ERA": 3.54,
+      "WHIP": 1.11,
+      "K/9": 10.5,
+      "SVHD": 17
+    },
+    "espn_id": "34862"
+  },
+  {
+    "name": "Yusei Kikuchi",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 90,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 148.0,
+      "QS": 16,
+      "ERA": 4.07,
+      "WHIP": 1.24,
+      "K/9": 10.09,
+      "SVHD": 0
+    },
+    "espn_id": "41415"
+  },
+  {
+    "name": "Louie Varland",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 91,
+    "positions": [
+      "SP",
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 142.0,
+      "QS": 14,
+      "ERA": 3.93,
+      "WHIP": 1.19,
+      "K/9": 9.89,
+      "SVHD": 0
+    },
+    "espn_id": "4917888"
+  },
+  {
+    "name": "Justin Verlander",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 92,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 148.0,
+      "QS": 13,
+      "ERA": 3.89,
+      "WHIP": 1.23,
+      "K/9": 7.11,
+      "SVHD": 0
+    },
+    "espn_id": "6341"
+  },
+  {
+    "name": "Griffin Canning",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 93,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 150.0,
+      "QS": 15,
+      "ERA": 4.08,
+      "WHIP": 1.21,
+      "K/9": 9.9,
+      "SVHD": 0
+    },
+    "espn_id": "41065"
+  },
+  {
+    "name": "Josiah Gray",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 94,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 177.0,
+      "QS": 16,
+      "ERA": 4.22,
+      "WHIP": 1.35,
+      "K/9": 9.0,
+      "SVHD": 0
+    },
+    "espn_id": "41165"
+  },
+  {
+    "name": "Andrew Abbott",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 95,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 147.0,
+      "QS": 15,
+      "ERA": 4.1,
+      "WHIP": 1.25,
+      "K/9": 9.98,
+      "SVHD": 0
+    },
+    "espn_id": "4414528"
+  },
+  {
+    "name": "Garrett Whitlock",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 96,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 124.0,
+      "QS": 15,
+      "ERA": 3.56,
+      "WHIP": 1.16,
+      "K/9": 9.15,
+      "SVHD": 0
+    },
+    "espn_id": "39674"
+  },
+  {
+    "name": "Kutter Crawford",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 97,
+    "positions": [
+      "SP",
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 134.0,
+      "QS": 15,
+      "ERA": 4.03,
+      "WHIP": 1.21,
+      "K/9": 9.54,
+      "SVHD": 0
+    },
+    "espn_id": "41277"
+  },
+  {
+    "name": "Jason Adam",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 98,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 57.0,
+      "QS": 0,
+      "ERA": 3.32,
+      "WHIP": 1.07,
+      "K/9": 11.37,
+      "SVHD": 31
+    },
+    "espn_id": "32145"
+  },
+  {
+    "name": "Andrew Heaney",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 99,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 145.0,
+      "QS": 15,
+      "ERA": 4.22,
+      "WHIP": 1.29,
+      "K/9": 10.12,
+      "SVHD": 0
+    },
+    "espn_id": "32672"
+  },
+  {
+    "name": "Nick Lodolo",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 100,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 127.0,
+      "QS": 13,
+      "ERA": 3.97,
+      "WHIP": 1.21,
+      "K/9": 11.48,
+      "SVHD": 0
+    },
+    "espn_id": "42433"
+  },
+  {
+    "name": "Sean Manaea",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 101,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 126.0,
+      "QS": 12,
+      "ERA": 4.21,
+      "WHIP": 1.23,
+      "K/9": 10.14,
+      "SVHD": 0
+    },
+    "espn_id": "33244"
+  },
+  {
+    "name": "Bryan Woo",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 102,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 133.0,
+      "QS": 14,
+      "ERA": 3.92,
+      "WHIP": 1.2,
+      "K/9": 9.95,
+      "SVHD": 0
+    },
+    "espn_id": "4629089"
+  },
+  {
+    "name": "A.J. Minter",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 103,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 64.0,
+      "QS": 0,
+      "ERA": 3.52,
+      "WHIP": 1.11,
+      "K/9": 11.39,
+      "SVHD": 32
+    },
+    "espn_id": "36133"
+  },
+  {
+    "name": "MacKenzie Gore",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 104,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 142.0,
+      "QS": 15,
+      "ERA": 4.18,
+      "WHIP": 1.31,
+      "K/9": 9.95,
+      "SVHD": 0
+    },
+    "espn_id": "39636"
+  },
+  {
+    "name": "Robert Suarez",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 105,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 55.0,
+      "QS": 0,
+      "ERA": 3.76,
+      "WHIP": 1.16,
+      "K/9": 9.16,
+      "SVHD": 31
+    },
+    "espn_id": "4148749"
+  },
+  {
+    "name": "Dean Kremer",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 106,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 169.0,
+      "QS": 17,
+      "ERA": 4.1,
+      "WHIP": 1.3,
+      "K/9": 8.09,
+      "SVHD": 0
+    },
+    "espn_id": "38295"
+  },
+  {
+    "name": "Gavin Williams",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 107,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 134.0,
+      "QS": 15,
+      "ERA": 3.83,
+      "WHIP": 1.26,
+      "K/9": 9.0,
+      "SVHD": 0
+    },
+    "espn_id": "4345076"
+  },
+  {
+    "name": "Hector Neris",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 108,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 68.0,
+      "QS": 0,
+      "ERA": 3.44,
+      "WHIP": 1.16,
+      "K/9": 10.32,
+      "SVHD": 34
+    },
+    "espn_id": "32377"
+  },
+  {
+    "name": "Robert Stephenson",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 109,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 53.0,
+      "QS": 0,
+      "ERA": 3.23,
+      "WHIP": 1.0,
+      "K/9": 14.09,
+      "SVHD": 20
+    },
+    "espn_id": "32134"
+  },
+  {
+    "name": "Bryan Abreu",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 110,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 65.0,
+      "QS": 0,
+      "ERA": 3.32,
+      "WHIP": 1.15,
+      "K/9": 12.88,
+      "SVHD": 27
+    },
+    "espn_id": "41208"
+  },
+  {
+    "name": "Joel Payamps",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 111,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 66.0,
+      "QS": 0,
+      "ERA": 3.68,
+      "WHIP": 1.18,
+      "K/9": 9.0,
+      "SVHD": 29
+    },
+    "espn_id": "40021"
+  },
+  {
+    "name": "Clarke Schmidt",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 112,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 153.0,
+      "QS": 15,
+      "ERA": 4.18,
+      "WHIP": 1.3,
+      "K/9": 9.06,
+      "SVHD": 0
+    },
+    "espn_id": "41085"
+  },
+  {
+    "name": "Ryan Pressly",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 113,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 66.0,
+      "QS": 0,
+      "ERA": 3.55,
+      "WHIP": 1.09,
+      "K/9": 10.09,
+      "SVHD": 29
+    },
+    "espn_id": "33072"
+  },
+  {
+    "name": "Kyle Gibson",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 114,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 185.0,
+      "QS": 16,
+      "ERA": 4.28,
+      "WHIP": 1.31,
+      "K/9": 7.2,
+      "SVHD": 0
+    },
+    "espn_id": "31053"
+  },
+  {
+    "name": "David Robertson",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 115,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 64.0,
+      "QS": 0,
+      "ERA": 3.66,
+      "WHIP": 1.22,
+      "K/9": 10.55,
+      "SVHD": 25
+    },
+    "espn_id": "29172"
+  },
+  {
+    "name": "Nestor Cortes",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 116,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 136.0,
+      "QS": 14,
+      "ERA": 4.04,
+      "WHIP": 1.21,
+      "K/9": 8.93,
+      "SVHD": 0
+    },
+    "espn_id": "36480"
+  },
+  {
+    "name": "JP Sears",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 117,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 174.0,
+      "QS": 15,
+      "ERA": 4.4,
+      "WHIP": 1.26,
+      "K/9": 8.28,
+      "SVHD": 0
+    },
+    "espn_id": "39818"
+  },
+  {
+    "name": "Brayan Bello",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 118,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 165.0,
+      "QS": 16,
+      "ERA": 4.2,
+      "WHIP": 1.32,
+      "K/9": 8.13,
+      "SVHD": 0
+    },
+    "espn_id": "4720856"
+  },
+  {
+    "name": "Brady Singer",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 119,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 169.0,
+      "QS": 16,
+      "ERA": 4.05,
+      "WHIP": 1.3,
+      "K/9": 8.09,
+      "SVHD": 0
+    },
+    "espn_id": "41172"
+  },
+  {
+    "name": "Erik Swanson",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 120,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 65.0,
+      "QS": 0,
+      "ERA": 3.46,
+      "WHIP": 1.11,
+      "K/9": 10.94,
+      "SVHD": 32
+    },
+    "espn_id": "36013"
+  },
+  {
+    "name": "Marcus Stroman",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 121,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 145.0,
+      "QS": 16,
+      "ERA": 3.66,
+      "WHIP": 1.25,
+      "K/9": 8.13,
+      "SVHD": 0
+    },
+    "espn_id": "32815"
+  },
+  {
+    "name": "Aaron Civale",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 122,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 128.0,
+      "QS": 14,
+      "ERA": 3.8,
+      "WHIP": 1.2,
+      "K/9": 8.37,
+      "SVHD": 0
+    },
+    "espn_id": "40934"
+  },
+  {
+    "name": "Dane Dunning",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 123,
+    "positions": [
+      "SP",
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 155.0,
+      "QS": 15,
+      "ERA": 4.01,
+      "WHIP": 1.3,
+      "K/9": 7.72,
+      "SVHD": 0
+    },
+    "espn_id": "36080"
+  },
+  {
+    "name": "Seth Lugo",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 124,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 156.0,
+      "QS": 16,
+      "ERA": 3.92,
+      "WHIP": 1.28,
+      "K/9": 7.96,
+      "SVHD": 0
+    },
+    "espn_id": "34873"
+  },
+  {
+    "name": "Hunter Harvey",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 125,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 52.0,
+      "QS": 0,
+      "ERA": 3.63,
+      "WHIP": 1.13,
+      "K/9": 10.56,
+      "SVHD": 34
+    },
+    "espn_id": "33191"
+  },
+  {
+    "name": "Yuki Matsui",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 126,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 61.0,
+      "QS": 0,
+      "ERA": 3.69,
+      "WHIP": 1.13,
+      "K/9": 9.89,
+      "SVHD": 24
+    },
+    "espn_id": "4142414"
+  },
+  {
+    "name": "James McArthur",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 127,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 70.0,
+      "QS": 0,
+      "ERA": 3.6,
+      "WHIP": 1.2,
+      "K/9": 9.26,
+      "SVHD": 19
+    },
+    "espn_id": "3960883"
+  },
+  {
+    "name": "Logan Allen",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 128,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 147.0,
+      "QS": 15,
+      "ERA": 4.04,
+      "WHIP": 1.29,
+      "K/9": 9.0,
+      "SVHD": 0
+    },
+    "espn_id": "4683350"
+  },
+  {
+    "name": "Scott Barlow",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 129,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 73.0,
+      "QS": 0,
+      "ERA": 3.45,
+      "WHIP": 1.26,
+      "K/9": 9.99,
+      "SVHD": 27
+    },
+    "espn_id": "32156"
+  },
+  {
+    "name": "Shota Imanaga",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 130,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 149.0,
+      "QS": 14,
+      "ERA": 4.17,
+      "WHIP": 1.2,
+      "K/9": 7.91,
+      "SVHD": 0
+    },
+    "espn_id": "5134630"
+  },
+  {
+    "name": "Shane Baz",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 131,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 107.0,
+      "QS": 12,
+      "ERA": 3.79,
+      "WHIP": 1.21,
+      "K/9": 10.01,
+      "SVHD": 0
+    },
+    "espn_id": "39639"
+  },
+  {
+    "name": "Jason Foley",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 132,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 62.0,
+      "QS": 0,
+      "ERA": 3.48,
+      "WHIP": 1.29,
+      "K/9": 7.11,
+      "SVHD": 38
+    },
+    "espn_id": "42698"
+  },
+  {
+    "name": "Brandon Pfaadt",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 133,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 136.0,
+      "QS": 14,
+      "ERA": 4.3,
+      "WHIP": 1.25,
+      "K/9": 9.2,
+      "SVHD": 0
+    },
+    "espn_id": "4721302"
+  },
+  {
+    "name": "Brusdar Graterol",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 134,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 66.0,
+      "QS": 0,
+      "ERA": 3.14,
+      "WHIP": 1.11,
+      "K/9": 6.55,
+      "SVHD": 27
+    },
+    "espn_id": "40965"
+  },
+  {
+    "name": "Mason Miller",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 135,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 57.0,
+      "QS": 0,
+      "ERA": 3.79,
+      "WHIP": 1.21,
+      "K/9": 10.42,
+      "SVHD": 23
+    },
+    "espn_id": "4730225"
+  },
+  {
+    "name": "Tanner Houck",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 136,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 142.0,
+      "QS": 15,
+      "ERA": 3.99,
+      "WHIP": 1.31,
+      "K/9": 8.68,
+      "SVHD": 0
+    },
+    "espn_id": "41009"
+  },
+  {
+    "name": "Chris Martin",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 137,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 56.0,
+      "QS": 0,
+      "ERA": 2.89,
+      "WHIP": 1.05,
+      "K/9": 8.68,
+      "SVHD": 33
+    },
+    "espn_id": "32903"
+  },
+  {
+    "name": "Edward Cabrera",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 138,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 115.0,
+      "QS": 12,
+      "ERA": 3.91,
+      "WHIP": 1.3,
+      "K/9": 9.94,
+      "SVHD": 0
+    },
+    "espn_id": "40944"
+  },
+  {
+    "name": "Chase Silseth",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 139,
+    "positions": [
+      "SP",
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 137.0,
+      "QS": 13,
+      "ERA": 4.27,
+      "WHIP": 1.31,
+      "K/9": 9.39,
+      "SVHD": 0
+    },
+    "espn_id": "4413990"
+  },
+  {
+    "name": "Giovanny Gallegos",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 140,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 59.0,
+      "QS": 0,
+      "ERA": 3.51,
+      "WHIP": 1.12,
+      "K/9": 9.61,
+      "SVHD": 27
+    },
+    "espn_id": "36050"
+  },
+  {
+    "name": "Miles Mikolas",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 141,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 186.0,
+      "QS": 17,
+      "ERA": 4.21,
+      "WHIP": 1.28,
+      "K/9": 6.1,
+      "SVHD": 0
+    },
+    "espn_id": "32116"
+  },
+  {
+    "name": "Julian Merryweather",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 142,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 72.0,
+      "QS": 0,
+      "ERA": 3.75,
+      "WHIP": 1.26,
+      "K/9": 11.25,
+      "SVHD": 23
+    },
+    "espn_id": "39816"
+  },
+  {
+    "name": "Mark Leiter Jr.",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 143,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 68.0,
+      "QS": 0,
+      "ERA": 3.71,
+      "WHIP": 1.18,
+      "K/9": 10.46,
+      "SVHD": 29
+    },
+    "espn_id": "36202"
+  },
+  {
+    "name": "Ranger Suarez",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 144,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 139.0,
+      "QS": 14,
+      "ERA": 3.95,
+      "WHIP": 1.33,
+      "K/9": 8.55,
+      "SVHD": 0
+    },
+    "espn_id": "39817"
+  },
+  {
+    "name": "Jameson Taillon",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 145,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 149.0,
+      "QS": 14,
+      "ERA": 4.29,
+      "WHIP": 1.26,
+      "K/9": 8.03,
+      "SVHD": 0
+    },
+    "espn_id": "31258"
+  },
+  {
+    "name": "Griffin Jax",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 146,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 70.0,
+      "QS": 0,
+      "ERA": 3.6,
+      "WHIP": 1.17,
+      "K/9": 9.39,
+      "SVHD": 26
+    },
+    "espn_id": "42604"
+  },
+  {
+    "name": "Cristopher Sanchez",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 147,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 133.0,
+      "QS": 13,
+      "ERA": 4.13,
+      "WHIP": 1.22,
+      "K/9": 8.66,
+      "SVHD": 0
+    },
+    "espn_id": "42359"
+  },
+  {
+    "name": "Nick Martinez",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 148,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 96.0,
+      "QS": 0,
+      "ERA": 4.03,
+      "WHIP": 1.32,
+      "K/9": 8.63,
+      "SVHD": 20
+    },
+    "espn_id": "33372"
+  },
+  {
+    "name": "Tyler Rogers",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 149,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 77.0,
+      "QS": 0,
+      "ERA": 3.62,
+      "WHIP": 1.22,
+      "K/9": 7.13,
+      "SVHD": 31
+    },
+    "espn_id": "34026"
+  },
+  {
+    "name": "Jordan Hicks",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 150,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 107.0,
+      "QS": 14,
+      "ERA": 3.53,
+      "WHIP": 1.25,
+      "K/9": 11.1,
+      "SVHD": 0
+    },
+    "espn_id": "37909"
+  },
+  {
+    "name": "Taijuan Walker",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 151,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 166.0,
+      "QS": 16,
+      "ERA": 4.23,
+      "WHIP": 1.31,
+      "K/9": 6.99,
+      "SVHD": 0
+    },
+    "espn_id": "31864"
+  },
+  {
+    "name": "Justin Lawrence",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 152,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 69.0,
+      "QS": 0,
+      "ERA": 4.83,
+      "WHIP": 1.58,
+      "K/9": 8.74,
+      "SVHD": 27
+    },
+    "espn_id": "41310"
+  },
+  {
+    "name": "Reynaldo Lopez",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 153,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 99.0,
+      "QS": 12,
+      "ERA": 3.73,
+      "WHIP": 1.23,
+      "K/9": 10.45,
+      "SVHD": 17
+    },
+    "espn_id": "33860"
+  },
+  {
+    "name": "Kevin Ginkel",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 154,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 64.0,
+      "QS": 0,
+      "ERA": 3.23,
+      "WHIP": 1.13,
+      "K/9": 9.98,
+      "SVHD": 16
+    },
+    "espn_id": "41432"
+  },
+  {
+    "name": "Emmet Sheehan",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 155,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 119.0,
+      "QS": 12,
+      "ERA": 4.31,
+      "WHIP": 1.29,
+      "K/9": 9.83,
+      "SVHD": 0
+    },
+    "espn_id": "4417806"
+  },
+  {
+    "name": "Gregory Soto",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 156,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 62.0,
+      "QS": 0,
+      "ERA": 3.77,
+      "WHIP": 1.24,
+      "K/9": 10.45,
+      "SVHD": 26
+    },
+    "espn_id": "39804"
+  },
+  {
+    "name": "Aroldis Chapman",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 157,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 58.0,
+      "QS": 0,
+      "ERA": 3.57,
+      "WHIP": 1.28,
+      "K/9": 13.81,
+      "SVHD": 17
+    },
+    "espn_id": "30442"
+  },
+  {
+    "name": "Max Scherzer",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 158,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 70.0,
+      "QS": 7,
+      "ERA": 3.86,
+      "WHIP": 1.17,
+      "K/9": 9.64,
+      "SVHD": 0
+    },
+    "espn_id": "28976"
+  },
+  {
+    "name": "Yimi Garcia",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 159,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 66.0,
+      "QS": 0,
+      "ERA": 3.68,
+      "WHIP": 1.15,
+      "K/9": 9.82,
+      "SVHD": 23
+    },
+    "espn_id": "32888"
+  },
+  {
+    "name": "Jack Flaherty",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 160,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 144.0,
+      "QS": 14,
+      "ERA": 4.25,
+      "WHIP": 1.41,
+      "K/9": 9.31,
+      "SVHD": 0
+    },
+    "espn_id": "33837"
+  },
+  {
+    "name": "Jose Quintana",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 161,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 142.0,
+      "QS": 15,
+      "ERA": 3.74,
+      "WHIP": 1.31,
+      "K/9": 7.29,
+      "SVHD": 0
+    },
+    "espn_id": "32106"
+  },
+  {
+    "name": "DL Hall",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 162,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 90.0,
+      "QS": 4,
+      "ERA": 3.9,
+      "WHIP": 1.29,
+      "K/9": 11.1,
+      "SVHD": 0
+    },
+    "espn_id": "41018"
+  },
+  {
+    "name": "Erick Fedde",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 163,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 147.0,
+      "QS": 14,
+      "ERA": 4.35,
+      "WHIP": 1.33,
+      "K/9": 7.9,
+      "SVHD": 0
+    },
+    "espn_id": "33793"
+  },
+  {
+    "name": "Andrew Nardi",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 164,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 63.0,
+      "QS": 0,
+      "ERA": 4.14,
+      "WHIP": 1.33,
+      "K/9": 11.43,
+      "SVHD": 28
+    },
+    "espn_id": "3975840"
+  },
+  {
+    "name": "Tyler Holton",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 165,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 83.0,
+      "QS": 0,
+      "ERA": 3.9,
+      "WHIP": 1.2,
+      "K/9": 8.78,
+      "SVHD": 17
+    },
+    "espn_id": "3983833"
+  },
+  {
+    "name": "Patrick Sandoval",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 166,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 153.0,
+      "QS": 15,
+      "ERA": 4.29,
+      "WHIP": 1.46,
+      "K/9": 8.88,
+      "SVHD": 0
+    },
+    "espn_id": "40975"
+  },
+  {
+    "name": "Tyler Wells",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 167,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 110.0,
+      "QS": 3,
+      "ERA": 4.09,
+      "WHIP": 1.18,
+      "K/9": 8.51,
+      "SVHD": 0
+    },
+    "espn_id": "4717904"
+  },
+  {
+    "name": "Frankie Montas",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 168,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 123.0,
+      "QS": 11,
+      "ERA": 4.24,
+      "WHIP": 1.3,
+      "K/9": 8.78,
+      "SVHD": 0
+    },
+    "espn_id": "33249"
+  },
+  {
+    "name": "Jose Urquidy",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 169,
+    "positions": [
+      "SP",
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 122.0,
+      "QS": 4,
+      "ERA": 4.35,
+      "WHIP": 1.24,
+      "K/9": 8.19,
+      "SVHD": 0
+    },
+    "espn_id": "35759"
+  },
+  {
+    "name": "Orion Kerkering",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 170,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 59.0,
+      "QS": 0,
+      "ERA": 3.51,
+      "WHIP": 1.17,
+      "K/9": 10.37,
+      "SVHD": 18
+    },
+    "espn_id": "4630789"
+  },
+  {
+    "name": "Domingo German",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 171,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 118.0,
+      "QS": 11,
+      "ERA": 4.27,
+      "WHIP": 1.23,
+      "K/9": 9.15,
+      "SVHD": 0
+    },
+    "espn_id": "33660"
+  },
+  {
+    "name": "Josh Winckowski",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 172,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 79.0,
+      "QS": 0,
+      "ERA": 4.1,
+      "WHIP": 1.37,
+      "K/9": 8.54,
+      "SVHD": 26
+    },
+    "espn_id": "4713488"
+  },
+  {
+    "name": "Michael Wacha",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 173,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 129.0,
+      "QS": 13,
+      "ERA": 3.98,
+      "WHIP": 1.26,
+      "K/9": 7.6,
+      "SVHD": 0
+    },
+    "espn_id": "32640"
+  },
+  {
+    "name": "Will Smith",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 174,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 58.0,
+      "QS": 0,
+      "ERA": 3.57,
+      "WHIP": 1.22,
+      "K/9": 9.0,
+      "SVHD": 13
+    },
+    "espn_id": "31549"
+  },
+  {
+    "name": "Keaton Winn",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 175,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 123.0,
+      "QS": 14,
+      "ERA": 3.8,
+      "WHIP": 1.24,
+      "K/9": 7.39,
+      "SVHD": 0
+    },
+    "espn_id": "5116843"
+  },
+  {
+    "name": "Trevor Stephan",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 176,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 68.0,
+      "QS": 0,
+      "ERA": 3.97,
+      "WHIP": 1.32,
+      "K/9": 9.66,
+      "SVHD": 27
+    },
+    "espn_id": "41003"
+  },
+  {
+    "name": "Taj Bradley",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 177,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 84.0,
+      "QS": 9,
+      "ERA": 4.07,
+      "WHIP": 1.27,
+      "K/9": 10.61,
+      "SVHD": 0
+    },
+    "espn_id": "42480"
+  },
+  {
+    "name": "Kirby Yates",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 178,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 64.0,
+      "QS": 0,
+      "ERA": 4.64,
+      "WHIP": 1.39,
+      "K/9": 10.83,
+      "SVHD": 21
+    },
+    "espn_id": "32623"
+  },
+  {
+    "name": "Jordan Wicks",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 179,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 140.0,
+      "QS": 13,
+      "ERA": 4.18,
+      "WHIP": 1.31,
+      "K/9": 7.91,
+      "SVHD": 0
+    },
+    "espn_id": "4420749"
+  },
+  {
+    "name": "Brooks Raley",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 180,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 55.0,
+      "QS": 0,
+      "ERA": 3.44,
+      "WHIP": 1.22,
+      "K/9": 10.15,
+      "SVHD": 30
+    },
+    "espn_id": "32005"
+  },
+  {
+    "name": "Colin Poche",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 181,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 59.0,
+      "QS": 0,
+      "ERA": 3.66,
+      "WHIP": 1.2,
+      "K/9": 10.68,
+      "SVHD": 23
+    },
+    "espn_id": "40364"
+  },
+  {
+    "name": "Devin Williams",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 182,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 57.0,
+      "QS": 0,
+      "ERA": 2.68,
+      "WHIP": 1.14,
+      "K/9": 14.21,
+      "SVHD": 32
+    },
+    "espn_id": "33224"
+  },
+  {
+    "name": "Scott McGough",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 183,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 69.0,
+      "QS": 0,
+      "ERA": 4.17,
+      "WHIP": 1.29,
+      "K/9": 10.04,
+      "SVHD": 21
+    },
+    "espn_id": "34834"
+  },
+  {
+    "name": "Taylor Rogers",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 184,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 60.0,
+      "QS": 0,
+      "ERA": 3.6,
+      "WHIP": 1.2,
+      "K/9": 11.1,
+      "SVHD": 17
+    },
+    "espn_id": "33671"
+  },
+  {
+    "name": "Alek Manoah",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 185,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 120.0,
+      "QS": 11,
+      "ERA": 4.2,
+      "WHIP": 1.34,
+      "K/9": 8.78,
+      "SVHD": 0
+    },
+    "espn_id": "42436"
+  },
+  {
+    "name": "Alex Vesia",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 186,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 55.0,
+      "QS": 0,
+      "ERA": 3.44,
+      "WHIP": 1.11,
+      "K/9": 11.45,
+      "SVHD": 15
+    },
+    "espn_id": "42622"
+  },
+  {
+    "name": "Trevor Rogers",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 187,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 96.0,
+      "QS": 11,
+      "ERA": 3.84,
+      "WHIP": 1.26,
+      "K/9": 9.19,
+      "SVHD": 0
+    },
+    "espn_id": "39640"
+  },
+  {
+    "name": "Mike Clevinger",
+    "team": "FA",
+    "owner": "FA",
+    "ovr": 188,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 126.0,
+      "QS": 13,
+      "ERA": 4.0,
+      "WHIP": 1.26,
+      "K/9": 7.57,
+      "SVHD": 0
+    },
+    "espn_id": "32769"
+  },
+  {
+    "name": "Lucas Sims",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 189,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 61.0,
+      "QS": 0,
+      "ERA": 4.28,
+      "WHIP": 1.34,
+      "K/9": 10.77,
+      "SVHD": 27
+    },
+    "espn_id": "32807"
+  },
+  {
+    "name": "Ross Stripling",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 190,
+    "positions": [
+      "SP",
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 135.0,
+      "QS": 15,
+      "ERA": 4.2,
+      "WHIP": 1.22,
+      "K/9": 7.6,
+      "SVHD": 0
+    },
+    "espn_id": "32789"
+  },
+  {
+    "name": "Matt Brash",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 191,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 69.0,
+      "QS": 0,
+      "ERA": 3.39,
+      "WHIP": 1.16,
+      "K/9": 13.57,
+      "SVHD": 34
+    },
+    "espn_id": "4894467"
+  },
+  {
+    "name": "Caleb Ferguson",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 192,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 64.0,
+      "QS": 0,
+      "ERA": 3.52,
+      "WHIP": 1.25,
+      "K/9": 10.97,
+      "SVHD": 2
+    },
+    "espn_id": "41017"
+  },
+  {
+    "name": "Ryan Walker",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 193,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 61.0,
+      "QS": 0,
+      "ERA": 3.54,
+      "WHIP": 1.2,
+      "K/9": 11.51,
+      "SVHD": 5
+    },
+    "espn_id": "5000950"
+  },
+  {
+    "name": "James Paxton",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 194,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 106.0,
+      "QS": 11,
+      "ERA": 4.33,
+      "WHIP": 1.28,
+      "K/9": 9.08,
+      "SVHD": 0
+    },
+    "espn_id": "31980"
+  },
+  {
+    "name": "Adam Ottavino",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 195,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 61.0,
+      "QS": 0,
+      "ERA": 3.69,
+      "WHIP": 1.25,
+      "K/9": 9.44,
+      "SVHD": 21
+    },
+    "espn_id": "29705"
+  },
+  {
+    "name": "Emilio Pagan",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 196,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 68.0,
+      "QS": 0,
+      "ERA": 4.1,
+      "WHIP": 1.22,
+      "K/9": 9.66,
+      "SVHD": 17
+    },
+    "espn_id": "33403"
+  },
+  {
+    "name": "Aaron Bummer",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 197,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 59.0,
+      "QS": 0,
+      "ERA": 3.81,
+      "WHIP": 1.34,
+      "K/9": 11.29,
+      "SVHD": 21
+    },
+    "espn_id": "36131"
+  },
+  {
+    "name": "Zack Littell",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 198,
+    "positions": [
+      "SP",
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 116.0,
+      "QS": 12,
+      "ERA": 4.27,
+      "WHIP": 1.25,
+      "K/9": 7.68,
+      "SVHD": 0
+    },
+    "espn_id": "36052"
+  },
+  {
+    "name": "John Means",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 199,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 108.0,
+      "QS": 12,
+      "ERA": 4.0,
+      "WHIP": 1.17,
+      "K/9": 6.92,
+      "SVHD": 0
+    },
+    "espn_id": "39948"
+  },
+  {
+    "name": "Tyler Kinley",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 200,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 55.0,
+      "QS": 0,
+      "ERA": 4.09,
+      "WHIP": 1.25,
+      "K/9": 9.33,
+      "SVHD": 20
+    },
+    "espn_id": "34166"
+  },
+  {
+    "name": "Kyle Hendricks",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 201,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 135.0,
+      "QS": 13,
+      "ERA": 4.07,
+      "WHIP": 1.28,
+      "K/9": 6.4,
+      "SVHD": 0
+    },
+    "espn_id": "33173"
+  },
+  {
+    "name": "Ian Gibaut",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 202,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 71.0,
+      "QS": 0,
+      "ERA": 4.18,
+      "WHIP": 1.41,
+      "K/9": 9.25,
+      "SVHD": 23
+    },
+    "espn_id": "37979"
+  },
+  {
+    "name": "Alex Cobb",
+    "team": "SF",
+    "owner": "FA",
+    "ovr": 203,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 111.0,
+      "QS": 12,
+      "ERA": 3.89,
+      "WHIP": 1.29,
+      "K/9": 8.19,
+      "SVHD": 0
+    },
+    "espn_id": "31086"
+  },
+  {
+    "name": "Will Vest",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 204,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 59.0,
+      "QS": 0,
+      "ERA": 3.51,
+      "WHIP": 1.19,
+      "K/9": 9.76,
+      "SVHD": 17
+    },
+    "espn_id": "41606"
+  },
+  {
+    "name": "Graham Ashcraft",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 205,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 154.0,
+      "QS": 14,
+      "ERA": 4.32,
+      "WHIP": 1.36,
+      "K/9": 7.36,
+      "SVHD": 0
+    },
+    "espn_id": "4084179"
+  },
+  {
+    "name": "Steven Wilson",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 206,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 57.0,
+      "QS": 0,
+      "ERA": 4.26,
+      "WHIP": 1.32,
+      "K/9": 10.26,
+      "SVHD": 27
+    },
+    "espn_id": "41828"
+  },
+  {
+    "name": "Luis Severino",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 207,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 120.0,
+      "QS": 11,
+      "ERA": 4.58,
+      "WHIP": 1.35,
+      "K/9": 9.23,
+      "SVHD": 0
+    },
+    "espn_id": "33263"
+  },
+  {
+    "name": "Josh Sborz",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 208,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 53.0,
+      "QS": 0,
+      "ERA": 3.74,
+      "WHIP": 1.15,
+      "K/9": 12.4,
+      "SVHD": 17
+    },
+    "espn_id": "36178"
+  },
+  {
+    "name": "Wade Miley",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 209,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 147.0,
+      "QS": 15,
+      "ERA": 4.04,
+      "WHIP": 1.32,
+      "K/9": 6.24,
+      "SVHD": 0
+    },
+    "espn_id": "31094"
+  },
+  {
+    "name": "Danny Coulombe",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 210,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 54.0,
+      "QS": 0,
+      "ERA": 3.83,
+      "WHIP": 1.24,
+      "K/9": 10.83,
+      "SVHD": 23
+    },
+    "espn_id": "33638"
+  },
+  {
+    "name": "Michael Lorenzen",
+    "team": "FA",
+    "owner": "FA",
+    "ovr": 211,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 148.0,
+      "QS": 13,
+      "ERA": 4.26,
+      "WHIP": 1.3,
+      "K/9": 6.69,
+      "SVHD": 0
+    },
+    "espn_id": "33252"
+  },
+  {
+    "name": "John Brebbia",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 212,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 46.0,
+      "QS": 0,
+      "ERA": 4.11,
+      "WHIP": 1.26,
+      "K/9": 9.78,
+      "SVHD": 12
+    },
+    "espn_id": "39085"
+  },
+  {
+    "name": "Tim Mayza",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 213,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 54.0,
+      "QS": 0,
+      "ERA": 3.17,
+      "WHIP": 1.17,
+      "K/9": 8.33,
+      "SVHD": 23
+    },
+    "espn_id": "35773"
+  },
+  {
+    "name": "Adrian Houser",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 214,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 129.0,
+      "QS": 9,
+      "ERA": 3.98,
+      "WHIP": 1.34,
+      "K/9": 7.05,
+      "SVHD": 0
+    },
+    "espn_id": "32157"
+  },
+  {
+    "name": "Paul Skenes",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 215,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 46.0,
+      "QS": 5,
+      "ERA": 4.5,
+      "WHIP": 1.39,
+      "K/9": 8.61,
+      "SVHD": 0
+    },
+    "espn_id": "4719507"
+  },
+  {
+    "name": "Alex Wood",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 216,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 123.0,
+      "QS": 13,
+      "ERA": 4.02,
+      "WHIP": 1.31,
+      "K/9": 7.46,
+      "SVHD": 0
+    },
+    "espn_id": "32620"
+  },
+  {
+    "name": "Hoby Milner",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 217,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 62.0,
+      "QS": 0,
+      "ERA": 3.48,
+      "WHIP": 1.1,
+      "K/9": 8.71,
+      "SVHD": 16
+    },
+    "espn_id": "36088"
+  },
+  {
+    "name": "Ian Hamilton",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 218,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 62.0,
+      "QS": 0,
+      "ERA": 4.06,
+      "WHIP": 1.32,
+      "K/9": 10.74,
+      "SVHD": 15
+    },
+    "espn_id": "41127"
+  },
+  {
+    "name": "Fernando Cruz",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 219,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 62.0,
+      "QS": 0,
+      "ERA": 3.77,
+      "WHIP": 1.21,
+      "K/9": 12.19,
+      "SVHD": 9
+    },
+    "espn_id": "34068"
+  },
+  {
+    "name": "John Schreiber",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 220,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 55.0,
+      "QS": 0,
+      "ERA": 3.6,
+      "WHIP": 1.24,
+      "K/9": 9.65,
+      "SVHD": 18
+    },
+    "espn_id": "39949"
+  },
+  {
+    "name": "Justin Topa",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 221,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 64.0,
+      "QS": 0,
+      "ERA": 3.66,
+      "WHIP": 1.25,
+      "K/9": 7.45,
+      "SVHD": 22
+    },
+    "espn_id": "38796"
+  },
+  {
+    "name": "Shawn Armstrong",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 222,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 58.0,
+      "QS": 0,
+      "ERA": 3.41,
+      "WHIP": 1.14,
+      "K/9": 9.93,
+      "SVHD": 9
+    },
+    "espn_id": "33499"
+  },
+  {
+    "name": "Trevor Richards",
+    "team": "TOR",
+    "owner": "FA",
+    "ovr": 223,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 67.0,
+      "QS": 0,
+      "ERA": 4.43,
+      "WHIP": 1.3,
+      "K/9": 12.09,
+      "SVHD": 9
+    },
+    "espn_id": "39912"
+  },
+  {
+    "name": "Miguel Castro",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 224,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 64.0,
+      "QS": 0,
+      "ERA": 4.08,
+      "WHIP": 1.31,
+      "K/9": 8.72,
+      "SVHD": 18
+    },
+    "espn_id": "33820"
+  },
+  {
+    "name": "Kevin Kelly",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 225,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 60.0,
+      "QS": 0,
+      "ERA": 3.45,
+      "WHIP": 1.17,
+      "K/9": 8.25,
+      "SVHD": 16
+    },
+    "espn_id": "5001153"
+  },
+  {
+    "name": "Steven Matz",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 226,
+    "positions": [
+      "SP",
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 95.0,
+      "QS": 10,
+      "ERA": 3.98,
+      "WHIP": 1.28,
+      "K/9": 8.53,
+      "SVHD": 0
+    },
+    "espn_id": "33106"
+  },
+  {
+    "name": "Caleb Thielbar",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 227,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 50.0,
+      "QS": 0,
+      "ERA": 3.6,
+      "WHIP": 1.14,
+      "K/9": 10.44,
+      "SVHD": 18
+    },
+    "espn_id": "32440"
+  },
+  {
+    "name": "Colin Holderman",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 228,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 56.0,
+      "QS": 0,
+      "ERA": 4.02,
+      "WHIP": 1.38,
+      "K/9": 7.23,
+      "SVHD": 31
+    },
+    "espn_id": "4917897"
+  },
+  {
+    "name": "Chris Stratton",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 229,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 73.0,
+      "QS": 0,
+      "ERA": 3.7,
+      "WHIP": 1.25,
+      "K/9": 8.51,
+      "SVHD": 8
+    },
+    "espn_id": "32787"
+  },
+  {
+    "name": "Brock Burke",
+    "team": "TEX",
+    "owner": "FA",
+    "ovr": 230,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 68.0,
+      "QS": 0,
+      "ERA": 4.24,
+      "WHIP": 1.26,
+      "K/9": 8.74,
+      "SVHD": 16
+    },
+    "espn_id": "39945"
+  },
+  {
+    "name": "Pedro Avila",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 231,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 99.0,
+      "QS": 3,
+      "ERA": 4.91,
+      "WHIP": 1.49,
+      "K/9": 9.09,
+      "SVHD": 0
+    },
+    "espn_id": "39740"
+  },
+  {
+    "name": "Beau Brieske",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 232,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 75.0,
+      "QS": 0,
+      "ERA": 4.08,
+      "WHIP": 1.31,
+      "K/9": 8.04,
+      "SVHD": 13
+    },
+    "espn_id": "4917779"
+  },
+  {
+    "name": "Drew Smyly",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 233,
+    "positions": [
+      "SP",
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 110.0,
+      "QS": 2,
+      "ERA": 4.42,
+      "WHIP": 1.35,
+      "K/9": 8.67,
+      "SVHD": 0
+    },
+    "espn_id": "31816"
+  },
+  {
+    "name": "Garrett Crochet",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 234,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 101.0,
+      "QS": 3,
+      "ERA": 3.92,
+      "WHIP": 1.39,
+      "K/9": 9.53,
+      "SVHD": 0
+    },
+    "espn_id": "4297835"
+  },
+  {
+    "name": "Tyler Anderson",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 235,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 158.0,
+      "QS": 14,
+      "ERA": 4.44,
+      "WHIP": 1.39,
+      "K/9": 7.29,
+      "SVHD": 0
+    },
+    "espn_id": "32151"
+  },
+  {
+    "name": "Michael Kopech",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 236,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 144.0,
+      "QS": 12,
+      "ERA": 5.0,
+      "WHIP": 1.49,
+      "K/9": 9.44,
+      "SVHD": 0
+    },
+    "espn_id": "33763"
+  },
+  {
+    "name": "Joe Jimenez",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 237,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 58.0,
+      "QS": 0,
+      "ERA": 3.57,
+      "WHIP": 1.12,
+      "K/9": 11.64,
+      "SVHD": 0
+    },
+    "espn_id": "33760"
+  },
+  {
+    "name": "Bailey Falter",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 238,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 139.0,
+      "QS": 7,
+      "ERA": 4.34,
+      "WHIP": 1.32,
+      "K/9": 6.67,
+      "SVHD": 0
+    },
+    "espn_id": "4705677"
+  },
+  {
+    "name": "Trevor Williams",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 239,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 163.0,
+      "QS": 14,
+      "ERA": 4.86,
+      "WHIP": 1.44,
+      "K/9": 7.62,
+      "SVHD": 0
+    },
+    "espn_id": "33305"
+  },
+  {
+    "name": "Andrew Chafin",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 240,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 53.0,
+      "QS": 0,
+      "ERA": 3.74,
+      "WHIP": 1.26,
+      "K/9": 9.85,
+      "SVHD": 19
+    },
+    "espn_id": "32810"
+  },
+  {
+    "name": "Tommy Kahnle",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 241,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 46.0,
+      "QS": 0,
+      "ERA": 3.91,
+      "WHIP": 1.2,
+      "K/9": 10.76,
+      "SVHD": 20
+    },
+    "espn_id": "31867"
+  },
+  {
+    "name": "Dylan Floro",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 242,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 57.0,
+      "QS": 0,
+      "ERA": 3.32,
+      "WHIP": 1.12,
+      "K/9": 8.84,
+      "SVHD": 12
+    },
+    "espn_id": "33852"
+  },
+  {
+    "name": "Dauri Moreta",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 243,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 53.0,
+      "QS": 0,
+      "ERA": 3.4,
+      "WHIP": 1.11,
+      "K/9": 10.87,
+      "SVHD": 6
+    },
+    "espn_id": "41874"
+  },
+  {
+    "name": "James Karinchak",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 244,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 50.0,
+      "QS": 0,
+      "ERA": 4.14,
+      "WHIP": 1.34,
+      "K/9": 13.68,
+      "SVHD": 17
+    },
+    "espn_id": "40715"
+  },
+  {
+    "name": "Jake Bird",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 245,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 76.0,
+      "QS": 0,
+      "ERA": 4.14,
+      "WHIP": 1.46,
+      "K/9": 7.11,
+      "SVHD": 17
+    },
+    "espn_id": "3459223"
+  },
+  {
+    "name": "Abner Uribe",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 246,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 56.0,
+      "QS": 0,
+      "ERA": 4.34,
+      "WHIP": 1.61,
+      "K/9": 10.13,
+      "SVHD": 18
+    },
+    "espn_id": "4917865"
+  },
+  {
+    "name": "Jordan Lyles",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 247,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 177.0,
+      "QS": 13,
+      "ERA": 5.08,
+      "WHIP": 1.39,
+      "K/9": 6.61,
+      "SVHD": 0
+    },
+    "espn_id": "31061"
+  },
+  {
+    "name": "Jakob Junis",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 248,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 79.0,
+      "QS": 2,
+      "ERA": 4.44,
+      "WHIP": 1.3,
+      "K/9": 9.57,
+      "SVHD": 0
+    },
+    "espn_id": "36056"
+  },
+  {
+    "name": "Enyel De Los Santos",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 249,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 69.0,
+      "QS": 0,
+      "ERA": 4.3,
+      "WHIP": 1.35,
+      "K/9": 8.09,
+      "SVHD": 18
+    },
+    "espn_id": "35026"
+  },
+  {
+    "name": "Trevor Gott",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 250,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 55.0,
+      "QS": 0,
+      "ERA": 3.93,
+      "WHIP": 1.27,
+      "K/9": 9.0,
+      "SVHD": 13
+    },
+    "espn_id": "33614"
+  },
+  {
+    "name": "Eli Morgan",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 251,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 69.0,
+      "QS": 0,
+      "ERA": 4.17,
+      "WHIP": 1.26,
+      "K/9": 8.87,
+      "SVHD": 11
+    },
+    "espn_id": "41324"
+  },
+  {
+    "name": "Rafael Montero",
+    "team": "HOU",
+    "owner": "FA",
+    "ovr": 252,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 62.0,
+      "QS": 0,
+      "ERA": 4.06,
+      "WHIP": 1.26,
+      "K/9": 10.6,
+      "SVHD": 9
+    },
+    "espn_id": "32631"
+  },
+  {
+    "name": "Drew Smith",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 253,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 56.0,
+      "QS": 0,
+      "ERA": 4.18,
+      "WHIP": 1.3,
+      "K/9": 9.8,
+      "SVHD": 17
+    },
+    "espn_id": "39685"
+  },
+  {
+    "name": "Jose Cuas",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 254,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 68.0,
+      "QS": 0,
+      "ERA": 3.84,
+      "WHIP": 1.35,
+      "K/9": 8.47,
+      "SVHD": 13
+    },
+    "espn_id": "35432"
+  },
+  {
+    "name": "Carlos Hernandez",
+    "team": "KC",
+    "owner": "FA",
+    "ovr": 255,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 70.0,
+      "QS": 0,
+      "ERA": 4.89,
+      "WHIP": 1.47,
+      "K/9": 8.49,
+      "SVHD": 22
+    },
+    "espn_id": "41233"
+  },
+  {
+    "name": "Huascar Brazoban",
+    "team": "MIA",
+    "owner": "FA",
+    "ovr": 256,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 56.0,
+      "QS": 0,
+      "ERA": 4.02,
+      "WHIP": 1.34,
+      "K/9": 10.77,
+      "SVHD": 16
+    },
+    "espn_id": "4916509"
+  },
+  {
+    "name": "Michael Soroka",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 257,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 81.0,
+      "QS": 2,
+      "ERA": 5.33,
+      "WHIP": 1.41,
+      "K/9": 7.56,
+      "SVHD": 0
+    },
+    "espn_id": "34984"
+  },
+  {
+    "name": "Matt Moore",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 258,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 51.0,
+      "QS": 0,
+      "ERA": 4.06,
+      "WHIP": 1.27,
+      "K/9": 9.53,
+      "SVHD": 21
+    },
+    "espn_id": "31099"
+  },
+  {
+    "name": "Dany Jimenez",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 259,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 45.0,
+      "QS": 0,
+      "ERA": 3.8,
+      "WHIP": 1.24,
+      "K/9": 11.6,
+      "SVHD": 11
+    },
+    "espn_id": "42380"
+  },
+  {
+    "name": "Michael Grove",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 260,
+    "positions": [
+      "SP",
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 70.0,
+      "QS": 1,
+      "ERA": 4.37,
+      "WHIP": 1.3,
+      "K/9": 9.77,
+      "SVHD": 0
+    },
+    "espn_id": "41242"
+  },
+  {
+    "name": "Phil Maton",
+    "team": "TB",
+    "owner": "FA",
+    "ovr": 261,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 59.0,
+      "QS": 0,
+      "ERA": 3.66,
+      "WHIP": 1.17,
+      "K/9": 10.83,
+      "SVHD": 0
+    },
+    "espn_id": "36161"
+  },
+  {
+    "name": "Gabe Speier",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 262,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 57.0,
+      "QS": 0,
+      "ERA": 4.89,
+      "WHIP": 1.33,
+      "K/9": 10.26,
+      "SVHD": 18
+    },
+    "espn_id": "40327"
+  },
+  {
+    "name": "Phil Bickford",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 263,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 63.0,
+      "QS": 0,
+      "ERA": 4.14,
+      "WHIP": 1.29,
+      "K/9": 10.57,
+      "SVHD": 7
+    },
+    "espn_id": "34989"
+  },
+  {
+    "name": "Ryan Brasier",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 264,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 58.0,
+      "QS": 0,
+      "ERA": 3.57,
+      "WHIP": 1.12,
+      "K/9": 9.16,
+      "SVHD": 0
+    },
+    "espn_id": "30189"
+  },
+  {
+    "name": "Reese Olson",
+    "team": "DET",
+    "owner": "FA",
+    "ovr": 265,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 144.0,
+      "QS": 13,
+      "ERA": 4.69,
+      "WHIP": 1.49,
+      "K/9": 8.31,
+      "SVHD": 0
+    },
+    "espn_id": "4734319"
+  },
+  {
+    "name": "Buck Farmer",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 266,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 69.0,
+      "QS": 0,
+      "ERA": 4.3,
+      "WHIP": 1.33,
+      "K/9": 9.26,
+      "SVHD": 12
+    },
+    "espn_id": "33627"
+  },
+  {
+    "name": "Seranthony Dominguez",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 267,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 54.0,
+      "QS": 0,
+      "ERA": 4.33,
+      "WHIP": 1.37,
+      "K/9": 9.5,
+      "SVHD": 19
+    },
+    "espn_id": "37793"
+  },
+  {
+    "name": "John King",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 268,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 56.0,
+      "QS": 0,
+      "ERA": 3.54,
+      "WHIP": 1.2,
+      "K/9": 6.75,
+      "SVHD": 17
+    },
+    "espn_id": "41763"
+  },
+  {
+    "name": "Mike Baumann",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 269,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 64.0,
+      "QS": 0,
+      "ERA": 3.94,
+      "WHIP": 1.31,
+      "K/9": 8.72,
+      "SVHD": 6
+    },
+    "espn_id": "40543"
+  },
+  {
+    "name": "Joe Kelly",
+    "team": "LAD",
+    "owner": "FA",
+    "ovr": 270,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 42.0,
+      "QS": 0,
+      "ERA": 3.64,
+      "WHIP": 1.21,
+      "K/9": 12.64,
+      "SVHD": 13
+    },
+    "espn_id": "31992"
+  },
+  {
+    "name": "Cal Quantrill",
+    "team": "COL",
+    "owner": "FA",
+    "ovr": 271,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 153.0,
+      "QS": 14,
+      "ERA": 4.35,
+      "WHIP": 1.37,
+      "K/9": 5.65,
+      "SVHD": 0
+    },
+    "espn_id": "39875"
+  },
+  {
+    "name": "Martin Perez",
+    "team": "PIT",
+    "owner": "FA",
+    "ovr": 272,
+    "positions": [
+      "SP",
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 144.0,
+      "QS": 13,
+      "ERA": 4.38,
+      "WHIP": 1.4,
+      "K/9": 6.25,
+      "SVHD": 0
+    },
+    "espn_id": "31098"
+  },
+  {
+    "name": "Nick Sandlin",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 273,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 60.0,
+      "QS": 0,
+      "ERA": 4.2,
+      "WHIP": 1.3,
+      "K/9": 10.05,
+      "SVHD": 12
+    },
+    "espn_id": "41385"
+  },
+  {
+    "name": "Kyle Nelson",
+    "team": "ARI",
+    "owner": "FA",
+    "ovr": 274,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 52.0,
+      "QS": 0,
+      "ERA": 3.98,
+      "WHIP": 1.25,
+      "K/9": 10.56,
+      "SVHD": 14
+    },
+    "espn_id": "42012"
+  },
+  {
+    "name": "Elvis Peguero",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 275,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 61.0,
+      "QS": 0,
+      "ERA": 4.28,
+      "WHIP": 1.39,
+      "K/9": 7.97,
+      "SVHD": 21
+    },
+    "espn_id": "4881978"
+  },
+  {
+    "name": "Michael Tonkin",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 276,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 73.0,
+      "QS": 0,
+      "ERA": 4.56,
+      "WHIP": 1.32,
+      "K/9": 9.49,
+      "SVHD": 0
+    },
+    "espn_id": "32594"
+  },
+  {
+    "name": "Ryne Stanek",
+    "team": "SEA",
+    "owner": "FA",
+    "ovr": 277,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 54.0,
+      "QS": 0,
+      "ERA": 3.83,
+      "WHIP": 1.26,
+      "K/9": 10.33,
+      "SVHD": 6
+    },
+    "espn_id": "33301"
+  },
+  {
+    "name": "Javier Assad",
+    "team": "CHC",
+    "owner": "FA",
+    "ovr": 278,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 70.0,
+      "QS": 2,
+      "ERA": 3.99,
+      "WHIP": 1.29,
+      "K/9": 8.1,
+      "SVHD": 0
+    },
+    "espn_id": "5002950"
+  },
+  {
+    "name": "Luis Garcia",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 279,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 54.0,
+      "QS": 0,
+      "ERA": 3.83,
+      "WHIP": 1.3,
+      "K/9": 9.0,
+      "SVHD": 14
+    },
+    "espn_id": "33089"
+  },
+  {
+    "name": "Sam Moll",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 280,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 62.0,
+      "QS": 0,
+      "ERA": 3.77,
+      "WHIP": 1.37,
+      "K/9": 9.29,
+      "SVHD": 8
+    },
+    "espn_id": "34928"
+  },
+  {
+    "name": "Brent Suter",
+    "team": "CIN",
+    "owner": "FA",
+    "ovr": 281,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 69.0,
+      "QS": 0,
+      "ERA": 3.78,
+      "WHIP": 1.3,
+      "K/9": 7.57,
+      "SVHD": 7
+    },
+    "espn_id": "36023"
+  },
+  {
+    "name": "Ron Marinaccio",
+    "team": "NYY",
+    "owner": "FA",
+    "ovr": 282,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 53.0,
+      "QS": 0,
+      "ERA": 3.91,
+      "WHIP": 1.28,
+      "K/9": 11.21,
+      "SVHD": 6
+    },
+    "espn_id": "4228723"
+  },
+  {
+    "name": "Steven Okert",
+    "team": "MIN",
+    "owner": "FA",
+    "ovr": 283,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 54.0,
+      "QS": 0,
+      "ERA": 4.67,
+      "WHIP": 1.33,
+      "K/9": 10.83,
+      "SVHD": 15
+    },
+    "espn_id": "33716"
+  },
+  {
+    "name": "Pierce Johnson",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 284,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 55.0,
+      "QS": 0,
+      "ERA": 4.09,
+      "WHIP": 1.29,
+      "K/9": 12.44,
+      "SVHD": 0
+    },
+    "espn_id": "32777"
+  },
+  {
+    "name": "Tanner Banks",
+    "team": "CHW",
+    "owner": "FA",
+    "ovr": 285,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 65.0,
+      "QS": 0,
+      "ERA": 4.15,
+      "WHIP": 1.26,
+      "K/9": 6.78,
+      "SVHD": 12
+    },
+    "espn_id": "40437"
+  },
+  {
+    "name": "Lucas Erceg",
+    "team": "OAK",
+    "owner": "FA",
+    "ovr": 286,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 60.0,
+      "QS": 0,
+      "ERA": 4.5,
+      "WHIP": 1.6,
+      "K/9": 9.6,
+      "SVHD": 16
+    },
+    "espn_id": "36618"
+  },
+  {
+    "name": "Cooper Criswell",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 287,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 111.0,
+      "QS": 5,
+      "ERA": 4.86,
+      "WHIP": 1.47,
+      "K/9": 7.3,
+      "SVHD": 0
+    },
+    "espn_id": "4326801"
+  },
+  {
+    "name": "Keynan Middleton",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 288,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 54.0,
+      "QS": 0,
+      "ERA": 4.17,
+      "WHIP": 1.28,
+      "K/9": 10.5,
+      "SVHD": 5
+    },
+    "espn_id": "36045"
+  },
+  {
+    "name": "Wandy Peralta",
+    "team": "SD",
+    "owner": "FA",
+    "ovr": 289,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 53.0,
+      "QS": 0,
+      "ERA": 4.08,
+      "WHIP": 1.28,
+      "K/9": 8.49,
+      "SVHD": 17
+    },
+    "espn_id": "36036"
+  },
+  {
+    "name": "Jake Irvin",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 290,
+    "positions": [
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 132.0,
+      "QS": 12,
+      "ERA": 4.57,
+      "WHIP": 1.38,
+      "K/9": 7.3,
+      "SVHD": 0
+    },
+    "espn_id": "41290"
+  },
+  {
+    "name": "Ben Lively",
+    "team": "CLE",
+    "owner": "FA",
+    "ovr": 291,
+    "positions": [
+      "SP",
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 74.0,
+      "QS": 1,
+      "ERA": 4.38,
+      "WHIP": 1.34,
+      "K/9": 8.15,
+      "SVHD": 0
+    },
+    "espn_id": "33194"
+  },
+  {
+    "name": "Brennan Bernardino",
+    "team": "BOS",
+    "owner": "FA",
+    "ovr": 292,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 54.0,
+      "QS": 0,
+      "ERA": 3.83,
+      "WHIP": 1.28,
+      "K/9": 9.17,
+      "SVHD": 5
+    },
+    "espn_id": "35876"
+  },
+  {
+    "name": "Bryan Baker",
+    "team": "BAL",
+    "owner": "FA",
+    "ovr": 293,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 49.0,
+      "QS": 0,
+      "ERA": 3.67,
+      "WHIP": 1.33,
+      "K/9": 9.92,
+      "SVHD": 12
+    },
+    "espn_id": "40884"
+  },
+  {
+    "name": "JoJo Romero",
+    "team": "STL",
+    "owner": "FA",
+    "ovr": 294,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 54.0,
+      "QS": 0,
+      "ERA": 4.0,
+      "WHIP": 1.26,
+      "K/9": 10.17,
+      "SVHD": 2
+    },
+    "espn_id": "40456"
+  },
+  {
+    "name": "Jordan Weems",
+    "team": "WSH",
+    "owner": "FA",
+    "ovr": 295,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 58.0,
+      "QS": 0,
+      "ERA": 4.5,
+      "WHIP": 1.4,
+      "K/9": 10.24,
+      "SVHD": 12
+    },
+    "espn_id": "40039"
+  },
+  {
+    "name": "Shintaro Fujinami",
+    "team": "NYM",
+    "owner": "FA",
+    "ovr": 296,
+    "positions": [
+      "RP",
+      "SP"
+    ],
+    "player_stats": {
+      "IP": 70.0,
+      "QS": 0,
+      "ERA": 4.5,
+      "WHIP": 1.47,
+      "K/9": 9.77,
+      "SVHD": 0
+    },
+    "espn_id": "4142398"
+  },
+  {
+    "name": "Penn Murfee",
+    "team": "ATL",
+    "owner": "FA",
+    "ovr": 297,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 55.0,
+      "QS": 0,
+      "ERA": 3.76,
+      "WHIP": 1.24,
+      "K/9": 10.15,
+      "SVHD": 0
+    },
+    "espn_id": "42631"
+  },
+  {
+    "name": "Ben Joyce",
+    "team": "LAA",
+    "owner": "FA",
+    "ovr": 298,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 49.0,
+      "QS": 0,
+      "ERA": 4.22,
+      "WHIP": 1.43,
+      "K/9": 10.84,
+      "SVHD": 14
+    },
+    "espn_id": "4867388"
+  },
+  {
+    "name": "Trevor Megill",
+    "team": "MIL",
+    "owner": "FA",
+    "ovr": 299,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 37.0,
+      "QS": 0,
+      "ERA": 4.38,
+      "WHIP": 1.35,
+      "K/9": 11.43,
+      "SVHD": 4
+    },
+    "espn_id": "40080"
+  },
+  {
+    "name": "Jeff Hoffman",
+    "team": "PHI",
+    "owner": "FA",
+    "ovr": 300,
+    "positions": [
+      "RP"
+    ],
+    "player_stats": {
+      "IP": 49.0,
+      "QS": 0,
+      "ERA": 4.96,
+      "WHIP": 1.41,
+      "K/9": 10.65,
+      "SVHD": 13
+    },
+    "espn_id": "33841"
+  }
+]

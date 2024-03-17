@@ -52,13 +52,13 @@ class Loader:
 
         self.combine_dataframes(dfs_bats, dfs_arms)
 
-    def import_owners(self):
+    # def import_owners(self):
         # TODO:
-        pass
+        # pass
 
-    def import_ruleset(self):
+    # def import_ruleset(self):
         # TODO:
-        pass
+        # pass
 
     def import_savant(self, pos) -> pd.DataFrame:
         return read.read_in_as(directory=self.extract_dir,
@@ -72,8 +72,8 @@ class Loader:
                                file_type=".csv",
                                as_type=read.IOKitDataTypes.DATAFRAME)
 
-    def import_stats(self, pos):
-        pass
+    # def import_stats(self, pos):
+    #     pass
 
     def combine_dataframes(self, dfs_bats: dict, dfs_arms: dict) -> None:
         """
@@ -93,14 +93,15 @@ class Loader:
                     case "FANGRAPHS":
                         source_key = "PlayerId"
                         keymap_key = "FANGRAPHSID"
-                        aux_key = "MLBID"  # this will match during concat sequence
+                        aux_key = "MLBID"  # this will match during merge sequence
                     case "SAVANT":
                         source_key = "player_id"
                         keymap_key = "MLBID"
                         aux_key = "FANGRAPHSID"
 
                 try:
-                    keyed_df = df.merge(self.keymap[[keymap_key, aux_key]],
+                    # add the keys from the keymap, to include ESPN Player Universe Keys
+                    keyed_df = df.merge(self.keymap[[keymap_key, aux_key, "ESPNID"]],
                                         how="left",
                                         left_on=source_key,
                                         right_on=keymap_key)
@@ -114,15 +115,16 @@ class Loader:
                     # Combine with the existing DataFrame (handles first iteration and subsequent
                     # ones)
                     combined = combined.merge(
-                        keyed_df, how="left", on=[keymap_key, aux_key]) if (
+                        keyed_df, how="left", on=[keymap_key, aux_key, "ESPNID"]) if (
                             combined is not None) else keyed_df
                 except AttributeError as e:
                     print(e)
 
             return combined
 
-        self.combined_bats = combine_pos_group(dfs_bats)
-        self.combined_arms = combine_pos_group(dfs_arms)
+        # dropna for ESPNID since we don't have those keys and not in the relevant universe
+        self.combined_bats = combine_pos_group(dfs_bats).dropna(subset="ESPNID")
+        self.combined_arms = combine_pos_group(dfs_arms).dropna(subset="ESPNID")
 
 
 def check_keymap_validity(df: pd.DataFrame, id_col: str, source: str) -> None:
