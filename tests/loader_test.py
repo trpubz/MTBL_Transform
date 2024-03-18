@@ -38,5 +38,5 @@ class TestLoader:
         assert isinstance(loader.combined_bats, pd.DataFrame)
         assert isinstance(loader.combined_arms, pd.DataFrame)
 
-        loader.combined_bats.to_json("./tests/fixtures/combined_bats.json")
-        loader.combined_arms.to_json("./tests/fixtures/combined_arms.json")
+        loader.combined_bats.to_json("./tests/fixtures/combined_bats.json", orient="records")
+        loader.combined_arms.to_json("./tests/fixtures/combined_arms.json", orient="records")

@@ -27,6 +27,7 @@ class Loader:
         """
         self.combined_bats = None
         self.combined_arms = None
+        self.player_universe = None
         self.extract_dir = extract_dir
         self.keymap = keymap
         self.etl_type = etl_type
@@ -38,6 +39,7 @@ class Loader:
         """
         dfs_bats = {}
         dfs_arms = {}
+        self.import_universe()
         match self.etl_type:
             case ETLType.PRE_SZN:
                 # order of keys matters here since SAVANT processing relies on FANGRAPHSID
@@ -45,6 +47,7 @@ class Loader:
                 dfs_bats["SAVANT"] = self.import_savant("bats")
                 dfs_arms["FANGRAPHS"] = self.import_projections("arms")
                 dfs_arms["SAVANT"] = self.import_savant("arms")
+
             case ETLType.REG_SZN:
                 # import managers, player universe, stats, ros projections, savant
                 # TODO:
@@ -53,12 +56,12 @@ class Loader:
         self.combine_dataframes(dfs_bats, dfs_arms)
 
     # def import_owners(self):
-        # TODO:
-        # pass
+    # TODO:
+    # pass
 
     # def import_ruleset(self):
-        # TODO:
-        # pass
+    # TODO:
+    # pass
 
     def import_savant(self, pos) -> pd.DataFrame:
         return read.read_in_as(directory=self.extract_dir,
@@ -72,12 +75,15 @@ class Loader:
                                file_type=".csv",
                                as_type=read.IOKitDataTypes.DATAFRAME)
 
-    # def import_stats(self, pos):
-    #     pass
+    def import_universe(self):
+        self.player_universe = read.read_in_as(directory=self.extract_dir,
+                                               file_name="espn_player_universe",
+                                               file_type=".json",
+                                               as_type=read.IOKitDataTypes.DATAFRAME)
 
     def combine_dataframes(self, dfs_bats: dict, dfs_arms: dict) -> None:
         """
-        Combines the pos group lists.
+        Combines the pos group lists.  Also adds the Player Universe Positions
         :param keymap: pd.Dataframe containing the joins table
         :param dfs_bats: dict of Dataframes for hitters
         :param dfs_arms: dict of Dataframes for pitchers
@@ -86,6 +92,10 @@ class Loader:
 
         def combine_pos_group(pos: dict) -> pd.DataFrame:
             combined = None
+            if self.etl_type == ETLType.PRE_SZN:
+                frame = self.player_universe
+                combined = frame[["name", "team", "positions", "espn_id"]]
+
             for source, df in pos.items():
                 # Assuming 'source_key' is the column in dfs_bats with the source-specific
                 # primary key Assuming 'combined_key' is the column in keymap with the aligned key
@@ -115,14 +125,21 @@ class Loader:
                     # Combine with the existing DataFrame (handles first iteration and subsequent
                     # ones)
                     combined = combined.merge(
-                        keyed_df, how="left", on=[keymap_key, aux_key, "ESPNID"]) if (
+                        keyed_df, how="left", left_on="espn_id", right_on="ESPNID") if (
                             combined is not None) else keyed_df
                 except AttributeError as e:
                     print(e)
 
+            combined["MLBID"] = combined["MLBID_x"]
+            combined.drop(columns=["MLBID_x", "MLBID_y"], inplace=True)
+            combined["FANGRAPHSID"] = combined["FANGRAPHSID_x"]
+            combined.drop(columns=["FANGRAPHSID_x", "FANGRAPHSID_y"], inplace=True)
+            combined["ESPNID"] = combined["ESPNID_x"]
+            combined.drop(columns=["ESPNID_x", "ESPNID_y"], inplace=True)
             return combined
 
         # dropna for ESPNID since we don't have those keys and not in the relevant universe
+        # TODO: drop _x/_y columns or combine them earlier
         self.combined_bats = combine_pos_group(dfs_bats).dropna(subset="ESPNID")
         self.combined_arms = combine_pos_group(dfs_arms).dropna(subset="ESPNID")
 

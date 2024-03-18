@@ -1,7 +1,7 @@
 # File with global variables
 # by pubins.taylor
-# v0.6.1
-# lastUpdate 16 MAR 2024
+# v0.6.2
+# lastUpdate 18 MAR 2024
 from enum import Enum
 
 DIR_EXTRACT = "/Users/Shared/BaseballHQ/resources/extract"
@@ -25,8 +25,25 @@ LG_RULESET = {
             "R", "HR", "RBI", "SBN", "OBP", "SLG"
         ],
         "PITCHING": [
-            "IP", "QS", "ERA", "WHIP", "KP9", "SVHD"
+            "IP", "QS", "ERA", "WHIP", "K/9", "SVHD"
         ]
+    },
+    "ROSTER_REQS": {
+        "BATTERS": {
+            "C": 1,
+            "1B": 1,
+            "2B": 1,
+            "3B": 1,
+            "SS": 1,
+            "OF": 3,
+            "DH": 1,
+        },
+        "BENCH": 5,
+        "PITCHERS": {
+            "SP": 3,
+            "RP": 2,
+            "P": 2
+        }
     }
 }
 
