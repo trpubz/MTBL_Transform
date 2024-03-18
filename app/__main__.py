@@ -5,7 +5,7 @@ from app.src.mtbl_globals import ETLType, LG_RULESET, NO_MANAGERS
 from app.src.keymap import KeyMap
 from app.src.loader import Loader
 from app.src.cleaner import clean_hitters, clean_pitchers
-from app.src.standardize import z_bats
+from app.src.standardize import z_bats, z_arms
 import app.src.transform as trx
 
 
@@ -24,7 +24,8 @@ def main(etl_type: ETLType):
     clean_sps, clean_rps = clean_pitchers(loader.combined_arms, etl_type)
     # standardize datasets
     bats = z_bats(clean_bats, LG_RULESET, NO_MANAGERS)
-    # add data fields
+    arms = z_arms(LG_RULESET, NO_MANAGERS, sps=clean_sps, rps=clean_rps)
+    # add value assessments
     # export datasets (pd.to_csv), if json, then PlayerKit -- pydantic
 
 

@@ -140,8 +140,10 @@ class Loader:
 
         # dropna for ESPNID since we don't have those keys and not in the relevant universe
         # TODO: drop _x/_y columns or combine them earlier
-        self.combined_bats = combine_pos_group(dfs_bats).dropna(subset="ESPNID")
-        self.combined_arms = combine_pos_group(dfs_arms).dropna(subset="ESPNID")
+        self.combined_bats = (combine_pos_group(dfs_bats)
+                              .dropna(subset="ESPNID").drop_duplicates("ESPNID"))
+        self.combined_arms = (combine_pos_group(dfs_arms)
+                              .dropna(subset="ESPNID").drop_duplicates("ESPNID"))
 
 
 def check_keymap_validity(df: pd.DataFrame, id_col: str, source: str) -> None:

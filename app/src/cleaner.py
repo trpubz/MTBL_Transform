@@ -16,10 +16,11 @@ def clean_hitters(df: pd.DataFrame, etl_type: ETLType) -> pd.DataFrame:
     columns = []
     match etl_type:
         case ETLType.PRE_SZN:
-            columns = ['ESPNID', 'FANGRAPHSID', 'Name', 'Team', 'G', 'PA', 'AB', 'H', 'HR', 'R',
-                       'RBI', 'SB', 'CS', 'SBN', 'AVG', 'OBP', 'SLG', 'OPS', 'BB%', 'K%', 'wOBA',
-                       'ISO', 'BABIP', 'wRC', 'wRAA', 'wRC+', 'WAR', 'MLBID', 'attempts',
-                       'avg_hit_angle', 'anglesweetspotpercent', 'max_hit_speed',
+            # lowercase name is used since that is ESPN's style
+            columns = ['ESPNID', 'FANGRAPHSID', 'name', 'Team', 'positions', 'G', 'PA', 'AB', 'H',
+                       'HR', 'R', 'RBI', 'SB', 'CS', 'SBN', 'AVG', 'OBP', 'SLG', 'OPS', 'BB%',
+                       'K%', 'wOBA', 'ISO', 'BABIP', 'wRC', 'wRAA', 'wRC+', 'WAR', 'MLBID',
+                       'attempts', 'avg_hit_angle', 'anglesweetspotpercent', 'max_hit_speed',
                        'avg_hit_speed', 'ev50', 'fbld', 'gb', 'max_distance', 'avg_distance',
                        'avg_hr_distance', 'ev95plus', 'ev95percent', 'barrels', 'brl_percent',
                        'brl_pa']
@@ -45,11 +46,13 @@ def clean_pitchers(df: pd.DataFrame, etl_type: ETLType) -> (pd.DataFrame, pd.Dat
     columns = []
     match etl_type:
         case ETLType.PRE_SZN:
-            columns = ['ESPNID', 'FANGRAPHSID', 'Name', 'Team', 'G', 'GS', 'IP', 'QS', 'SV', 'HLD',
-                       'SVHD', 'ERA', 'WHIP', 'K/9', 'FIP', 'BB/9', 'K/BB', 'HR/9', 'BABIP', 'WAR',
-                       'MLBID', 'p_formatted_ip', 'pa', 'k_percent', 'bb_percent', 'woba', 'xwoba',
-                       'hard_hit_percent', 'avg_best_speed', 'avg_hyper_speed',
-                       'z_swing_miss_percent', 'oz_swing_percent', 'whiff_percent', 'swing_percent']
+            # lowercase name is used since that is ESPN's style
+            columns = ['ESPNID', 'FANGRAPHSID', 'name', 'Team', 'positions', 'G', 'GS', 'IP',
+                       'QS', 'SV', 'HLD', 'SVHD', 'ERA', 'WHIP', 'K/9', 'FIP', 'BB/9', 'K/BB',
+                       'HR/9', 'BABIP', 'WAR', 'MLBID', 'p_formatted_ip', 'pa', 'k_percent',
+                       'bb_percent', 'woba', 'xwoba', 'hard_hit_percent', 'avg_best_speed',
+                       'avg_hyper_speed', 'z_swing_miss_percent', 'oz_swing_percent',
+                       'whiff_percent', 'swing_percent']
         # case ETLType.REG_SZN:
         #     pass
 
