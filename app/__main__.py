@@ -6,7 +6,7 @@ from app.src.keymap import KeyMap
 from app.src.loader import Loader
 from app.src.cleaner import clean_hitters, clean_pitchers
 from app.src.standardize import z_bats, z_arms
-import app.src.transform as trx
+from app.src.shekles import add_skekels
 
 
 def main(etl_type: ETLType):
@@ -25,7 +25,9 @@ def main(etl_type: ETLType):
     # standardize datasets
     bats = z_bats(clean_bats, LG_RULESET, NO_MANAGERS)
     arms = z_arms(LG_RULESET, NO_MANAGERS, sps=clean_sps, rps=clean_rps)
+    # bats and arms are now keyed by pos
     # add value assessments
+    pos_groups = add_skekels()
     # export datasets (pd.to_csv), if json, then PlayerKit -- pydantic
 
 

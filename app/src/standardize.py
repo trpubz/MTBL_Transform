@@ -11,7 +11,7 @@ def z_bats(df: pd.DataFrame, ruleset: dict, no_managers: int) -> dict:
     :param no_managers: Number of managers, establishes the RLP threshold
     :return: dict keyed by the pos
     """
-    pos_groups = calc_initial_rlp(df, ruleset, no_managers)
+    pos_groups = calc_initial_rlp_bats(df, ruleset, no_managers)
 
     for pos, group in pos_groups.items():
         pos_groups[pos]["bats"] = calculate_zscores(
@@ -43,7 +43,8 @@ def z_bats(df: pd.DataFrame, ruleset: dict, no_managers: int) -> dict:
                         break
 
     for pos, group in pos_groups.items():
-        rlp = rlp_group(pos_groups[pos]["bats"], ruleset["ROSTER_REQS"]["BATTERS"][pos], no_managers)
+        rlp = rlp_group(pos_groups[pos]["bats"], ruleset["ROSTER_REQS"]["BATTERS"][pos],
+                        no_managers)
         rlp = reduce_rlp_group(rlp)
         pos_groups[pos]["bats"] = calculate_zscores(
             pos, group["bats"], rlp, ruleset["SCORING"]["BATTING"])
@@ -59,7 +60,21 @@ def z_arms(ruleset: dict, no_managers: int, **kwargs) -> dict:
     :param no_managers: Number of managers, establishes the RLP threshold
     :return: dict keyed by the pos
     """
-    pos_groups = calc_initial_rlp(df, ruleset, no_managers)
+    pos_groups = calc_rlp_arms(ruleset, no_managers, **kwargs)
+
+    for pos, group in pos_groups.items():
+        pos_groups[pos]["arms"] = calculate_zscores(
+            pos, group["arms"], group["rlp"], ruleset["SCORING"]["PITCHING"])
+
+    # re-calculate based on initial sorted
+    pos_groups = calc_rlp_arms(ruleset, no_managers,
+                               sps=pos_groups["SP"]["arms"], rps=pos_groups["RP"]["arms"])
+
+    for pos, group in pos_groups.items():
+        pos_groups[pos]["arms"] = calculate_zscores(
+            pos, group["arms"], group["rlp"], ruleset["SCORING"]["PITCHING"])
+
+    return pos_groups
 
 
 def calculate_zscores(pos, df, rlp_dict, categories: list):
@@ -83,17 +98,41 @@ def calculate_zscores(pos, df, rlp_dict, categories: list):
         if cat in rlp_dict:
             rlp_mean = rlp_dict[cat]
             std = df[cat].std(ddof=1)  # Sample standard deviation
-            df["z" + cat] = np.sqrt((df[cat] - rlp_mean) / std)
+            if cat in ["ERA", "WHIP"]:  # since lower values are more desirable, need to swap num
+                df["z" + cat] = np.sqrt((rlp_mean - df[cat]) / std)
+            else:
+                df["z" + cat] = np.sqrt((df[cat] - rlp_mean) / std)
 
+    drop_cols = ["z_total", "z_swing_miss_percent", "oz_swing_percent"]
     # Calculate Total of 'z' columns
-    df["z_total"] = df.filter(like="z").drop("z_total", axis=1, errors="ignore").sum(axis=1)
+    df["z_total"] = df.filter(like="z").drop(drop_cols, axis=1, errors="ignore").sum(axis=1)
     df.sort_values("z_total", ascending=False, inplace=True)
     df.reset_index(drop=True, inplace=True)
 
     return df
 
 
-def calc_initial_rlp(df: any, ruleset: dict, no_managers: int) -> dict:
+def calc_rlp_arms(ruleset: dict, no_managers: int, **kwargs) -> dict:
+    arms = {"SP": {"arms": kwargs["sps"], "rlp": None},
+            "RP": {"arms": kwargs["rps"], "rlp": None}}
+
+    wild_card_ps = ruleset["ROSTER_REQS"]["PITCHERS"]["P"]
+    ros_sps = ruleset["ROSTER_REQS"]["PITCHERS"]["SP"]
+    wild_card_sps = math.ceil(wild_card_ps / 2)
+    ros_sps += wild_card_sps
+    wild_card_ps -= wild_card_sps
+    ros_rps = ruleset["ROSTER_REQS"]["PITCHERS"]["RP"] + wild_card_ps
+
+    arms["SP"]["rlp"] = rlp_group(arms["SP"]["arms"], ros_sps, no_managers)
+    arms["SP"]["rlp"] = reduce_rlp_group(arms["SP"]["rlp"])
+
+    arms["RP"]["rlp"] = rlp_group(arms["RP"]["arms"], ros_rps, no_managers)
+    arms["RP"]["rlp"] = reduce_rlp_group(arms["RP"]["rlp"])
+
+    return arms
+
+
+def calc_initial_rlp_bats(df: any, ruleset: dict, no_managers: int) -> dict:
     """
     Calculate the Replacement Level Players for each position group
     :param df: Dataframe with hitters

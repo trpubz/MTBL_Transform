@@ -56,6 +56,6 @@ def clean_pitchers(df: pd.DataFrame, etl_type: ETLType) -> (pd.DataFrame, pd.Dat
         # case ETLType.REG_SZN:
         #     pass
 
-    clean_sps = clean_sps[columns].sort_values("FIP", ascending=True)
-    clean_rps = clean_rps[columns].sort_values("FIP", ascending=True)
+    clean_sps = clean_sps[columns].drop(columns="SVHD").sort_values("FIP", ascending=True)
+    clean_rps = clean_rps[columns].drop(columns="QS").sort_values("FIP", ascending=True)
     return clean_sps, clean_rps
