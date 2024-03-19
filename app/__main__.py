@@ -1,11 +1,12 @@
 import os
 import argparse
 
-from app.src.mtbl_globals import ETLType
+from app.src.mtbl_globals import ETLType, LG_RULESET, NO_MANAGERS
 from app.src.keymap import KeyMap
 from app.src.loader import Loader
 from app.src.cleaner import clean_hitters, clean_pitchers
-import app.src.transform as trx
+from app.src.standardize import z_bats, z_arms
+from app.src.shekles import add_skekels
 
 
 def main(etl_type: ETLType):
@@ -22,7 +23,11 @@ def main(etl_type: ETLType):
     clean_bats = clean_hitters(loader.combined_bats, etl_type)
     clean_sps, clean_rps = clean_pitchers(loader.combined_arms, etl_type)
     # standardize datasets
-    # add data fields
+    bats = z_bats(clean_bats, LG_RULESET, NO_MANAGERS)
+    arms = z_arms(LG_RULESET, NO_MANAGERS, sps=clean_sps, rps=clean_rps)
+    # bats and arms are now keyed by pos
+    # add value assessments
+    pos_groups = add_skekels()
     # export datasets (pd.to_csv), if json, then PlayerKit -- pydantic
 
 

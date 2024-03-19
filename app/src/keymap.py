@@ -4,6 +4,7 @@ by: pubins.taylor
 date: 29 FEB 2024
 keymap.py
 """
+import io
 import json
 import os
 
@@ -36,7 +37,7 @@ class KeyMap:
             json_data = json.load(f)["data"]
             # Setting drop=False prevents the removal of the primary key column,
             # retaining it along with its name within the DataFrame.
-            keymap = pd.read_json(json.dumps(json_data))
+            keymap = pd.read_json(io.StringIO(json.dumps(json_data)))
             keymap = convert_num_id_cols(keymap)
 
             keymap.set_index(primary_key, drop=False, inplace=True)
@@ -71,8 +72,8 @@ def convert_num_id_cols(df: pd.DataFrame) -> pd.DataFrame:
         if pd.notna(x).any():  # Check for at least one non-null value
 
             for idx in range(len(x)):
-                if isinstance(x[idx], float) and not pd.isnull(x[idx]):
-                    x[idx] = str(int(x[idx]))
+                if isinstance(x.iloc[idx], float) and not pd.isnull(x.iloc[idx]):
+                    x.iloc[idx] = str(int(x.iloc[idx]))
 
             return x
         else:

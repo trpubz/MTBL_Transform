@@ -8271,25 +8271,12 @@
       "FIRSTNAME":"Shohei",
       "LASTNAME":"Ohtani",
       "TEAM":"LAA",
-      "POS":"DH",
+      "POS":"DH\/P",
       "FANGRAPHSID":"19755",
       "MLBID":"660271",
       "ESPNID":"39832",
       "BREFID":"ohtansh01",
       "FANTRAXID":"*02yc4*"
-    },
-    {
-      "PLAYERNAME":"Shohei Ohtani",
-      "BIRTHDATE":"7\/5\/1994",
-      "FIRSTNAME":"Shohei",
-      "LASTNAME":"Ohtani",
-      "TEAM":"LAA",
-      "POS":"P",
-      "FANGRAPHSID":"19755",
-      "MLBID":"660271",
-      "ESPNID":"39832",
-      "BREFID":"ohtansh01",
-      "FANTRAXID":"*06als*"
     },
     {
       "PLAYERNAME":"Robert Dugger",
