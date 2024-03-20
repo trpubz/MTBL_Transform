@@ -21,9 +21,9 @@ class TestLoader:
         yield keymap
 
     def test_instantiation(self, setup):
-        loader = Loader(setup, ETLType.PRE_SZN)
+        loader = Loader(setup, ETLType.PRE_SZN, "./tests/fixtures")
 
-        assert loader.extract_dir == DIR_EXTRACT
+        assert loader.extract_dir == "./tests/fixtures"
         assert isinstance(loader.keymap, pd.DataFrame)
         assert loader.etl_type == ETLType.PRE_SZN
 
@@ -32,7 +32,7 @@ class TestLoader:
         monkeypatch.setattr(Loader, "import_savant", mock_savant)
         monkeypatch.setattr(Loader, "import_projections", mock_projections)
 
-        loader = Loader(setup, ETLType.PRE_SZN)
+        loader = Loader(setup, ETLType.PRE_SZN, "./tests/fixtures")
         loader.load_extracted_data()
 
         assert isinstance(loader.combined_bats, pd.DataFrame)

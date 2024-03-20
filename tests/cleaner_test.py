@@ -12,14 +12,7 @@ from tests.fixtures.mock_helper import mock_savant, mock_projections
 
 class TestCleaner:
     @pytest.fixture(autouse=True)
-    def setup(self, monkeypatch):
-        # keymap = KeyMap("./tests/fixtures", primary_key="FANGRAPHSID").keymap
-        #
-        # monkeypatch.setattr(Loader, "import_savant", mock_savant)
-        # monkeypatch.setattr(Loader, "import_projections", mock_projections)
-        #
-        # loader = Loader(keymap, ETLType.PRE_SZN)
-        # loader.load_extracted_data()
+    def setup(self):
         self.combined_bats = pd.read_json("./tests/fixtures/combined_bats.json")
         self.combined_arms = pd.read_json("./tests/fixtures/combined_arms.json")
 
@@ -35,5 +28,4 @@ class TestCleaner:
         assert isinstance(cleaned_sps, pd.DataFrame)
         assert "ESPNID", "FANGRAPHSID" in cleaned_sps.columns.tolist()
         assert cleaned_sps.iloc[0]["FIP"] <= cleaned_sps.iloc[1]["FIP"]
-
         assert "SVHD" in cleaned_rps.columns.tolist()
