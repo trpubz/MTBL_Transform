@@ -70,10 +70,22 @@ class Loader:
                                as_type=read.IOKitDataTypes.DATAFRAME)
 
     def import_projections(self, pos) -> pd.DataFrame:
-        return read.read_in_as(directory=self.extract_dir,
-                               file_name=pos + "_fg",
-                               file_type=".csv",
-                               as_type=read.IOKitDataTypes.DATAFRAME)
+        if pos == "bats":
+            int_cols = ['G', 'PA', 'AB', 'H', 'HR', 'R', 'RBI', 'SB', 'CS']
+            float_cols = ['AVG', 'OBP', 'SLG', 'OPS', 'BB%', 'K%', 'wOBA', 'ISO', 'BABIP', 'wRC',
+                          'wRAA', 'wRC+', 'WAR']
+        else:
+            int_cols = ['G', 'GS', 'QS', 'SV', 'HLD']
+            float_cols = ['IP', 'ERA', 'WHIP', 'K/9', 'FIP', 'BB/9', 'K/BB', 'HR/9', 'BABIP', 'WAR']
+        str_cols = ['PlayerId', 'Name', 'Team']
+        df = read.read_in_as(directory=self.extract_dir,
+                             file_name=pos + "_fg",
+                             file_type=".csv",
+                             as_type=read.IOKitDataTypes.DATAFRAME)
+        df[int_cols] = df[int_cols].astype(int)
+        df[float_cols] = df[float_cols].astype(float)
+        df[str_cols] = df[str_cols].astype(str)
+        return df
 
     def import_universe(self):
         self.player_universe = read.read_in_as(directory=self.extract_dir,
