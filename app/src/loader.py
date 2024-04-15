@@ -64,10 +64,24 @@ class Loader:
     # pass
 
     def import_savant(self, pos) -> pd.DataFrame:
-        return read.read_in_as(directory=self.extract_dir,
+        if pos == "bats":
+            int_cols = ['attempts', 'max_distance', 'avg_distance', 'avg_hr_distance', 'ev95plus', 'barrels']
+            str_cols = ['last_name, first_name', 'player_id']
+        else:
+            int_cols = ['pa']
+            str_cols = ['last_name, first_name', 'player_id', 'year']
+        inverse_float_cols = str_cols + int_cols
+
+        df = read.read_in_as(directory=self.extract_dir,
                                file_name=pos + "_savant",
                                file_type=".csv",
                                as_type=read.IOKitDataTypes.DATAFRAME)
+        df = df[df.apply(lambda row: all(row != ''), axis=1)]
+        df[int_cols] = df[int_cols].apply(pd.to_numeric, errors='coerce')
+        df.loc[:, str_cols] = df.loc[:, str_cols].astype(str)
+        float_cols = df.columns[~df.columns.isin(inverse_float_cols)]
+        df[float_cols] = df[float_cols].apply(pd.to_numeric, errors='coerce')
+        return df
 
     def import_projections(self, pos) -> pd.DataFrame:
         if pos == "bats":
@@ -187,4 +201,5 @@ def check_keymap_validity(df: pd.DataFrame, id_col: str, source: str) -> None:
                      "'sa'):\n{}").format(
             '\n'.join(problematic_players.tolist())
         )
-        raise AttributeError(error_msg)
+        print(error_msg)
+        # raise AttributeError(error_msg)

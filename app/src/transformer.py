@@ -46,6 +46,7 @@ def z_bats(df: pd.DataFrame, ruleset: dict, no_managers: int) -> dict:
         rlp = rlp_group(pos_groups[pos]["players"], ruleset["ROSTER_REQS"]["BATTERS"][pos],
                         no_managers)
         rlp = reduce_rlp_group(rlp)
+        group["players"]["pri_pos"] = pos
         pos_groups[pos]["players"] = calculate_zscores(
             pos, group["players"], rlp, ruleset["SCORING"]["BATTING"])
 
