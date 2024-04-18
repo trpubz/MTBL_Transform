@@ -6,6 +6,7 @@ date: 13 MAR 2024
 """
 import os
 
+import numpy as np
 import pandas as pd
 
 from mtbl_iokit import read
@@ -40,18 +41,11 @@ class Loader:
         dfs_bats = {}
         dfs_arms = {}
         self.import_universe()
-        match self.etl_type:
-            case ETLType.PRE_SZN:
-                # order of keys matters here since SAVANT processing relies on FANGRAPHSID
-                dfs_bats["FANGRAPHS"] = self.import_projections("bats")
-                dfs_bats["SAVANT"] = self.import_savant("bats")
-                dfs_arms["FANGRAPHS"] = self.import_projections("arms")
-                dfs_arms["SAVANT"] = self.import_savant("arms")
-
-            case ETLType.REG_SZN:
-                # import managers, player universe, stats, ros projections, savant
-                # TODO:
-                pass
+        # order of keys matters here since SAVANT processing relies on FANGRAPHSID
+        dfs_bats["FANGRAPHS"] = self.import_fangraphs("bats")
+        dfs_bats["SAVANT"] = self.import_savant("bats")
+        dfs_arms["FANGRAPHS"] = self.import_fangraphs("arms")
+        dfs_arms["SAVANT"] = self.import_savant("arms")
 
         self.combine_dataframes(dfs_bats, dfs_arms)
 
@@ -65,7 +59,8 @@ class Loader:
 
     def import_savant(self, pos) -> pd.DataFrame:
         if pos == "bats":
-            int_cols = ['attempts', 'max_distance', 'avg_distance', 'avg_hr_distance', 'ev95plus', 'barrels']
+            int_cols = ['attempts', 'max_distance', 'avg_distance', 'avg_hr_distance', 'ev95plus',
+                        'barrels']
             str_cols = ['last_name, first_name', 'player_id']
         else:
             int_cols = ['pa']
@@ -73,17 +68,21 @@ class Loader:
         inverse_float_cols = str_cols + int_cols
 
         df = read.read_in_as(directory=self.extract_dir,
-                               file_name=pos + "_savant",
-                               file_type=".csv",
-                               as_type=read.IOKitDataTypes.DATAFRAME)
+                             file_name=pos + "_savant",
+                             file_type=".csv",
+                             as_type=read.IOKitDataTypes.DATAFRAME)
+
+        # remove completely empty rows, may happen with poorly constructed .csv
         df = df[df.apply(lambda row: all(row != ''), axis=1)]
-        df[int_cols] = df[int_cols].apply(pd.to_numeric, errors='coerce')
+        df = cast_columns(df, int_cols, pd.Int64Dtype)
+        # df[int_cols] = df[int_cols].apply(pd.to_numeric, errors='coerce')
         df.loc[:, str_cols] = df.loc[:, str_cols].astype(str)
         float_cols = df.columns[~df.columns.isin(inverse_float_cols)]
-        df[float_cols] = df[float_cols].apply(pd.to_numeric, errors='coerce')
+        df = cast_columns(df, float_cols, pd.Float64Dtype)
+        # df[float_cols] = df[float_cols].apply(pd.to_numeric, errors='coerce')
         return df
 
-    def import_projections(self, pos) -> pd.DataFrame:
+    def import_fangraphs(self, pos) -> pd.DataFrame:
         if pos == "bats":
             int_cols = ['G', 'PA', 'AB', 'H', 'HR', 'R', 'RBI', 'SB', 'CS']
             float_cols = ['AVG', 'OBP', 'SLG', 'OPS', 'BB%', 'K%', 'wOBA', 'ISO', 'BABIP', 'wRC',
@@ -91,26 +90,51 @@ class Loader:
         else:
             int_cols = ['G', 'GS', 'QS', 'SV', 'HLD']
             float_cols = ['IP', 'ERA', 'WHIP', 'K/9', 'FIP', 'BB/9', 'K/BB', 'HR/9', 'BABIP', 'WAR']
+        # add the proj_ prefix for columns
+        proj_int_cols = ["proj_" + col for col in int_cols]
+        proj_float_cols = ["proj_" + col for col in float_cols]
         str_cols = ['PlayerId', 'Name', 'Team']
+
+        match self.etl_type:
+            case ETLType.PRE_SZN:
+                fangraphs_suffix = "_pre_season"
+            case ETLType.REG_SZN:
+                fangraphs_suffix = "_regular_season"
+                str_cols.append("MLBAMID")
+
         df = read.read_in_as(directory=self.extract_dir,
-                             file_name=pos + "_fg",
+                             file_name=pos + fangraphs_suffix,
                              file_type=".csv",
                              as_type=read.IOKitDataTypes.DATAFRAME)
-        df[int_cols] = df[int_cols].astype(int)
-        df[float_cols] = df[float_cols].astype(float)
+
+        df = cast_columns(df, int_cols, pd.Int64Dtype)
+        df = cast_columns(df, proj_int_cols, pd.Int64Dtype)
+        df = cast_columns(df, float_cols, pd.Float64Dtype)
+        df = cast_columns(df, proj_float_cols, pd.Float64Dtype)
         df[str_cols] = df[str_cols].astype(str)
+
         return df
 
     def import_universe(self):
-        self.player_universe = read.read_in_as(directory=self.extract_dir,
-                                               file_name="espn_player_universe",
-                                               file_type=".json",
-                                               as_type=read.IOKitDataTypes.DATAFRAME)
+        df = read.read_in_as(directory=self.extract_dir,
+                             file_name="espn_player_universe",
+                             file_type=".json",
+                             as_type=read.IOKitDataTypes.DATAFRAME)
+
+        player_stats = pd.json_normalize(df["player_stats"])
+        df.drop(columns="player_stats", inplace=True)
+        flat_df = pd.concat([df, player_stats], axis=1)
+        exclude_cols = ["name", "team", "positions", "espn_id", "owner", "ovr"]
+        stat_cols = flat_df.columns[~flat_df.columns.isin(exclude_cols)]
+
+        if "PRTR" in flat_df.columns:  # PRTR only available for in-season player universe
+            flat_df.rename(columns={col: "prtr_" + col for col in stat_cols}, inplace=True)
+
+        self.player_universe = flat_df
 
     def combine_dataframes(self, dfs_bats: dict, dfs_arms: dict) -> None:
         """
         Combines the pos group lists.  Also adds the Player Universe Positions
-        :param keymap: pd.Dataframe containing the joins table
         :param dfs_bats: dict of Dataframes for hitters
         :param dfs_arms: dict of Dataframes for pitchers
         :return: None
@@ -118,9 +142,11 @@ class Loader:
 
         def combine_pos_group(pos: dict) -> pd.DataFrame:
             combined = None
-            if self.etl_type == ETLType.PRE_SZN:
-                frame = self.player_universe
-                combined = frame[["name", "team", "positions", "espn_id"]]
+            universe = self.player_universe
+            match self.etl_type:
+                case ETLType.PRE_SZN:
+                    # TODO: consider adding ESPN projections to the mix
+                    combined = universe[["name", "team", "positions", "espn_id"]]
 
             for source, df in pos.items():
                 # Assuming 'source_key' is the column in dfs_bats with the source-specific
@@ -203,3 +229,12 @@ def check_keymap_validity(df: pd.DataFrame, id_col: str, source: str) -> None:
         )
         print(error_msg)
         # raise AttributeError(error_msg)
+
+
+def cast_columns(df, cols, astype) -> pd.DataFrame:
+    cast_cols = df.columns.intersection(cols)
+    cast_df = df.copy()
+    cast_df[cast_cols] = cast_df[cast_cols].apply(pd.to_numeric, errors="coerce").astype(
+        astype)
+
+    return cast_df

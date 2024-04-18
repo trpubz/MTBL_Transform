@@ -16,8 +16,8 @@ def main(etl_type: ETLType):
     Note: if ETLType is PRE_SZN, keymap primary key should be set to other than ESPNID.
     :param etl_type: Enum for PRE_SZN or REG_SZN
     """
-    km = KeyMap(primary_key="FANGRAPHSID")  # object has keymap attribute
-    loader = Loader(km.keymap, etl_type=ETLType.PRE_SZN)  # object has combined dfs
+    km = KeyMap(primary_key="FANGRAPHSID").keymap  # object has keymap attribute
+    loader = Loader(keymap=km, etl_type=etl_type)  # object has combined dfs
     loader.load_extracted_data()
     # clean data
     clean_bats = clean_hitters(loader.combined_bats, etl_type)

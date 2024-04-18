@@ -6,17 +6,23 @@ import pytest
 from app.src.mtbl_globals import ETLType, DIR_EXTRACT
 from app.src.keymap import KeyMap
 from app.src.loader import Loader
-from tests.fixtures.mock_helper import mock_savant, mock_projections
+from tests.fixtures.mock_helper import mock_savant, mock_fangraphs, mock_savant_reg_szn, \
+    mock_fangraphs_reg_szn
 
 from mtbl_iokit import read
 
 
 class TestLoader:
-    @pytest.fixture(autouse=True)
+    @pytest.fixture
     def setup(self):
         # optionally refresh keymap during mods; comment out line if desired to use static file
         # KeyMap.refresh_keymap("./tests/fixtures")
         # setting to alt primary key since testing with preseason data
+        keymap = KeyMap("./tests/fixtures", primary_key="FANGRAPHSID").keymap
+        yield keymap
+
+    @pytest.fixture
+    def setup_reg_szn(self):
         keymap = KeyMap("./tests/fixtures", primary_key="FANGRAPHSID").keymap
         yield keymap
 
@@ -28,9 +34,8 @@ class TestLoader:
         assert loader.etl_type == ETLType.PRE_SZN
 
     def test_load_extracted_data(self, setup, monkeypatch):
-
         monkeypatch.setattr(Loader, "import_savant", mock_savant)
-        monkeypatch.setattr(Loader, "import_projections", mock_projections)
+        monkeypatch.setattr(Loader, "import_fangraphs", mock_fangraphs)
 
         loader = Loader(setup, ETLType.PRE_SZN, "./tests/fixtures")
         loader.load_extracted_data()
@@ -40,3 +45,17 @@ class TestLoader:
 
         loader.combined_bats.to_json("./tests/fixtures/combined_bats.json", orient="records")
         loader.combined_arms.to_json("./tests/fixtures/combined_arms.json", orient="records")
+
+    def test_load_extracted_data_reg_szn(self, setup_reg_szn, monkeypatch):
+        # monkeypatch.setattr(Loader, "import_savant", mock_savant_reg_szn)
+        # monkeypatch.setattr(Loader, "import_fangraphs", mock_fangraphs_reg_szn)
+        loader = Loader(setup_reg_szn, ETLType.REG_SZN, "./tests/fixtures_reg_szn")
+        loader.load_extracted_data()
+
+        assert isinstance(loader.combined_bats, pd.DataFrame)
+        assert isinstance(loader.combined_arms, pd.DataFrame)
+
+        loader.combined_bats.to_json("./tests/fixtures_reg_szn/combined_bats.json",
+                                     orient="records")
+        loader.combined_arms.to_json("./tests/fixtures_reg_szn/combined_arms.json",
+                                     orient="records")

@@ -7,7 +7,7 @@ from app.src.mtbl_globals import ETLType
 from app.src import cleaner
 from app.src.loader import Loader
 from app.src.keymap import KeyMap
-from tests.fixtures.mock_helper import mock_savant, mock_projections
+from tests.fixtures.mock_helper import mock_savant, mock_fangraphs
 
 
 class TestCleaner:
