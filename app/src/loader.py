@@ -59,11 +59,11 @@ class Loader:
 
     def import_savant(self, pos) -> pd.DataFrame:
         if pos == "bats":
-            int_cols = ['attempts', 'max_distance', 'avg_distance', 'avg_hr_distance', 'ev95plus',
-                        'barrels']
-            str_cols = ['last_name, first_name', 'player_id']
+            int_cols = ['pa', 'n_bolts']
+            str_cols = ['last_name, first_name', 'player_id', 'year']
         else:
-            int_cols = ['pa']
+            int_cols = ['p_game', 'hit', 'strikeout', 'walk', 'p_save',
+                        'p_quality_start', 'p_hold', 'p_starting_p', 'SVHD']
             str_cols = ['last_name, first_name', 'player_id', 'year']
         inverse_float_cols = str_cols + int_cols
 
@@ -74,12 +74,11 @@ class Loader:
 
         # remove completely empty rows, may happen with poorly constructed .csv
         df = df[df.apply(lambda row: all(row != ''), axis=1)]
-        df = cast_columns(df, int_cols, pd.Int64Dtype)
-        # df[int_cols] = df[int_cols].apply(pd.to_numeric, errors='coerce')
-        df.loc[:, str_cols] = df.loc[:, str_cols].astype(str)
+        df = cast_num_columns(df, int_cols, pd.Int64Dtype)
         float_cols = df.columns[~df.columns.isin(inverse_float_cols)]
-        df = cast_columns(df, float_cols, pd.Float64Dtype)
+        df = cast_num_columns(df, float_cols, pd.Float64Dtype)
         # df[float_cols] = df[float_cols].apply(pd.to_numeric, errors='coerce')
+        df.loc[:, str_cols] = df.loc[:, str_cols].astype(str)
         return df
 
     def import_fangraphs(self, pos) -> pd.DataFrame:
@@ -107,10 +106,10 @@ class Loader:
                              file_type=".csv",
                              as_type=read.IOKitDataTypes.DATAFRAME)
 
-        df = cast_columns(df, int_cols, pd.Int64Dtype)
-        df = cast_columns(df, proj_int_cols, pd.Int64Dtype)
-        df = cast_columns(df, float_cols, pd.Float64Dtype)
-        df = cast_columns(df, proj_float_cols, pd.Float64Dtype)
+        df = cast_num_columns(df, int_cols, pd.Int64Dtype)
+        df = cast_num_columns(df, proj_int_cols, pd.Int64Dtype)
+        df = cast_num_columns(df, float_cols, pd.Float64Dtype)
+        df = cast_num_columns(df, proj_float_cols, pd.Float64Dtype)
         df[str_cols] = df[str_cols].astype(str)
 
         return df
@@ -231,7 +230,7 @@ def check_keymap_validity(df: pd.DataFrame, id_col: str, source: str) -> None:
         # raise AttributeError(error_msg)
 
 
-def cast_columns(df, cols, astype) -> pd.DataFrame:
+def cast_num_columns(df, cols, astype) -> pd.DataFrame:
     cast_cols = df.columns.intersection(cols)
     cast_df = df.copy()
     cast_df[cast_cols] = cast_df[cast_cols].apply(pd.to_numeric, errors="coerce").astype(
