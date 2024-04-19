@@ -60,11 +60,11 @@ class Loader:
     def import_savant(self, pos) -> pd.DataFrame:
         if pos == "bats":
             int_cols = ['pa', 'n_bolts']
-            str_cols = ['last_name, first_name', 'player_id', 'year']
         else:
             int_cols = ['p_game', 'hit', 'strikeout', 'walk', 'p_save',
                         'p_quality_start', 'p_hold', 'p_starting_p', 'SVHD']
-            str_cols = ['last_name, first_name', 'player_id', 'year']
+
+        str_cols = ['last_name, first_name', 'player_id', 'year']
         inverse_float_cols = str_cols + int_cols
 
         df = read.read_in_as(directory=self.extract_dir,
@@ -77,7 +77,6 @@ class Loader:
         df = cast_num_columns(df, int_cols, pd.Int64Dtype)
         float_cols = df.columns[~df.columns.isin(inverse_float_cols)]
         df = cast_num_columns(df, float_cols, pd.Float64Dtype)
-        # df[float_cols] = df[float_cols].apply(pd.to_numeric, errors='coerce')
         df.loc[:, str_cols] = df.loc[:, str_cols].astype(str)
         return df
 
@@ -211,21 +210,25 @@ def check_keymap_validity(df: pd.DataFrame, id_col: str, source: str) -> None:
     :return:
     """
     problematic_players = None
-
+    error_source = ""
     match source:
         case "FANGRAPHS":
-            problematic_players = df[df[id_col].isna()]["Name"]
+            problematic_players = df[df[id_col].isna()][["Name", "PlayerId", "MLBAMID"]]
+            error_source = ("Player shows up in FANGRAPHS data, but not in KeyMap.\n"
+                            "Name, PlayerId, MLBAMID")
         case "SAVANT":
             # FANGRAPHSID cannot start with 'sa' and be found in the savant data.
             no_nas_df = df[df[id_col].notna()]
             problematic_players = no_nas_df[no_nas_df["FANGRAPHSID"].str.startswith(
-                'sa')]["last_name, first_name"]
+                'sa')][["last_name, first_name", "player_id", "FANGRAPHSID", "ESPNID"]]
+            error_source = ("Players found in SAVANT but have a minor league FANGRAPHS ID, "
+                            "update with pro-FANGRAPHSID.\n"
+                            "Name, player_id, FANGRAPHSID, ESPNID")
 
     if not problematic_players.empty:
-        error_msg = ("Keymap Error: The following players have problematic IDs (starting with "
-                     "'sa'):\n{}").format(
-            '\n'.join(problematic_players.tolist())
-        )
+        error_msg = "Keymap Error: {}:\n{}".format(error_source,
+                                                   problematic_players.to_string()
+                                                   )
         print(error_msg)
         # raise AttributeError(error_msg)
 
