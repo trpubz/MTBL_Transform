@@ -23,7 +23,7 @@ class TestLoader:
 
     @pytest.fixture
     def setup_reg_szn(self):
-        keymap = KeyMap("./tests/fixtures", primary_key="FANGRAPHSID").keymap
+        keymap = KeyMap("./tests/fixtures_reg_szn", primary_key="FANGRAPHSID").keymap
         yield keymap
 
     def test_instantiation(self, setup):

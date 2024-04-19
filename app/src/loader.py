@@ -218,16 +218,14 @@ def check_keymap_validity(df: pd.DataFrame, id_col: str, source: str) -> None:
     match source:
         case "FANGRAPHS":
             problematic_players = df[df[id_col].isna()][["Name", "PlayerId", "MLBAMID"]]
-            error_source = ("Player shows up in FANGRAPHS data, but not in KeyMap.\n"
-                            "Name, PlayerId, MLBAMID")
+            error_source = ("Player shows up in FANGRAPHS data, but not in KeyMap.\n")
         case "SAVANT":
             # FANGRAPHSID cannot start with 'sa' and be found in the savant data.
             no_nas_df = df[df[id_col].notna()]
             problematic_players = no_nas_df[no_nas_df["FANGRAPHSID"].str.startswith(
                 'sa')][["last_name, first_name", "player_id", "FANGRAPHSID", "ESPNID"]]
             error_source = ("Players found in SAVANT but have a minor league FANGRAPHS ID, "
-                            "update with pro-FANGRAPHSID.\n"
-                            "Name, player_id, FANGRAPHSID, ESPNID")
+                            "update with pro-FANGRAPHSID.\n")
 
     if not problematic_players.empty:
         error_msg = "Keymap Error: {}:\n{}".format(error_source,
