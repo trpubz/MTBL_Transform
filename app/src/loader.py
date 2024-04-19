@@ -73,7 +73,7 @@ class Loader:
                              as_type=read.IOKitDataTypes.DATAFRAME)
 
         # remove completely empty rows, may happen with poorly constructed .csv
-        df = df[df.apply(lambda row: all(row != ''), axis=1)]
+        df = df[df.apply(lambda row: not all(row == ''), axis=1)]
         df = cast_num_columns(df, int_cols, pd.Int64Dtype)
         float_cols = df.columns[~df.columns.isin(inverse_float_cols)]
         df = cast_num_columns(df, float_cols, pd.Float64Dtype)
@@ -141,10 +141,13 @@ class Loader:
         def combine_pos_group(pos: dict) -> pd.DataFrame:
             combined = None
             universe = self.player_universe
+
             match self.etl_type:
                 case ETLType.PRE_SZN:
                     # TODO: consider adding ESPN projections to the mix
                     combined = universe[["name", "team", "positions", "espn_id"]]
+                case ETLType.REG_SZN:
+                    combined = universe
 
             for source, df in pos.items():
                 # Assuming 'source_key' is the column in dfs_bats with the source-specific
@@ -186,6 +189,7 @@ class Loader:
             combined.drop(columns=["FANGRAPHSID_x", "FANGRAPHSID_y"], inplace=True)
             combined["ESPNID"] = combined["ESPNID_x"]
             combined.drop(columns=["ESPNID_x", "ESPNID_y"], inplace=True)
+
             return combined
 
         # dropna for ESPNID since we don't have those keys and not in the relevant universe

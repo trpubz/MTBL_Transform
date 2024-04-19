@@ -46,7 +46,7 @@ class TestKeymap:
 
     # @pytest.mark.skip(reason="network call")
     def test_refresh_keymap(self):
-        test_dir = "./tests/fixtures"
+        test_dir = "./tests/fixtures_reg_szn"
         KeyMap.refresh_keymap(test_dir)
 
         expected_file = "mtbl_keymap.json"  # Example filename
