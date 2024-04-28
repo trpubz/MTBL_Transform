@@ -22,7 +22,7 @@ def fangraphs_fixture(pos, fix_dir="./tests/fixtures") -> ():
     """
     file_name = pos + "_regular_season" if (
             fix_dir == "./tests/fixtures_reg_szn") else \
-        (pos + "_fg")
+        (pos + "_preseason")
     return read.read_in_as(directory=fix_dir,
                            file_name=file_name,
                            file_type=".csv",

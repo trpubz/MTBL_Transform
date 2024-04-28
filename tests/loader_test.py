@@ -34,8 +34,8 @@ class TestLoader:
         assert loader.etl_type == ETLType.PRE_SZN
 
     def test_load_extracted_data(self, setup, monkeypatch):
-        monkeypatch.setattr(Loader, "import_savant", mock_savant)
-        monkeypatch.setattr(Loader, "import_fangraphs", mock_fangraphs)
+        # monkeypatch.setattr(Loader, "import_savant", mock_savant)
+        # monkeypatch.setattr(Loader, "import_fangraphs", mock_fangraphs)
 
         loader = Loader(setup, ETLType.PRE_SZN, "./tests/fixtures")
         loader.load_extracted_data()
@@ -43,8 +43,10 @@ class TestLoader:
         assert isinstance(loader.combined_bats, pd.DataFrame)
         assert isinstance(loader.combined_arms, pd.DataFrame)
 
-        loader.combined_bats.to_json("./tests/fixtures/combined_bats.json", orient="records")
-        loader.combined_arms.to_json("./tests/fixtures/combined_arms.json", orient="records")
+        loader.combined_bats.to_json("./tests/fixtures/combined_bats.json",
+                                     orient="records", indent=2)
+        loader.combined_arms.to_json("./tests/fixtures/combined_arms.json",
+                                     orient="records", indent=2)
 
     def test_load_extracted_data_reg_szn(self, setup_reg_szn, monkeypatch):
         # monkeypatch.setattr(Loader, "import_savant", mock_savant_reg_szn)
@@ -56,6 +58,6 @@ class TestLoader:
         assert isinstance(loader.combined_arms, pd.DataFrame)
 
         loader.combined_bats.to_json("./tests/fixtures_reg_szn/combined_bats.json",
-                                     orient="records")
+                                     orient="records", indent=2)
         loader.combined_arms.to_json("./tests/fixtures_reg_szn/combined_arms.json",
-                                     orient="records")
+                                     orient="records", indent=2)

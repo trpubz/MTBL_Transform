@@ -95,7 +95,7 @@ class Loader:
 
         match self.etl_type:
             case ETLType.PRE_SZN:
-                fangraphs_suffix = "_pre_season"
+                fangraphs_suffix = "_preseason"
             case ETLType.REG_SZN:
                 fangraphs_suffix = "_regular_season"
                 str_cols.append("MLBAMID")
@@ -183,21 +183,39 @@ class Loader:
                 except AttributeError as e:
                     print(e)
 
-            combined["MLBID"] = combined["MLBID_x"]
-            combined.drop(columns=["MLBID_x", "MLBID_y"], inplace=True)
-            combined["FANGRAPHSID"] = combined["FANGRAPHSID_x"]
-            combined.drop(columns=["FANGRAPHSID_x", "FANGRAPHSID_y"], inplace=True)
-            combined["ESPNID"] = combined["ESPNID_x"]
-            combined.drop(columns=["ESPNID_x", "ESPNID_y"], inplace=True)
+            # column clean up
+            combined["MLBID"] = combined["player_id"]
+            # drop year in REG_SZN but leave in PRE_SZN
+            combined.drop(columns=["MLBID_x", "MLBID_y", "player_id",
+                                   "last_name, first_name"],
+                          inplace=True)
+            combined["FANGRAPHSID"] = combined["PlayerId"]
+            combined.drop(columns=["FANGRAPHSID_x", "FANGRAPHSID_y", "PlayerId", "Name",
+                                   "Team"],
+                          inplace=True)
+            combined["ESPNID"] = combined["espn_id"]
+            combined.drop(columns=["ESPNID_x", "ESPNID_y", "espn_id"],
+                          inplace=True)
+
+            match self.etl_type:
+                case ETLType.REG_SZN:
+                    combined.drop(columns=["year"],
+                                  inplace=True)
 
             return combined
 
         # dropna for ESPNID since we don't have those keys and not in the relevant universe
         # TODO: drop _x/_y columns or combine them earlier
         self.combined_bats = (combine_pos_group(dfs_bats)
-                              .dropna(subset="ESPNID").drop_duplicates("ESPNID"))
+                              .dropna(subset="proj_R")
+                              .drop_duplicates("ESPNID")
+                              .drop(columns=["prtr_IP", "prtr_QS", "prtr_ERA", "prtr_WHIP",
+                                             "prtr_K/9", "prtr_SVHD"], errors="ignore"))
         self.combined_arms = (combine_pos_group(dfs_arms)
-                              .dropna(subset="ESPNID").drop_duplicates("ESPNID"))
+                              .dropna(subset="proj_IP")
+                              .drop_duplicates("ESPNID")
+                              .drop(columns=["prtr_R", "prtr_HR", "prtr_RBI", "prtr_SBN",
+                                             "prtr_OBP", "prtr_SLG"], errors="ignore"))
 
 
 def check_keymap_validity(df: pd.DataFrame, id_col: str, source: str) -> None:
@@ -217,7 +235,8 @@ def check_keymap_validity(df: pd.DataFrame, id_col: str, source: str) -> None:
     error_source = ""
     match source:
         case "FANGRAPHS":
-            problematic_players = df[df[id_col].isna()][["Name", "PlayerId", "MLBAMID"]]
+            valid_eval_cols = df.columns.intersection(["Name", "PlayerId", "MLBAMID"])
+            problematic_players = df[df[id_col].isna()][valid_eval_cols]
             error_source = ("Player shows up in FANGRAPHS data, but not in KeyMap.\n")
         case "SAVANT":
             # FANGRAPHSID cannot start with 'sa' and be found in the savant data.

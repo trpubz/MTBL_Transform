@@ -27,11 +27,10 @@ def main(etl_type: ETLType):
     arms = z_arms(LG_RULESET, NO_MANAGERS, sps=clean_sps, rps=clean_rps)
     # bats and arms are now keyed by pos
     all_players = bats.copy().update(arms)
-    # add value assessments
-    if etl_type == ETLType.PRE_SZN:
-        budget_pref = {"bats": 0.65, "sps": 0.20, "rps": .15}
-        app = Appraiser(LG_RULESET, NO_MANAGERS, budget_pref, bats=bats, arms=arms)
-        app.add_skekels()
+
+    budget_pref = {"bats": 0.65, "sps": 0.20, "rps": .15}
+    app = Appraiser(LG_RULESET, NO_MANAGERS, budget_pref, bats=bats, arms=arms)
+    app.add_skekels()
 
     for pos, pos_group in app.pos_groups.items():
         export_dataframe(pos_group["players"], "mtbl_" + pos.lower(), ".json", DIR_TRANSFORM)
