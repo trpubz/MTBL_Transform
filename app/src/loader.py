@@ -59,7 +59,7 @@ class Loader:
 
     def import_savant(self, pos) -> pd.DataFrame:
         if pos == "bats":
-            int_cols = ['pa', 'n_bolts']
+            int_cols = ['pa', 'n_bolts', 'r_total_stolen_base', 'r_total_caught_stealing']
         else:
             int_cols = ['p_game', 'hit', 'strikeout', 'walk', 'p_save',
                         'p_quality_start', 'p_hold', 'p_starting_p', 'SVHD']

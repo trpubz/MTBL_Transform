@@ -22,25 +22,34 @@ class Cleaner:
         :return: cleaned bats dataframe
         """
         self.bats["proj_SBN"] = self.bats["proj_SB"] - self.bats["proj_CS"]
+        self.bats["SBN"] = self.bats["r_total_stolen_base"] - self.bats["r_total_caught_stealing"]
         clean_bats = None
         columns = ['ESPNID', 'FANGRAPHSID', 'MLBID', 'name', 'team', 'positions',
+                   'proj_G', 'proj_PA', 'proj_AB', 'proj_H', 'proj_HR', 'proj_R', 'proj_RBI',
+                   'proj_SBN', 'proj_AVG', 'proj_OBP', 'proj_SLG', 'proj_OPS', 'proj_BB%', 'proj_K%',
+                   'proj_wOBA', 'proj_ISO', 'proj_BABIP', 'proj_wRC', 'proj_wRAA', 'proj_wRC+',
+                   'proj_WAR',
+                   'pa', 'xslg', 'woba', 'xwoba', 'xobp', "sweet_spot_percent",
+                   "barrel_batted_rate", "hard_hit_percent", "avg_best_speed", "avg_hyper_speed",
+                   "oz_swing_percent", "n_bolts", "xwOBA_diff", "xSLG_diff", "xOBP_diff"
                    ]
+        sort_value = ""
+
         match self.etl_type:
             case ETLType.PRE_SZN:
-                columns.append(['G', 'PA', 'AB', 'H', 'HR', 'R', 'RBI', 'SB', 'CS', 'SBN', 'AVG', 'OBP', 'SLG', 'OPS',
-                                'BB%', 'K%', 'wOBA', 'ISO', 'BABIP', 'wRC', 'wRAA', 'wRC+',
-                                'WAR',
-                                'attempts', 'avg_hit_angle', 'anglesweetspotpercent',
-                                'max_hit_speed', 'avg_hit_speed', 'ev50', 'fbld', 'gb',
-                                'max_distance', 'avg_distance', 'avg_hr_distance', 'ev95plus',
-                                'ev95percent', 'barrels', 'brl_percent', 'brl_pa'])
+                columns += ['year']
+                sort_value = "proj_wRC+"
             case ETLType.REG_SZN:
-                columns.append(['owner',
-                                'prtr_%ROST', 'prtr_PRTR', 'prtr_H', 'prtr_HR', 'prtr_R',
-                                'prtr_RBI', 'prtr_SBN', 'prtr_OBP', 'prtr_SLG'])
+                columns += ['owner',
+                            'prtr_%ROST', 'prtr_PRTR', 'prtr_HR', 'prtr_R',
+                            'prtr_RBI', 'prtr_SBN', 'prtr_OBP', 'prtr_SLG',
+                            'G', 'PA', 'HR', 'R', 'RBI', 'SBN', 'AVG', 'OBP', 'SLG',
+                            'on_base_plus_slg', 'BB%', 'K%', 'wOBA', 'ISO', 'BABIP',
+                            'wRC+', 'WAR'
+                            ]
+                sort_value = "wRC+"
 
-        self.bats["SBN"] = self.bats["SB"] - self.bats["CS"]
-        clean_bats = self.bats[columns].sort_values(by="wRAA", ascending=False)
+        clean_bats = self.bats[columns].sort_values(by=sort_value, ascending=False)
 
         return clean_bats
 
@@ -57,21 +66,20 @@ class Cleaner:
                    'proj_ERA', 'proj_WHIP', 'proj_K/9', 'proj_FIP', 'proj_BB/9', 'proj_K/BB',
                    'proj_HR/9', 'proj_BABIP', 'proj_WAR',
                    'woba', 'xwoba', "xwOBA_diff", 'hard_hit_percent', 'avg_best_speed',
-                   'avg_hyper_speed', 'z_swing_miss_percent', 'oz_swing_percent', 'whiff_percent',
-                   'swing_percent']
+                   'avg_hyper_speed', 'whiff_percent', 'swing_percent']
         sort_value = ""
 
         match self.etl_type:
             case ETLType.PRE_SZN:
-                columns.append(["year"])
+                columns += ["year"]
                 sort_value = "proj_FIP"
             case ETLType.REG_SZN:
-                columns.append(['owner',
-                                'prtr_%ROST', "prtr_PRTR", "prtr_IP", "prtr_QS", "prtr_ERA",
-                                "prtr_WHIP", "prtr_K/9", "prtr_SVHD",
-                                'G', 'GS', 'IP', 'ERA', 'WHIP', 'K/9', 'p_save', 'p_hold', 'SVHD',
-                                'p_quality_start', 'FIP', 'BB/9', 'HR/9', 'BABIP', 'WAR',
-                                'k_percent', 'bb_percent'])
+                columns += ['owner',
+                            'prtr_%ROST', "prtr_PRTR", "prtr_IP", "prtr_QS", "prtr_ERA",
+                            "prtr_WHIP", "prtr_K/9", "prtr_SVHD",
+                            'G', 'GS', 'IP', 'ERA', 'WHIP', 'K/9', 'p_save', 'p_hold', 'SVHD',
+                            'p_quality_start', 'FIP', 'BB/9', 'HR/9', 'BABIP', 'WAR',
+                            'k_percent', 'bb_percent']
                 sort_value = "FIP"
 
         clean_sps = clean_sps[columns].drop(columns="proj_SVHD").sort_values(sort_value,
