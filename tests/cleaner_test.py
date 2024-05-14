@@ -31,7 +31,7 @@ class TestCleaner:
     def test_clean_hitters_reg_szn(self, setup_reg_szn):
         assert isinstance(self.cleaned_bats, pd.DataFrame)
         assert "ESPNID", "FANGRAPHSID" in self.cleaned_bats.columns.tolist()
-        assert self.cleaned_bats.iloc[0]["wRC+"] >= self.cleaned_bats.iloc[1]["wRC+"]
+        assert self.cleaned_bats.iloc[0]["proj_wRC+"] >= self.cleaned_bats.iloc[1]["proj_wRC+"]
         assert "SBN" in self.cleaned_bats.columns.tolist()
 
     def test_clean_pitchers_pre_szn(self, setup_pre_szn):
@@ -43,5 +43,5 @@ class TestCleaner:
     def test_clean_pitchers_reg_szn(self, setup_reg_szn):
         assert isinstance(self.cleaned_sps, pd.DataFrame)
         assert "ESPNID", "FANGRAPHSID" in self.cleaned_sps.columns.tolist()
-        assert self.cleaned_sps.iloc[0]["FIP"] <= self.cleaned_sps.iloc[1]["FIP"]
+        assert self.cleaned_sps.iloc[0]["proj_FIP"] <= self.cleaned_sps.iloc[1]["proj_FIP"]
         assert "SVHD" in self.cleaned_rps.columns.tolist()

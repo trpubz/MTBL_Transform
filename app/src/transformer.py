@@ -3,88 +3,219 @@ import pandas as pd
 import math
 
 
-def z_bats(df: pd.DataFrame, ruleset: dict, no_managers: int) -> dict:
-    """
-    Z-score for batters group.  RLP is the average of the players right outside the draftable set
-    :param df: Dataframe with hitters
-    :param ruleset: League specific ruleset
-    :param no_managers: Number of managers, establishes the RLP threshold
-    :return: dict keyed by the pos
-    """
-    pos_groups = calc_initial_rlp_bats(df, ruleset, no_managers)
+class Transformer:
+    def __init__(self, ruleset: dict, no_managers: int, bats: pd.DataFrame, sps: pd.DataFrame,
+                 rps: pd.DataFrame):
+        """
+        :param ruleset: League specific ruleset
+        :param no_managers: Number of managers, establishes the RLP threshold
+        :param bats: Dataframe with hitters
+        :param sps: Dataframe with pitchers
+        :param rps: Dataframe with pitchers
+        """
+        self.ruleset = ruleset
+        self.batting_categories = ruleset["SCORING"]["BATTING"]
+        self.pitching_categories = ruleset["SCORING"]["PITCHING"]
+        self.no_managers = no_managers
+        self.bats = bats
+        self.sps = sps
+        self.rps = rps
 
-    for pos, group in pos_groups.items():
-        pos_groups[pos]["players"] = calculate_zscores(
-            pos, group["players"], group["rlp"], ruleset["SCORING"]["BATTING"])
+    def z_bats(self) -> dict:
+        """
+        Z-score for batters group.  RLP is the average of the players right outside the
+        draftable set
+        :return: dict keyed by the pos
+        """
+        pos_groups = self.calc_initial_rlp_bats()
 
-    # second time through, force player into pri position, remove from alt position group
-    pos_list = list(pos_groups.keys())
-    for i in range(0, len(pos_list)):
-        pos_i = pos_list[i]
-        bats = pos_groups[pos_i]["players"]
-        for player in bats.itertuples():
-            positions = player.positions
-            if len(positions) > 1:
-                for alt_pos in positions:
-                    if pos_i != alt_pos and alt_pos != "SP":
-                        match = pos_groups[alt_pos]["players"][
-                            pos_groups[alt_pos]["players"]["ESPNID"] == player.ESPNID]
-                        if len(match) == 0: continue
-                        # #Index used since itertuples, unwrapping required for direct index
-                        p_idx = math.ceil(player.Index / ruleset["ROSTER_REQS"]["BATTERS"][pos_i])
-                        m_idx = math.ceil(match.index[0] /
-                                          ruleset["ROSTER_REQS"]["BATTERS"][alt_pos])
-                        if p_idx < m_idx:
-                            match_index = match.index[0]  # Assuming single match
-                            pos_groups[alt_pos]["players"].drop(match_index, inplace=True)
-                        else:
-                            pos_groups[pos_i]["players"].drop(player.Index, inplace=True)
+        for pos, group in pos_groups.items():
+            pos_groups[pos]["players"] = calculate_zscores(df=group["players"],
+                                                           rlp_dict=group["rlp"],
+                                                           categories=self.batting_categories)
+            if pos != "DH":
+                pos_groups["DH"]["players"] = self.cleanup_dh_pos_group(pos_groups=pos_groups,
+                                                                        pos=pos)
 
-                        break
+        # TODO: need to resort each position group and remove players now valid, from the DH group
+        # TODO: after resorting the new groups, make new RLP for DH group
+        pos_groups = self.set_pri_pos(pos_groups)
 
-    for pos, group in pos_groups.items():
-        rlp = rlp_group(pos_groups[pos]["players"], ruleset["ROSTER_REQS"]["BATTERS"][pos],
-                        no_managers)
-        rlp = reduce_rlp_group(rlp)
-        group["players"]["pri_pos"] = pos
-        pos_groups[pos]["players"] = calculate_zscores(
-            pos, group["players"], rlp, ruleset["SCORING"]["BATTING"])
+        for pos, group in pos_groups.items():
+            rlp_group = self.rlp_group(df=pos_groups[pos]["players"],
+                                       ros_req=self.ruleset["ROSTER_REQS"]["BATTERS"][pos])
+            rlp = reduce_rlp_group(rlp_group)
+            group["players"]["pri_pos"] = pos
+            pos_groups[pos]["players"] = calculate_zscores(df=group["players"],
+                                                           rlp_dict=rlp,
+                                                           categories=self.batting_categories)
 
-    return pos_groups
+        return pos_groups
+
+    def cleanup_dh_pos_group(self, pos_groups: dict, pos: str) -> pd.DataFrame:
+        """
+        After the position groups are sorted by total_z scores, the top players at each position
+        need to be removed from the DH group
+        :param pos_groups: all the position groups with players and rlp keys
+        :param pos: str for pos to comb through
+        :return: Dataframe of DH group
+        """
+        ros_reqs = self.ruleset["ROSTER_REQS"]["BATTERS"][pos]
+        num_players = ros_reqs * self.no_managers
+        top_players_at_pos = pos_groups[pos]["players"][:num_players]
+        dh_players = pos_groups["DH"]["players"]
+        no_dups_dh = dh_players[~dh_players["ESPNID"].isin(top_players_at_pos["ESPNID"])]
+
+        return no_dups_dh
+
+    def set_pri_pos(self, pos_groups: dict) -> dict:
+        """
+        second time through, force player into pri position, remove from alt position group
+        :param pos_groups: POS primary keys with players df and rlp dict as secondary key
+        :return: pos_groups object type
+        """
+        pos_groups = pos_groups.copy()
+        pos_list = list(pos_groups.keys())
+        for i in range(0, len(pos_list)):
+            pos_i = pos_list[i]
+            bats = pos_groups[pos_i]["players"]
+            for player in bats.itertuples():
+                positions = player.positions
+                if len(positions) > 1:
+                    for alt_pos in positions:
+                        if pos_i != alt_pos and alt_pos != "SP":
+                            match = pos_groups[alt_pos]["players"][
+                                pos_groups[alt_pos]["players"]["ESPNID"] == player.ESPNID]
+                            if len(match) == 0:
+                                continue
+                            # #Index used since itertuples, unwrapping required for direct index
+                            current_pos_group_player_idx = math.ceil(
+                                player.Index / self.ruleset["ROSTER_REQS"]["BATTERS"][pos_i])
+                            match_idx = math.ceil(match.index[0] /
+                                                  self.ruleset["ROSTER_REQS"]["BATTERS"][alt_pos])
+                            # drop the player from the group for the lower ranking
+                            if current_pos_group_player_idx < match_idx:
+                                match_index = match.index[0]  # Assuming single match
+                                pos_groups[alt_pos]["players"].drop(match_index, inplace=True)
+                            else:
+                                pos_groups[pos_i]["players"].drop(player.Index, inplace=True)
+                            break
+
+        return pos_groups
+
+    def z_arms(self) -> dict:
+        """
+        Z-score for pitcher group.  RLP is the average of the players right outside the
+        draftable set
+        :return: dict keyed by the pos
+        """
+        pos_groups = self.calc_rlp_arms(sps=self.sps, rps=self.rps)
+
+        for pos, group in pos_groups.items():
+            pos_groups[pos]["players"] = calculate_zscores(df=group["players"],
+                                                           rlp_dict=group["rlp"],
+                                                           categories=self.ruleset["SCORING"][
+                                                               "PITCHING"])
+
+        # re-calculate based on initial sorted
+        pos_groups = self.calc_rlp_arms(sps=pos_groups["SP"]["players"],
+                                        rps=pos_groups["RP"]["players"])
+
+        for pos, group in pos_groups.items():
+            pos_groups[pos]["players"] = calculate_zscores(df=group["players"],
+                                                           rlp_dict=group["rlp"],
+                                                           categories=self.ruleset["SCORING"][
+                                                               "PITCHING"])
+
+        return pos_groups
+
+    def calc_rlp_arms(self, **kwargs) -> dict:
+        """
+        Calculates RLP groups for all pitchers
+        :return: dict keyed by the pos with two inner keys: players & rlp
+        """
+        arms = {
+            "SP": {"players": kwargs["sps"]},
+            "RP": {"players": kwargs["rps"]}
+        }
+
+        wild_card_ps = self.ruleset["ROSTER_REQS"]["PITCHERS"]["P"]
+        ros_sps = self.ruleset["ROSTER_REQS"]["PITCHERS"]["SP"]
+        wild_card_sps = math.ceil(wild_card_ps / 2)
+        ros_sps += wild_card_sps
+        wild_card_ps -= wild_card_sps
+        ros_rps = self.ruleset["ROSTER_REQS"]["PITCHERS"]["RP"] + wild_card_ps
+
+        sp_rlp_group = self.rlp_group(arms["SP"]["players"], ros_sps)
+        # add RLP inner key
+        arms["SP"]["rlp"] = reduce_rlp_group(sp_rlp_group)
+
+        rp_rlp_group = self.rlp_group(arms["RP"]["players"], ros_rps)
+        arms["RP"]["rlp"] = reduce_rlp_group(rp_rlp_group)
+
+        return arms
+
+    def calc_initial_rlp_bats(self, sort_stat: str = "proj_wRC+") -> dict:
+        """
+        Calculate the Replacement Level Players for each position group the first time through.
+        This is required because DH position group has only a few players, and the RLPs from each
+        position group are added into the DH group.
+        Sorting on this group is done with the sort_stat
+        :param: sort_stat: the stat to sort on
+        :return: position group dictionary; keys are positions, each position has a pos group and
+        RLP dict
+        """
+        bats = {"DH": {"players": pd.DataFrame(), "rlp": dict}}
+
+        for roster_slot, pos_req in self.ruleset["ROSTER_REQS"]["BATTERS"].items():
+            # instantiate the dict
+            bats[roster_slot] = {"players": pd.DataFrame(), "rlp": dict} if (
+                    roster_slot not in bats) else bats[roster_slot]
+
+            # DH is last position, fill up RLP players into the DH df.
+            if roster_slot != "DH":
+                bats[roster_slot]["players"] = self.bats[self.bats["positions"].apply(lambda pos:
+                                                                                      roster_slot in
+                                                                                      pos)]
+                rlp_group = self.rlp_group(bats[roster_slot]["players"], pos_req)
+                bats["DH"]["players"] = pd.concat([bats["DH"]["players"], rlp_group])
+            else:
+                # only one position and it equals DH
+                only_dh = self.bats[self.bats["positions"].apply(lambda pos: "DH" in pos[0])]
+                bats["DH"]["players"] = pd.concat([bats["DH"]["players"], only_dh])
+                # since this is all the RLPs from other positions, resort on proj stat
+                bats["DH"]["players"].sort_values(by=sort_stat, ascending=False, inplace=True)
+                rlp_group = self.rlp_group(bats["DH"]["players"], pos_req)
+
+            bats[roster_slot]["rlp"] = reduce_rlp_group(rlp_group)
+
+        # remove from front of dict
+        dh = bats.pop("DH")
+        # remove any duplicate players
+        dh["players"] = dh["players"].drop_duplicates(subset="ESPNID")
+        # append to back of dict
+        bats["DH"] = dh
+
+        return bats
+
+    def rlp_group(self, df: pd.DataFrame, ros_req: int) -> pd.DataFrame:
+        """
+        Calculates RLP groups for single position group
+        :param df: Dataframe of position groups
+        :param ros_req: number of roster slots required
+        :return: Dataframe of RLP group, just outside position reqs
+        """
+        rlp_range = slice(self.no_managers * ros_req, self.no_managers * ros_req + 3)
+        return df[rlp_range]
 
 
-def z_arms(ruleset: dict, no_managers: int, **kwargs) -> dict:
-    """
-    Z-score for pitcher group.  RLP is the average of the players right outside the draftable set
-    :param kwargs: keyed dataframes with pitchers
-    :param ruleset: League specific ruleset
-    :param no_managers: Number of managers, establishes the RLP threshold
-    :return: dict keyed by the pos
-    """
-    pos_groups = calc_rlp_arms(ruleset, no_managers, **kwargs)
-
-    for pos, group in pos_groups.items():
-        pos_groups[pos]["players"] = calculate_zscores(
-            pos, group["players"], group["rlp"], ruleset["SCORING"]["PITCHING"])
-
-    # re-calculate based on initial sorted
-    pos_groups = calc_rlp_arms(ruleset, no_managers,
-                               sps=pos_groups["SP"]["players"], rps=pos_groups["RP"]["players"])
-
-    for pos, group in pos_groups.items():
-        pos_groups[pos]["players"] = calculate_zscores(
-            pos, group["players"], group["rlp"], ruleset["SCORING"]["PITCHING"])
-
-    return pos_groups
-
-
-def calculate_zscores(pos, df, rlp_dict, categories: list):
+def calculate_zscores(df: pd.DataFrame, rlp_dict: dict, categories: list) -> pd.DataFrame:
     """Calculates z-scores for numeric columns and adds them to the DataFrame.
+        Also sorts on total z-score
 
     Note:
-        We apply a sqrt normalization on the z-scores to reduce highend outliers
+        We apply a sqrt normalization on the z-scores to reduce high-end outliers
     Args:
-        pos (string): position of the player group
         df (pd.DataFrame): DataFrame containing numeric columns.
         rlp_dict (dict): Dictionary where keys are column names and
                            values are corresponding means.
@@ -117,65 +248,13 @@ def calculate_zscores(pos, df, rlp_dict, categories: list):
     return df
 
 
-def calc_rlp_arms(ruleset: dict, no_managers: int, **kwargs) -> dict:
-    arms = {"SP": {"players": kwargs["sps"]},
-            "RP": {"players": kwargs["rps"]}}
-
-    wild_card_ps = ruleset["ROSTER_REQS"]["PITCHERS"]["P"]
-    ros_sps = ruleset["ROSTER_REQS"]["PITCHERS"]["SP"]
-    wild_card_sps = math.ceil(wild_card_ps / 2)
-    ros_sps += wild_card_sps
-    wild_card_ps -= wild_card_sps
-    ros_rps = ruleset["ROSTER_REQS"]["PITCHERS"]["RP"] + wild_card_ps
-
-    group = rlp_group(arms["SP"]["players"], ros_sps, no_managers)
-    arms["SP"]["rlp"] = reduce_rlp_group(group)
-
-    group = rlp_group(arms["RP"]["players"], ros_rps, no_managers)
-    arms["RP"]["rlp"] = reduce_rlp_group(group)
-
-    return arms
-
-
-def calc_initial_rlp_bats(df: any, ruleset: dict, no_managers: int) -> dict:
-    """
-    Calculate the Replacement Level Players for each position group
-    :param df: Dataframe with hitters
-    :param no_managers: League specific ruleset
-    :param ruleset: Number of managers, establishes the RLP threshold
-    :return: position group dictionary; keys are positions, each position has a pos group and RLP
-    dict
-    """
-    bats = {"DH": {"players": pd.DataFrame(), "rlp": None}}
-
-    for roster_slot, num in ruleset["ROSTER_REQS"]["BATTERS"].items():
-        # instantiate the dict
-        bats[roster_slot] = {"players": None, "rlp": None} if (
-                roster_slot not in bats) else bats[roster_slot]
-
-        # DH is last position, fill up RLP players into the DH df.
-        if roster_slot != "DH":
-            bats[roster_slot]["players"] = df[df["positions"].apply(lambda pos: roster_slot in pos)]
-            rlp = rlp_group(bats[roster_slot]["players"], num, no_managers)
-            bats["DH"]["players"] = pd.concat([bats["DH"]["players"], rlp])
-        else:
-            # only one position and it equals DH
-            only_dh = df[df["positions"].apply(lambda pos: "DH" in pos[0])]
-            bats["DH"]["players"] = pd.concat([bats["DH"]["players"], only_dh])
-            # since this is all the RLPs from other positions, resort on wRAA
-            bats["DH"]["players"].sort_values(by="wRAA", ascending=False, inplace=True)
-            rlp = rlp_group(bats["DH"]["players"], num, no_managers)
-
-        bats[roster_slot]["rlp"] = reduce_rlp_group(rlp)
-    return bats
-
-
-def rlp_group(df: pd.DataFrame, ros_req: int, no_managers: int) -> pd.DataFrame:
-    rlp_range = slice(no_managers * ros_req, no_managers * ros_req + 3)
-    return df[rlp_range]
-
-
 def reduce_rlp_group(df: pd.DataFrame) -> dict:
+    """
+    Reduce by averaging numerical columns
+    :param df: Dataframe of position's RLP group
+    :return: dict of numerical columns reduced by averaging
+    """
     # Select numeric columns
-    numeric_cols = df.select_dtypes(include='number').columns.drop(["ESPNID", "MLBID"], errors="ignore")
+    numeric_cols = df.select_dtypes(include='number').columns.drop(["ESPNID", "MLBID"],
+                                                                   errors="ignore")
     return df[numeric_cols].mean().to_dict()

@@ -5,8 +5,8 @@ from mtbl_iokit.write import export_dataframe
 from app.src.mtbl_globals import ETLType, LG_RULESET, NO_MANAGERS, DIR_TRANSFORM
 from app.src.keymap import KeyMap
 from app.src.loader import Loader
-from app.src.cleaner import clean_hitters, clean_pitchers
-from app.src.transformer import z_bats, z_arms
+from app.src.cleaner import Cleaner
+from app.src.transformer import Transformer
 from app.src.appraiser import Appraiser
 
 
@@ -20,11 +20,18 @@ def main(etl_type: ETLType):
     loader = Loader(keymap=km, etl_type=etl_type)  # object has combined dfs
     loader.load_extracted_data()
     # clean data
-    clean_bats = clean_hitters(loader.combined_bats, etl_type)
-    clean_sps, clean_rps = clean_pitchers(loader.combined_arms, etl_type)
+    cleaner = Cleaner(etl_type=etl_type, bats=loader.combined_bats, arms=loader.combined_arms)
+    clean_bats = cleaner.clean_hitters()
+    clean_sps, clean_rps = cleaner.clean_pitchers()
     # standardize datasets
-    bats = z_bats(clean_bats, LG_RULESET, NO_MANAGERS)
-    arms = z_arms(LG_RULESET, NO_MANAGERS, sps=clean_sps, rps=clean_rps)
+    transformer = Transformer(ruleset=LG_RULESET,
+                              no_managers=NO_MANAGERS,
+                              bats=clean_bats,
+                              sps=clean_sps,
+                              rps=clean_rps)
+    # TODO:
+    bats = transformer.z_bats()
+    arms = transformer.z_arms()
     # bats and arms are now keyed by pos
     all_players = bats.copy().update(arms)
 

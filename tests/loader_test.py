@@ -1,15 +1,9 @@
-import functools
-
 import pandas as pd
 import pytest
 
-from app.src.mtbl_globals import ETLType, DIR_EXTRACT
+from app.src.mtbl_globals import ETLType
 from app.src.keymap import KeyMap
 from app.src.loader import Loader
-from tests.fixtures.mock_helper import mock_savant, mock_fangraphs, mock_savant_reg_szn, \
-    mock_fangraphs_reg_szn
-
-from mtbl_iokit import read
 
 
 class TestLoader:
@@ -33,9 +27,7 @@ class TestLoader:
         assert isinstance(loader.keymap, pd.DataFrame)
         assert loader.etl_type == ETLType.PRE_SZN
 
-    def test_load_extracted_data(self, setup, monkeypatch):
-        # monkeypatch.setattr(Loader, "import_savant", mock_savant)
-        # monkeypatch.setattr(Loader, "import_fangraphs", mock_fangraphs)
+    def test_load_extracted_data(self, setup):
 
         loader = Loader(setup, ETLType.PRE_SZN, "./tests/fixtures")
         loader.load_extracted_data()
@@ -48,9 +40,7 @@ class TestLoader:
         loader.combined_arms.to_json("./tests/fixtures/combined_arms.json",
                                      orient="records", indent=2)
 
-    def test_load_extracted_data_reg_szn(self, setup_reg_szn, monkeypatch):
-        # monkeypatch.setattr(Loader, "import_savant", mock_savant_reg_szn)
-        # monkeypatch.setattr(Loader, "import_fangraphs", mock_fangraphs_reg_szn)
+    def test_load_extracted_data_reg_szn(self, setup_reg_szn):
         loader = Loader(setup_reg_szn, ETLType.REG_SZN, "./tests/fixtures_reg_szn")
         loader.load_extracted_data()
 

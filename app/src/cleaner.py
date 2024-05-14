@@ -26,9 +26,9 @@ class Cleaner:
         clean_bats = None
         columns = ['ESPNID', 'FANGRAPHSID', 'MLBID', 'name', 'team', 'positions',
                    'proj_G', 'proj_PA', 'proj_AB', 'proj_H', 'proj_HR', 'proj_R', 'proj_RBI',
-                   'proj_SBN', 'proj_AVG', 'proj_OBP', 'proj_SLG', 'proj_OPS', 'proj_BB%', 'proj_K%',
-                   'proj_wOBA', 'proj_ISO', 'proj_BABIP', 'proj_wRC', 'proj_wRAA', 'proj_wRC+',
-                   'proj_WAR',
+                   'proj_SBN', 'proj_AVG', 'proj_OBP', 'proj_SLG', 'proj_OPS', 'proj_BB%',
+                   'proj_K%', 'proj_wOBA', 'proj_ISO', 'proj_BABIP', 'proj_wRC', 'proj_wRAA',
+                   'proj_wRC+', 'proj_WAR',
                    'pa', 'xslg', 'woba', 'xwoba', 'xobp', "sweet_spot_percent",
                    "barrel_batted_rate", "hard_hit_percent", "avg_best_speed", "avg_hyper_speed",
                    "oz_swing_percent", "n_bolts", "xwOBA_diff", "xSLG_diff", "xOBP_diff"
@@ -47,7 +47,7 @@ class Cleaner:
                             'on_base_plus_slg', 'BB%', 'K%', 'wOBA', 'ISO', 'BABIP',
                             'wRC+', 'WAR'
                             ]
-                sort_value = "wRC+"
+                sort_value = "proj_wRC+"
 
         clean_bats = self.bats[columns].sort_values(by=sort_value, ascending=False)
 
@@ -80,7 +80,7 @@ class Cleaner:
                             'G', 'GS', 'IP', 'ERA', 'WHIP', 'K/9', 'p_save', 'p_hold', 'SVHD',
                             'p_quality_start', 'FIP', 'BB/9', 'HR/9', 'BABIP', 'WAR',
                             'k_percent', 'bb_percent']
-                sort_value = "FIP"
+                sort_value = "proj_FIP"
 
         clean_sps = clean_sps[columns].drop(columns="proj_SVHD").sort_values(sort_value,
                                                                              ascending=True)

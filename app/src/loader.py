@@ -74,9 +74,9 @@ class Loader:
 
         # remove completely empty rows, may happen with poorly constructed .csv
         df = df[df.apply(lambda row: not all(row == ''), axis=1)]
-        df = cast_num_columns(df, int_cols, pd.Int64Dtype)
+        df = cast_num_columns(df, int_cols, pd.Int64Dtype())
         float_cols = df.columns[~df.columns.isin(inverse_float_cols)]
-        df = cast_num_columns(df, float_cols, pd.Float64Dtype)
+        df = cast_num_columns(df, float_cols, pd.Float64Dtype())
         df.loc[:, str_cols] = df.loc[:, str_cols].astype(str)
         return df
 
@@ -105,10 +105,10 @@ class Loader:
                              file_type=".csv",
                              as_type=read.IOKitDataTypes.DATAFRAME)
 
-        df = cast_num_columns(df, int_cols, pd.Int64Dtype)
-        df = cast_num_columns(df, proj_int_cols, pd.Int64Dtype)
-        df = cast_num_columns(df, float_cols, pd.Float64Dtype)
-        df = cast_num_columns(df, proj_float_cols, pd.Float64Dtype)
+        df = cast_num_columns(df, int_cols, pd.Int64Dtype())
+        df = cast_num_columns(df, proj_int_cols, pd.Int64Dtype())
+        df = cast_num_columns(df, float_cols, pd.Float64Dtype())
+        df = cast_num_columns(df, proj_float_cols, pd.Float64Dtype())
         df[str_cols] = df[str_cols].astype(str)
 
         return df
@@ -237,7 +237,7 @@ def check_keymap_validity(df: pd.DataFrame, id_col: str, source: str) -> None:
         case "FANGRAPHS":
             valid_eval_cols = df.columns.intersection(["Name", "PlayerId", "MLBAMID"])
             problematic_players = df[df[id_col].isna()][valid_eval_cols]
-            error_source = ("Player shows up in FANGRAPHS data, but not in KeyMap.\n")
+            error_source = "Player shows up in FANGRAPHS data, but not in KeyMap.\n"
         case "SAVANT":
             # FANGRAPHSID cannot start with 'sa' and be found in the savant data.
             no_nas_df = df[df[id_col].notna()]

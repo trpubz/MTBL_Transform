@@ -1,6 +1,7 @@
 import math
 
 import pandas as pd
+
 pd.options.mode.chained_assignment = None  # silences SettingWithCopyWarning
 
 
@@ -57,10 +58,7 @@ class Appraiser:
             budget_alloc_for_pos_group = (pos_group["pool_z"] / lg_tot_z) * self.lg_budget
             self.pos_groups[pos]["budget_alloc"] = budget_alloc_for_pos_group
             pos_pool.loc[:, "shekels"] = (pos_pool["z_total"] / pos_group["pool_z"] *
-                                   budget_alloc_for_pos_group).round(1)
+                                          budget_alloc_for_pos_group).round(1)
             # pos_pool["shekels"] = pos_pool["shekels"].apply(lambda x: round(x))
             # reinsert shekeled players to instance attribute
             all_pos_players.iloc[:pos_group["pool_size"]] = pos_pool
-
-
-
