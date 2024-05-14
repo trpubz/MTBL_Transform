@@ -225,27 +225,27 @@ def calculate_zscores(df: pd.DataFrame, rlp_dict: dict, categories: list) -> pd.
         pd.DataFrame: DataFrame with new z-score columns.
     """
     # df.drop(columns=categories, inplace=True)
-
+    z_df = df.copy()
     for cat in categories:
         if cat in rlp_dict:
             rlp_mean = rlp_dict[cat]
-            std = df[cat].std(ddof=1)  # Sample standard deviation
+            std = z_df[cat].std(ddof=1)  # Sample standard deviation
             if cat in ["ERA", "WHIP"]:  # since lower values are more desirable, need to swap num
                 # sign indicator reapplied after the abs function
                 # #sqrt cannot be applied to neg numbers
-                sign_indicator = np.where(rlp_mean - df[cat] >= 0, 1, -1)
-                df["z" + cat] = np.sqrt(np.abs((rlp_mean - df[cat]) / std)) * sign_indicator
+                sign_indicator = np.where(rlp_mean - z_df[cat] >= 0, 1, -1)
+                z_df.loc[:, "z" + cat] = np.sqrt(np.abs((rlp_mean - z_df[cat]) / std)) * sign_indicator
             else:
-                sign_indicator = np.where(df[cat] - rlp_mean >= 0, 1, -1)
-                df["z" + cat] = np.sqrt(np.abs((df[cat] - rlp_mean) / std)) * sign_indicator
+                sign_indicator = np.where(z_df[cat] - rlp_mean >= 0, 1, -1)
+                z_df.loc[:, "z" + cat] = np.sqrt(np.abs((z_df[cat] - rlp_mean) / std)) * sign_indicator
 
     drop_cols = ["z_total", "z_swing_miss_percent", "oz_swing_percent"]
     # Calculate Total of 'z' columns
-    df["z_total"] = df.filter(like="z").drop(drop_cols, axis=1, errors="ignore").sum(axis=1)
-    df.sort_values("z_total", ascending=False, inplace=True)
-    df.reset_index(drop=True, inplace=True)
+    z_df.loc[:, "z_total"] = z_df.filter(like="z").drop(drop_cols, axis=1, errors="ignore").sum(axis=1)
+    z_df.sort_values("z_total", ascending=False, inplace=True)
+    z_df.reset_index(drop=True, inplace=True)
 
-    return df
+    return z_df
 
 
 def reduce_rlp_group(df: pd.DataFrame) -> dict:
