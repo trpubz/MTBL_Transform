@@ -37,6 +37,12 @@ class TestTransformer:
     def test_z_bats_reg_szn(self, setup_reg_szn):
         bats = self.transformer.z_bats()
 
+        assert isinstance(bats["SS"]["players"], pd.DataFrame)
+        assert "z_total" in bats["SS"]["players"].columns
+        assert bats["SS"]["players"].loc[0, "z_total"] >= bats["SS"]["players"].loc[1, "z_total"]
+        assert bats["DH"]["players"].loc[0, "z_total"] >= bats["DH"]["players"].loc[1, "z_total"]
+        assert bats["DH"]["players"].duplicated("ESPNID").any() == False
+
     def test_calc_initial_rlp_bats_reg_szn(self, setup_reg_szn):
         bats = self.transformer.calc_initial_rlp_bats()
 
@@ -48,9 +54,10 @@ class TestTransformer:
         pos_groups = self.transformer.calc_initial_rlp_bats()
 
         for pos, group in pos_groups.items():
-            pos_groups[pos]["players"] = calculate_zscores(
+            pos_groups[pos]["players"] = self.transformer.calculate_z_scores(
                 df=group["players"],
                 rlp_dict=group["rlp"],
+                pos=pos,
                 categories=self.transformer.batting_categories)
 
         ss_players = pos_groups["SS"]["players"]
@@ -61,20 +68,48 @@ class TestTransformer:
     def test_cleanup_dh_pos_group_reg_szn(self, setup_reg_szn):
         pos_groups = self.transformer.calc_initial_rlp_bats()
         for pos, group in pos_groups.items():
-            pos_groups[pos]["players"] = calculate_zscores(
-                                            df=group["players"],
-                                            rlp_dict=group["rlp"],
-                                            categories=self.transformer.batting_categories)
+            pos_groups[pos]["players"] = self.transformer.calculate_z_scores(
+                df=group["players"],
+                rlp_dict=group["rlp"],
+                pos=pos,
+                categories=self.transformer.batting_categories)
             if pos != "DH":
                 pos_groups["DH"]["players"] = self.transformer.cleanup_dh_pos_group(
-                                                pos_groups=pos_groups,
-                                                pos=pos)
+                    pos_groups=pos_groups,
+                    pos=pos)
 
                 ros_reqs = self.transformer.ruleset["ROSTER_REQS"]["BATTERS"][pos]
                 num_players = ros_reqs * self.transformer.no_managers
 
                 assert True not in pos_groups["DH"]["players"]["ESPNID"].isin(
                     pos_groups[pos]["players"][:num_players]["ESPNID"]).to_list()
+
+    def test_set_pri_pos_bats_reg_szn(self, setup_reg_szn):
+        """
+        Expect the player to end up in the lower indexed position group.
+        Player 5 is rank 1 in the 1B group and rank 5 in the OF group.  Thus, he should be
+        pri-pos for OF group.
+        """
+        pos_groups = {
+            "1B": {"players":
+                       pd.DataFrame({
+                           "ESPNID": [1, 2, 3, 4, 5],
+                           "proj_wRC+": [100, 110, 120, 130, 140],
+                           "z_total": [1, 2, 3, 4, 5],
+                           "positions": [["1B"], ["1B"], ["1B"], ["1B"], ["1B", "OF"]]
+                       }).sort_values("z_total", ascending=False)},
+            "OF": {"players":
+                       pd.DataFrame({
+                           "ESPNID": [5, 7, 8, 9, 10],
+                           "proj_wRC+": [100, 110, 120, 130, 140],
+                           "z_total": [1, 2, 3, 4, 5],
+                           "positions": [["1B", "OF"], ["OF"], ["OF"], ["OF"], ["OF"]]
+                       }).sort_values("z_total", ascending=False)},
+        }
+
+        pos_groups = self.transformer.set_pri_pos(pos_groups)
+
+        assert 5 not in pos_groups["1B"]["players"]["ESPNID"].to_list()
 
     def test_calc_rlp_bats_pre_szn(self, setup_pre_szn):
         # standardize datasets
