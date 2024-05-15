@@ -29,14 +29,17 @@ def main(etl_type: ETLType):
                               bats=clean_bats,
                               sps=clean_sps,
                               rps=clean_rps)
-    # TODO:
+
     bats = transformer.z_bats()
     arms = transformer.z_arms()
     # bats and arms are now keyed by pos
     all_players = bats.copy().update(arms)
 
     budget_pref = {"bats": 0.65, "sps": 0.20, "rps": .15}
-    app = Appraiser(LG_RULESET, NO_MANAGERS, budget_pref, bats=bats, arms=arms)
+    app = Appraiser(ruleset=LG_RULESET,
+                    no_managers=NO_MANAGERS,
+                    budget_split=budget_pref,
+                    bats=bats, arms=arms)
     app.add_skekels()
 
     for pos, pos_group in app.pos_groups.items():

@@ -249,7 +249,8 @@ class Transformer:
                            rlp_dict: dict,
                            pos: str,
                            categories: list) -> pd.DataFrame:
-        """Calculates z-scores for numeric columns and adds them to the DataFrame.
+        """Calculates z-scores for projected league-relevant stat columns and adds them to the
+        DataFrame.
             Also sorts on total z-score
 
         Note:
@@ -264,29 +265,29 @@ class Transformer:
         Returns:
             pd.DataFrame: DataFrame with new z-score columns.
         """
-        # df.drop(columns=categories, inplace=True)
         num_players = self.get_players_at_pos(pos)
-        z_df = df.copy()
+        z_df = df.copy().reset_index(drop=True)  # reset index so #loc slicking works in a few lines
         for cat in categories:
             if cat in rlp_dict:
-                rlp_mean = rlp_dict[cat]
-                std = z_df[cat].std(ddof=1)  # Sample standard deviation
-                if cat in ["ERA",
-                           "WHIP"]:  # since lower values are more desirable, need to swap num
+                proj_cat = "proj_" + cat
+                rlp_mean = rlp_dict[proj_cat]
+                std = z_df.loc[:num_players, proj_cat].std(ddof=1)  # Sample standard deviation
+                if proj_cat in ["proj_ERA",
+                           "proj_WHIP"]:  # since lower values are more desirable, need to swap num
                     # sign indicator reapplied after the abs function
                     # #sqrt cannot be applied to neg numbers
-                    sign_indicator = np.where(rlp_mean - z_df[cat] >= 0, 1, -1)
-                    z_df.loc[:, "z" + cat] = np.sqrt(
-                        np.abs((rlp_mean - z_df[cat]) / std)) * sign_indicator
+                    sign_indicator = np.where(rlp_mean - z_df[proj_cat] >= 0, 1, -1)
+                    z_df.loc[:, "z" + proj_cat] = np.sqrt(
+                        np.abs((rlp_mean - z_df[proj_cat]) / std)) * sign_indicator
                 else:
-                    sign_indicator = np.where(z_df[cat] - rlp_mean >= 0, 1, -1)
-                    z_df.loc[:, "z" + cat] = np.sqrt(
-                        np.abs((z_df[cat] - rlp_mean) / std)) * sign_indicator
+                    sign_indicator = np.where(z_df[proj_cat] - rlp_mean >= 0, 1, -1)
+                    z_df.loc[:, "z_" + proj_cat] = np.sqrt(
+                        np.abs((z_df[proj_cat] - rlp_mean) / std)) * sign_indicator
 
         drop_cols = ["z_total", "z_swing_miss_percent", "oz_swing_percent"]
         # Calculate Total of 'z' columns
-        z_df.loc[:, "z_total"] = z_df.filter(like="z").drop(drop_cols, axis=1, errors="ignore").sum(
-            axis=1)
+        z_df.loc[:, "z_total"] = z_df.filter(like="z_").drop(drop_cols, axis=1,
+                                                             errors="ignore").sum(axis=1)
         z_df.sort_values("z_total", ascending=False, inplace=True)
         z_df.reset_index(drop=True, inplace=True)
 
