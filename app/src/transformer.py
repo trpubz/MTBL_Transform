@@ -1,3 +1,10 @@
+"""
+This module contains the Transformer class, which is responsible for calculating z-scores for
+batters and pitchers. The z-scores are used to determine the relative value of each player in the
+pos group.
+Modified: 15 MAY 24
+version: 0.1
+"""
 import numpy as np
 import pandas as pd
 import math
@@ -82,6 +89,49 @@ class Transformer:
 
         return no_dups_dh
 
+    def calc_initial_rlp_bats(self, sort_stat: str = "proj_wRC+") -> dict:
+        """
+        Calculate the Replacement Level Players for each position group the first time through.
+        This is required because DH position group has only a few players, and the RLPs from each
+        position group are added into the DH group.
+        Sorting on this group is done with the sort_stat
+        :param: sort_stat: the stat to sort on
+        :return: position group dictionary; keys are positions, each position has a pos group and
+        RLP dict
+        """
+        bats = {"DH": {"players": pd.DataFrame(), "rlp": dict}}
+
+        for roster_slot, pos_req in self.ruleset["ROSTER_REQS"]["BATTERS"].items():
+            # instantiate the dict
+            bats[roster_slot] = {"players": pd.DataFrame(), "rlp": dict} if (
+                    roster_slot not in bats) else bats[roster_slot]
+
+            # DH is last position, fill up RLP players into the DH df.
+            if roster_slot != "DH":
+                bats[roster_slot]["players"] = self.bats[self.bats["positions"].apply(lambda pos:
+                                                                                      roster_slot in
+                                                                                      pos)]
+                rlp_group = self.rlp_group(bats[roster_slot]["players"], roster_slot)
+                bats["DH"]["players"] = pd.concat([bats["DH"]["players"], rlp_group])
+            else:
+                # only one position and it equals DH
+                only_dh = self.bats[self.bats["positions"].apply(lambda pos: "DH" in pos[0])]
+                bats["DH"]["players"] = pd.concat([bats["DH"]["players"], only_dh])
+                # since this is all the RLPs from other positions, resort on proj stat
+                bats["DH"]["players"].sort_values(by=sort_stat, ascending=False, inplace=True)
+                rlp_group = self.rlp_group(bats["DH"]["players"], roster_slot)
+
+            bats[roster_slot]["rlp"] = reduce_rlp_group(rlp_group)
+
+        # remove from front of dict
+        dh = bats.pop("DH")
+        # remove any duplicate players
+        dh["players"] = dh["players"].drop_duplicates(subset="ESPNID")
+        # append to back of dict
+        bats["DH"] = dh
+
+        return bats
+
     def set_pri_pos(self, pos_groups: dict) -> dict:
         """
         Second time through, force player into pri position, remove from alt position group
@@ -133,6 +183,9 @@ class Transformer:
         draftable set
         :return: dict keyed by the pos
         """
+        # ensure #calc_rlp_arms returns the rlp_dict void of the proj_SVHD and proj_QS for SPs
+        # and RPs respectively because #calculate_z_scores holds loop logic that will fail if rlp
+        # group has these columns and not the players df
         pos_groups = self.calc_rlp_arms(sps=self.sps, rps=self.rps)
 
         for pos, group in pos_groups.items():
@@ -157,7 +210,7 @@ class Transformer:
 
     def calc_rlp_arms(self, **kwargs) -> dict:
         """
-        Calculates RLP groups for all pitchers
+        Calculates RLP groups for all pitchers.
         :return: dict keyed by the pos with two inner keys: players & rlp
         """
         arms = {
@@ -165,64 +218,16 @@ class Transformer:
             "RP": {"players": kwargs["rps"]}
         }
 
-        wild_card_ps = self.ruleset["ROSTER_REQS"]["PITCHERS"]["P"]
-        ros_sps = self.ruleset["ROSTER_REQS"]["PITCHERS"]["SP"]
-        wild_card_sps = math.ceil(wild_card_ps / 2)
-        ros_sps += wild_card_sps
-        wild_card_ps -= wild_card_sps
-        ros_rps = self.ruleset["ROSTER_REQS"]["PITCHERS"]["RP"] + wild_card_ps
-
         sp_rlp_group = self.rlp_group(arms["SP"]["players"], "SP")
         # add RLP inner key
         arms["SP"]["rlp"] = reduce_rlp_group(sp_rlp_group)
+        # del arms["SP"]["rlp"]["proj_SVHD"]
 
         rp_rlp_group = self.rlp_group(arms["RP"]["players"], "RP")
         arms["RP"]["rlp"] = reduce_rlp_group(rp_rlp_group)
+        # del arms["RP"]["rlp"]["proj_QS"]
 
         return arms
-
-    def calc_initial_rlp_bats(self, sort_stat: str = "proj_wRC+") -> dict:
-        """
-        Calculate the Replacement Level Players for each position group the first time through.
-        This is required because DH position group has only a few players, and the RLPs from each
-        position group are added into the DH group.
-        Sorting on this group is done with the sort_stat
-        :param: sort_stat: the stat to sort on
-        :return: position group dictionary; keys are positions, each position has a pos group and
-        RLP dict
-        """
-        bats = {"DH": {"players": pd.DataFrame(), "rlp": dict}}
-
-        for roster_slot, pos_req in self.ruleset["ROSTER_REQS"]["BATTERS"].items():
-            # instantiate the dict
-            bats[roster_slot] = {"players": pd.DataFrame(), "rlp": dict} if (
-                    roster_slot not in bats) else bats[roster_slot]
-
-            # DH is last position, fill up RLP players into the DH df.
-            if roster_slot != "DH":
-                bats[roster_slot]["players"] = self.bats[self.bats["positions"].apply(lambda pos:
-                                                                                      roster_slot in
-                                                                                      pos)]
-                rlp_group = self.rlp_group(bats[roster_slot]["players"], roster_slot)
-                bats["DH"]["players"] = pd.concat([bats["DH"]["players"], rlp_group])
-            else:
-                # only one position and it equals DH
-                only_dh = self.bats[self.bats["positions"].apply(lambda pos: "DH" in pos[0])]
-                bats["DH"]["players"] = pd.concat([bats["DH"]["players"], only_dh])
-                # since this is all the RLPs from other positions, resort on proj stat
-                bats["DH"]["players"].sort_values(by=sort_stat, ascending=False, inplace=True)
-                rlp_group = self.rlp_group(bats["DH"]["players"], roster_slot)
-
-            bats[roster_slot]["rlp"] = reduce_rlp_group(rlp_group)
-
-        # remove from front of dict
-        dh = bats.pop("DH")
-        # remove any duplicate players
-        dh["players"] = dh["players"].drop_duplicates(subset="ESPNID")
-        # append to back of dict
-        bats["DH"] = dh
-
-        return bats
 
     def rlp_group(self, df: pd.DataFrame, pos: str) -> pd.DataFrame:
         """
@@ -236,13 +241,15 @@ class Transformer:
         return df[rlp_range]
 
     def get_players_at_pos(self, pos: str) -> int:
-        pos_group = ""
-        if pos in ["SP", "RP"]:
-            pos_group = "PITCHERS"
-        else:
-            pos_group = "BATTERS"
+        match pos:
+            case "SP":
+                pos_slots, _ = bucket_wildcard_arms(self.ruleset)
+            case "RP":
+                _, pos_slots = bucket_wildcard_arms(self.ruleset)
+            case _:
+                pos_slots = self.ruleset["ROSTER_REQS"]["BATTERS"][pos]
 
-        return self.no_managers * self.ruleset["ROSTER_REQS"][pos_group][pos]
+        return self.no_managers * pos_slots
 
     def calculate_z_scores(self,
                            df: pd.DataFrame,
@@ -268,16 +275,16 @@ class Transformer:
         num_players = self.get_players_at_pos(pos)
         z_df = df.copy().reset_index(drop=True)  # reset index so #loc slicking works in a few lines
         for cat in categories:
-            if cat in rlp_dict:
-                proj_cat = "proj_" + cat
+            proj_cat = "proj_" + cat
+            if proj_cat in rlp_dict:
                 rlp_mean = rlp_dict[proj_cat]
                 std = z_df.loc[:num_players, proj_cat].std(ddof=1)  # Sample standard deviation
-                if proj_cat in ["proj_ERA",
-                           "proj_WHIP"]:  # since lower values are more desirable, need to swap num
+                if proj_cat in ["proj_ERA", "proj_WHIP"]:
+                    # since lower values are more desirable, need to swap num
                     # sign indicator reapplied after the abs function
                     # #sqrt cannot be applied to neg numbers
                     sign_indicator = np.where(rlp_mean - z_df[proj_cat] >= 0, 1, -1)
-                    z_df.loc[:, "z" + proj_cat] = np.sqrt(
+                    z_df.loc[:, "z_" + proj_cat] = np.sqrt(
                         np.abs((rlp_mean - z_df[proj_cat]) / std)) * sign_indicator
                 else:
                     sign_indicator = np.where(z_df[proj_cat] - rlp_mean >= 0, 1, -1)
@@ -304,3 +311,23 @@ def reduce_rlp_group(df: pd.DataFrame) -> dict:
     numeric_cols = df.select_dtypes(include='number').columns.drop(["ESPNID", "MLBID"],
                                                                    errors="ignore")
     return df[numeric_cols].mean().to_dict()
+
+
+def bucket_wildcard_arms(ruleset: dict) -> tuple:
+    """
+    Bucket the wildcard pitchers into SPs and RPs based on league ruleset
+    :param ruleset: dict
+    :return: number of SPs, number of RPs
+    """
+    wild_card_pitchers = ruleset["ROSTER_REQS"]["PITCHERS"]["P"]
+    roster_sps = ruleset["ROSTER_REQS"]["PITCHERS"]["SP"]
+    # split the wildcard between SPs and RPs
+    wild_card_sps = math.ceil(wild_card_pitchers / 2)
+    roster_sps += wild_card_sps
+    wild_card_pitchers -= wild_card_sps
+    roster_rps = ruleset["ROSTER_REQS"]["PITCHERS"]["RP"] + wild_card_pitchers
+    assert roster_sps + roster_rps == (
+            ruleset["ROSTER_REQS"]["PITCHERS"]["P"] +
+            ruleset["ROSTER_REQS"]["PITCHERS"]["SP"] +
+            ruleset["ROSTER_REQS"]["PITCHERS"]["RP"])
+    return roster_sps, roster_rps

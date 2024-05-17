@@ -23,7 +23,7 @@ class Cleaner:
         """
         self.bats["proj_SBN"] = self.bats["proj_SB"] - self.bats["proj_CS"]
         self.bats["SBN"] = self.bats["r_total_stolen_base"] - self.bats["r_total_caught_stealing"]
-        clean_bats = None
+
         columns = ['ESPNID', 'FANGRAPHSID', 'MLBID', 'name', 'team', 'positions',
                    'proj_G', 'proj_PA', 'proj_AB', 'proj_H', 'proj_HR', 'proj_R', 'proj_RBI',
                    'proj_SBN', 'proj_AVG', 'proj_OBP', 'proj_SLG', 'proj_OPS', 'proj_BB%',
@@ -33,6 +33,7 @@ class Cleaner:
                    "barrel_batted_rate", "hard_hit_percent", "avg_best_speed", "avg_hyper_speed",
                    "oz_swing_percent", "n_bolts", "xwOBA_diff", "xSLG_diff", "xOBP_diff"
                    ]
+
         sort_value = ""
 
         match self.etl_type:
