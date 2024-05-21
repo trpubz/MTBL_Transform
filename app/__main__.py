@@ -1,4 +1,3 @@
-import os
 import argparse
 
 from mtbl_iokit.write import export_dataframe
@@ -35,11 +34,46 @@ def main(etl_type: ETLType):
     # bats and arms are now keyed by pos
     all_players = bats.copy().update(arms)
 
-    budget_pref = {"bats": 0.65, "sps": 0.20, "rps": .15}
+    budget_pref = {
+        "bats": {
+            "ovr": 0.65,
+            "cats": {
+                "HR": 0.20,
+                "R": 0.15,
+                "RBI": 0.10,
+                "SBN": 0.15,
+                "OBP": 0.20,
+                "SLG": 0.20
+            }
+        },
+        "sps": {
+            "ovr": 0.20,
+            "cats": {
+                "IP": 0.15,
+                "QS": 0.20,
+                "ERA": 0.20,
+                "WHIP": 0.20,
+                "K/9": 0.25
+            }
+        },
+        "rps": {
+            "ovr": 0.15,
+            "cats": {
+                "IP": 0.15,
+                "SVHD": 0.20,
+                "ERA": 0.20,
+                "WHIP": 0.20,
+                "K/9": 0.25
+            }
+        }
+    }
     app = Appraiser(ruleset=LG_RULESET,
                     no_managers=NO_MANAGERS,
                     budget_split=budget_pref,
                     bats=bats, arms=arms)
+    app.calculate_league_batting_category_totals()
+    app.calculate_batting_category_weights_shekels()
+    app.calculate_pitching_category_weights_shekels()
     app.add_skekels()
 
     for pos, pos_group in app.pos_groups.items():

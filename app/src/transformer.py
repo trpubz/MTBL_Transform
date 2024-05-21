@@ -278,7 +278,8 @@ class Transformer:
             proj_cat = "proj_" + cat
             if proj_cat in rlp_dict:
                 rlp_mean = rlp_dict[proj_cat]
-                std = z_df.loc[:num_players, proj_cat].std(ddof=1)  # Sample standard deviation
+                # loc slicing is inclusive, need to subtract 1
+                std = z_df.loc[:num_players-1, proj_cat].std(ddof=1)  # Sample standard deviation
                 if proj_cat in ["proj_ERA", "proj_WHIP"]:
                     # since lower values are more desirable, need to swap num
                     # sign indicator reapplied after the abs function

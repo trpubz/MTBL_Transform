@@ -51,8 +51,8 @@ class Cleaner:
                 sort_value = "proj_wRC+"
 
         clean_bats = self.bats[columns].sort_values(by=sort_value, ascending=False)
-
-        return clean_bats
+        # players with no projections are not useful for analysis
+        return clean_bats.dropna(subset="proj_wRC+")
 
     def clean_pitchers(self) -> (pd.DataFrame, pd.DataFrame):
         """
@@ -88,4 +88,4 @@ class Cleaner:
         clean_rps = clean_rps[columns].drop(columns="proj_QS").sort_values(sort_value,
                                                                            ascending=True)
 
-        return clean_sps, clean_rps
+        return clean_sps.dropna(subset="proj_IP"), clean_rps.dropna(subset="proj_IP")
