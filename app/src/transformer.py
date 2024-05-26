@@ -288,6 +288,7 @@ class Transformer:
                     z_df.loc[:, "z_" + proj_cat] = np.sqrt(
                         np.abs((rlp_mean - z_df[proj_cat]) / std)) * sign_indicator
                 else:
+
                     sign_indicator = np.where(z_df[proj_cat] - rlp_mean >= 0, 1, -1)
                     z_df.loc[:, "z_" + proj_cat] = np.sqrt(
                         np.abs((z_df[proj_cat] - rlp_mean) / std)) * sign_indicator
