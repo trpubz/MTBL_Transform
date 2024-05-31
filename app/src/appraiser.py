@@ -23,7 +23,7 @@ class Appraiser:
             self.pos_groups[pos]["pool_size"] = (
                     no_managers * ruleset["ROSTER_REQS"]["BATTERS"][pos])
 
-        roster_rps, roster_sps = bucket_wildcard_arms(ruleset)
+        roster_sps, roster_rps = bucket_wildcard_arms(ruleset)
         for pos, pos_group in kwargs["arms"].items():
             self.pos_groups[pos] = {}
             self.pos_groups[pos]["players"] = pos_group["players"]
@@ -112,11 +112,11 @@ class Appraiser:
 
                     self.lg_category_totals["BATTING"][pos][cat_shekel_per_z] = (
                             (cat_budget * pos_w_cat) / (
-                        pos_group["players"].loc[:num_players - 1, z_proj_cat].sum())
+                                pos_group["players"].loc[:num_players - 1, z_proj_cat].sum())
                     )
 
     def add_skekels(self):
-        """"
+        """
         Assigns a budget to each player based on their z-score contribution to the position group
         stat category relative to the league z-score total for that category.
         Let's use dingers as our example.  The total amount of HRs in the league needs to be
@@ -134,7 +134,7 @@ class Appraiser:
         -------------------
         Let's assume the sum of z_HR for 1B is 10.  Then the shekel value per z_HR for 1B is 6.76.
         Let's say Big Papi has a z_HR of 3. Then Big Papi's shekel value is 20.28 (which still
-        needs to be added to the other categories.
+        needs to be added to the other categories.)
         """
         for pos, pos_group in self.pos_groups.items():
             pos_type = "PITCHING" if pos in ["SP", "RP"] else "BATTING"

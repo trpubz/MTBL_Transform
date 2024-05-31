@@ -159,4 +159,3 @@ class TestAppraiser:
 
         for pos, pos_group in self.app.pos_groups.items():
             assert isinstance(pos_group["players"].loc[0, "shekels"], float)
-

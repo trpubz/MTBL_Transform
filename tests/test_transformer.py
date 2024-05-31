@@ -1,3 +1,4 @@
+import pandas as pd
 import pytest
 
 from app.src.cleaner import Cleaner
@@ -209,3 +210,12 @@ class TestTransformer:
         assert isinstance(arms["RP"]["players"], pd.DataFrame)
         assert isinstance(arms["SP"]["rlp"], dict)
         assert isinstance(arms["RP"]["rlp"], dict)
+
+    @pytest.mark.parametrize("setup_data", [
+        ("fixtures_reg_szn", ETLType.REG_SZN)], indirect=True)
+    def test_normalize_cat_z_scores(self, setup_data):
+        self.transformer.ruleset["ROSTER_REQS"]["BATTERS"]["test"] = 1
+        series = pd.Series([1, 2, 3, 4, -5, 6, 7, 8, 9, 10, 11, 12])
+        normalized = self.transformer.normalize_cat_z_scores(series, pos="test")
+        assert normalized.min() == 0
+        assert normalized.max() == 17

@@ -237,7 +237,7 @@ class Transformer:
         :return: Dataframe of RLP group, just outside position reqs
         """
         num_players = self.get_players_at_pos(pos)
-        rlp_range = slice(num_players, num_players + 3)
+        rlp_range = slice(num_players, num_players + 5)
         return df[rlp_range]
 
     def get_players_at_pos(self, pos: str) -> int:
@@ -279,19 +279,21 @@ class Transformer:
             if proj_cat in rlp_dict:
                 rlp_mean = rlp_dict[proj_cat]
                 # loc slicing is inclusive, need to subtract 1
-                std = z_df.loc[:num_players-1, proj_cat].std(ddof=1)  # Sample standard deviation
+                std = z_df.loc[:num_players - 1, proj_cat].std(ddof=1)  # Sample standard deviation
                 if proj_cat in ["proj_ERA", "proj_WHIP"]:
                     # since lower values are more desirable, need to swap num
                     # sign indicator reapplied after the abs function
                     # #sqrt cannot be applied to neg numbers
-                    sign_indicator = np.where(rlp_mean - z_df[proj_cat] >= 0, 1, -1)
-                    z_df.loc[:, "z_" + proj_cat] = np.sqrt(
+                    sign_indicator = np.where((rlp_mean - z_df[proj_cat]) >= 0, 1, -1)
+                    cat_z_scores = np.sqrt(
                         np.abs((rlp_mean - z_df[proj_cat]) / std)) * sign_indicator
                 else:
 
-                    sign_indicator = np.where(z_df[proj_cat] - rlp_mean >= 0, 1, -1)
-                    z_df.loc[:, "z_" + proj_cat] = np.sqrt(
+                    sign_indicator = np.where((z_df[proj_cat] - rlp_mean) >= 0, 1, -1)
+                    cat_z_scores = np.sqrt(
                         np.abs((z_df[proj_cat] - rlp_mean) / std)) * sign_indicator
+
+                z_df.loc[:, "z_" + proj_cat] = self.normalize_cat_z_scores(cat_z_scores, pos=pos)
 
         drop_cols = ["z_total", "z_swing_miss_percent", "oz_swing_percent"]
         # Calculate Total of 'z' columns
@@ -301,6 +303,21 @@ class Transformer:
         z_df.reset_index(drop=True, inplace=True)
 
         return z_df
+
+    def normalize_cat_z_scores(self, pds: pd.Series, pos: str) -> pd.Series:
+        """
+        Normalize the z-scores for the given DataFrame by way of adding the largest negative
+        number from the relevant
+        :param pos: Position of the player DataFrame
+        :param pds:  with z-scores
+        :return: pandas Series with normalized z-scores
+        """
+        num_players = self.get_players_at_pos(pos)
+        # series slicing is range exclusive, diff from #loc[slicing]
+        lowest_value = pds[:num_players].min()
+        normalized = pds - lowest_value
+
+        return normalized
 
 
 def reduce_rlp_group(df: pd.DataFrame) -> dict:
