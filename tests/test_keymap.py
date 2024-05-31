@@ -44,9 +44,9 @@ class TestKeymap:
         result = benchmark(indexing_pandas)
         assert result is not None
 
-    @pytest.mark.skip(reason="network call")
+    # @pytest.mark.skip(reason="network call")
     def test_refresh_keymap(self):
-        test_dir = "./tests/fixtures"
+        test_dir = "./tests/fixtures_reg_szn"
         KeyMap.refresh_keymap(test_dir)
 
         expected_file = "mtbl_keymap.json"  # Example filename

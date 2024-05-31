@@ -4,26 +4,27 @@ import pytest
 from mtbl_iokit.read import read
 
 
-def savant_fixture(pos) -> ():
+def savant_fixture(pos, fix_dir="./tests/fixtures") -> ():
     """
     Fixture factory
     :return: a function and can accept arg at runtime
     """
-
-    return read.read_in_as(directory="./tests/fixtures",
+    return read.read_in_as(directory=fix_dir,
                            file_name=pos + "_savant",
                            file_type=".csv",
                            as_type=read.IOKitDataTypes.DATAFRAME)
 
 
-def projections_fixture(pos) -> ():
+def fangraphs_fixture(pos, fix_dir="./tests/fixtures") -> ():
     """
     Fixture factory
     :return: a function and can accept arg at runtime
     """
-
-    return read.read_in_as(directory="./tests/fixtures",
-                           file_name=pos + "_fg",
+    file_name = pos + "_regular_season" if (
+            fix_dir == "./tests/fixtures_reg_szn") else \
+        (pos + "_preseason")
+    return read.read_in_as(directory=fix_dir,
+                           file_name=file_name,
                            file_type=".csv",
                            as_type=read.IOKitDataTypes.DATAFRAME)
 
@@ -37,10 +38,28 @@ def mock_savant(_, pos) -> pd.DataFrame:
         raise ValueError(f"Unexpected position: {pos}")
 
 
-def mock_projections(_, pos) -> pd.DataFrame:
+def mock_savant_reg_szn(_, pos) -> pd.DataFrame:
     if pos == "bats":
-        return projections_fixture("bats")
+        return savant_fixture("bats", fix_dir="./tests/fixtures_reg_szn")
     elif pos == "arms":
-        return projections_fixture("arms")
+        return savant_fixture("arms", fix_dir="./tests/fixtures_reg_szn")
+    else:
+        raise ValueError(f"Unexpected position: {pos}")
+
+
+def mock_fangraphs(_, pos) -> pd.DataFrame:
+    if pos == "bats":
+        return fangraphs_fixture("bats")
+    elif pos == "arms":
+        return fangraphs_fixture("arms")
+    else:
+        raise ValueError(f"Unexpected position: {pos}")
+
+
+def mock_fangraphs_reg_szn(_, pos) -> pd.DataFrame:
+    if pos == "bats":
+        return fangraphs_fixture("bats", fix_dir="./tests/fixtures_reg_szn")
+    elif pos == "arms":
+        return fangraphs_fixture("arms", fix_dir="./tests/fixtures_reg_szn")
     else:
         raise ValueError(f"Unexpected position: {pos}")

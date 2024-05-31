@@ -21,7 +21,7 @@ Inputs for this process include:
 - arms_fg.csv
   - Pitcher RoS Projections: sourced from Fangraphs, combined from multiple RoS projections 
 - arms_stats.csv
-  - Pitcher Season Stats: sourced from Frangraphs (QS data sourced from Baseball-Reference, standard/advanced stats. 
+  - Pitcher Season Stats: sourced from Frangraphs (QS data sourced from Baseball-Reference, standard/advanced stats). 
 - arms_savant.csv
   - Pitcher Arsenal Stats: sourced from Savant 'Pitcher Arsenal Leaderboard'.  Broken down by pitch type with Wiff% info.   
 
